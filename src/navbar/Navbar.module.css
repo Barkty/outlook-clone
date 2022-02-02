@@ -1,0 +1,33 @@
+body {
+  font-family: segoe, "Segoe UI", Arial, sans-serif;
+}
+
+.top {
+  background: rgba(255, 255, 255, 0.2);
+  height: 54px;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.top__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+}
+
+.top__inner__logo {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+/*# sourceMappingURL=Navbar.module.css.map */
