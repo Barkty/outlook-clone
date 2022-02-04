@@ -15,4 +15,52 @@ $fontFamily : segoe, "Segoe UI", Arial, sans-serif;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+
+    &__title {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: space-around;
+        padding: 0 20px 0 20px;
+
+        &__name {
+            color: white;
+            font-size: 1.375rem;
+            margin-top: -10px;
+            text-align: left;
+            display: inline-block;
+        }
+
+        &__text {
+            color: white;
+            font-size: 2.5rem;
+            font-weight: 600;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            line-height: 50px;
+            
+            span {
+                display: inline-block;
+                text-align: left;
+                animation-name: taglineEmerge;
+                animation-duration: 1400ms;
+                animation-fill-mode: forwards;
+            }
+        }
+
+    }
+}
+
+@keyframes taglineEmerge {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }

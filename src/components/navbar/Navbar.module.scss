@@ -5,13 +5,14 @@ $fontFamily : segoe, "Segoe UI", Arial, sans-serif;
     box-sizing: border-box;
 }
 .top {
-    background-color: inherit;
+    background-color: hsl(28,61,30);
     height: 54px;
     width: 100%;
     order: 1;
     z-index: 3;
     position: fixed;
     padding: 8px;
+    border-bottom: 1px solid hsl(28,61,30);
     //box-shadow: 0 10px 30px rgb(0 0 0);
 
     &__inner {

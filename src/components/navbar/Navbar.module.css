@@ -5,7 +5,7 @@
 }
 
 .top {
-  background-color: inherit;
+  background-color: #7b491e;
   height: 54px;
   width: 100%;
   -webkit-box-ordinal-group: 2;
@@ -14,6 +14,7 @@
   z-index: 3;
   position: fixed;
   padding: 8px;
+  border-bottom: 1px solid #7b491e;
 }
 
 .top__inner {
