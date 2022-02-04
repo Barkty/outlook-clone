@@ -12,8 +12,9 @@ const Header = () => {
                     <span>Get things done.</span>
                 </p>
             </div>
-            <div>
-                <p></p>
+            <div className={styles.header__bottom}>
+                <p className={styles.header__bottom__text}>Free Outlook email and calender</p>
+                <button type='button' className={styles.header__bottom__btn}>Create free account</button>
             </div>
         </div>
     )
