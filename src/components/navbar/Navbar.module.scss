@@ -12,7 +12,13 @@ $fontFamily : segoe, "Segoe UI", Arial, sans-serif;
     z-index: 3;
     position: fixed;
     padding: 8px;
+    overflow: hidden;
     border-bottom: 1px solid hsl(28,61,30);
+    //background-color: #2a2112;
+    background-image: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 45% center;
     //box-shadow: 0 10px 30px rgb(0 0 0);
 
     &__inner {
@@ -21,6 +27,8 @@ $fontFamily : segoe, "Segoe UI", Arial, sans-serif;
         align-items: center;
         height: 100%;
         width: 100%;
+        max-width: calc(996 * 1px);
+        margin: 0 auto;
         transform: translateY(-1px);
 
         &__logo {
@@ -202,7 +210,13 @@ $fontFamily : segoe, "Segoe UI", Arial, sans-serif;
         position: fixed;
         padding: 5px 40px 5px 40px;
         border-bottom: 1px solid hsl(28,61,30);
+        background-image: inherit;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 45% center;
+        overflow: hidden;
         //box-shadow: 0 10px 30px rgb(0 0 0);
+        //background-color: #2a2112;    
 
         &__inner {
             display: flex;
@@ -241,32 +255,34 @@ $fontFamily : segoe, "Segoe UI", Arial, sans-serif;
                     height: 100%;
     
                     &__link:first-child {
-                        padding: 6px;
+                        padding: 8px;
                         text-align: center;
-                        font-weight: 400;
+                        font-weight: 500;
                         line-height: 1;
                         transition: none;
                         margin: 0 10px 0 0;
-                        border-radius: 2px;
+                        border-radius: 4px;
                         border: 1.5px solid white;
+                        background: rgba(0,0,0,0.1);
+                        transition: all 180ms;
     
                         a {
                             color: white;
                             text-decoration: none;
-                            font-size: 0.875rem;
+                            font-size: 1rem;
                             font-weight: 500;
-                            padding: 8px 15px 11px;
+                            padding: 9px 27px 12px;
                             cursor: pointer;
                         }
                     }
     
                     &__link:last-child {
                         background-color: white;
-                        border-radius: 2px;
+                        border-radius: 4px;
                         transition: none;
                         line-height: 1;
                         font-weight: 500;
-                        padding: 6px;
+                        padding: 8px;
                         margin: 0;
                         border: 2px solid white;
                         //box-shadow: 0 3px 9px rgb(0 0 0 / 5%);
@@ -275,7 +291,7 @@ $fontFamily : segoe, "Segoe UI", Arial, sans-serif;
                             //text-align: center;
                             color: #0078d4;
                             text-decoration: none;
-                            font-size: 0.75rem;
+                            font-size: 1rem;
                             font-weight: 500;
                             padding: 8px 15px 11px;
                             cursor: pointer;
@@ -285,4 +301,8 @@ $fontFamily : segoe, "Segoe UI", Arial, sans-serif;
             }
         }
     }
+}
+
+@media screen {
+    
 }
