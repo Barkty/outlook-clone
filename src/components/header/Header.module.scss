@@ -16,6 +16,7 @@ $fontFamily : segoe, "Segoe UI", Arial, sans-serif;
     background-size: cover;
     background-position: 45% center;
     background-repeat: no-repeat;
+    padding: 0 10px 0 10px;
 
     &__title {
         width: 100%;
@@ -32,6 +33,8 @@ $fontFamily : segoe, "Segoe UI", Arial, sans-serif;
             margin-top: -10px;
             text-align: left;
             display: inline-block;
+            line-height: 1;
+            font-weight: 500;
         }
 
         &__text {
@@ -42,6 +45,7 @@ $fontFamily : segoe, "Segoe UI", Arial, sans-serif;
             flex-direction: column;
             justify-content: flex-start;
             line-height: 50px;
+            transform: translateX(-0.0625em);
             
             span {
                 display: inline-block;
@@ -49,6 +53,7 @@ $fontFamily : segoe, "Segoe UI", Arial, sans-serif;
                 animation-name: taglineEmerge;
                 animation-duration: 1400ms;
                 animation-fill-mode: forwards;
+                //transform: translateY(50px);
             }
         }
 
@@ -103,4 +108,406 @@ $fontFamily : segoe, "Segoe UI", Arial, sans-serif;
         transform: translateY(0px);
         opacity: 1;
     }
+}
+
+@media screen and (min-width: 421px) {
+    .header {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        top: 0;
+        left: 0;
+        background-color: #2a2112;
+        background-image: url('../../images/banner.jpg');
+        background-size: cover;
+        background-position: 45% center;
+        background-repeat: no-repeat;
+        padding: 0 10px 0 10px;
+    
+        &__title {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: space-around;
+            padding: 0 20px 0 20px;
+    
+            &__name {
+                color: white;
+                font-size: 1.375rem;
+                margin-top: -30px;
+                text-align: left;
+                display: inline-block;
+                line-height: 1;
+                font-weight: 500;
+            }
+    
+            &__text {
+                color: white;
+                font-size: 3rem;
+                font-weight: 600;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                line-height: 50px;
+                letter-spacing: -0.02em;
+                transform: translateX(-0.0625em);
+                
+                span {
+                    display: inline-block;
+                    text-align: left;
+                    margin-bottom: 0.125em;
+                    letter-spacing: -0.02em;
+                    animation-name: taglineEmerge;
+                    animation-duration: 1400ms;
+                    animation-fill-mode: forwards;
+                }
+            }
+    
+        }
+    
+        &__bottom {
+            width: 100%;
+            height: 82px;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: center;
+            position: relative;
+            top: -100px;
+            padding: 0 20px 0 20px;
+    
+           &__text {
+                font-size: 1.25rem;
+                font-weight: 600;
+                color: white;
+                text-align: left;
+                animation-name: taglineEmerge;
+                animation-duration: 1400ms;
+                animation-fill-mode: forwards;
+                transform: translateY(50px);
+                opacity: 0;
+                margin: 0 0 10px 0;
+            }
+    
+            &__btn {
+                height: 80px;
+                border-radius: 6px;
+                background-color: #0078d4;
+                outline: none;
+                border: none;
+                cursor: pointer;
+                color: white;
+                line-height: 1.1;
+                font-weight: 500;
+                text-align: center;
+                font-size: 1.25rem !important;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 499px) {
+    .header {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        top: 0;
+        left: 0;
+        background-color: #2a2112;
+        background-image: url('../../images/banner.jpg');
+        background-size: cover;
+        background-position: 45% center;
+        background-repeat: no-repeat;
+        padding: 0 10px 0 10px;
+    
+        &__title {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: space-around;
+            padding: 0 20px 0 20px;
+    
+            &__name {
+                color: white;
+                font-size: 2.125rem;
+                margin-top: 15px;
+                text-align: left;
+                display: inline-block;
+                line-height: 1;
+                font-weight: 500;
+            }
+    
+            &__text {
+                color: white;
+                font-size: 3.5rem;
+                font-weight: 600;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                line-height: 50px;
+                letter-spacing: -0.02em;
+                padding-bottom: 40px;
+                transform: translateX(-0.0625em);
+                
+                span {
+                    display: inline-block;
+                    text-align: left;
+                    margin-bottom: 0.225em;
+                    letter-spacing: -0.02em;
+                    animation-name: taglineEmerge;
+                    animation-duration: 1400ms;
+                    animation-fill-mode: forwards;
+                }
+            }
+    
+        }
+    
+        &__bottom {
+            width: 100%;
+            height: 82px;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: center;
+            position: relative;
+            top: -100px;
+            padding: 0 20px 0 20px;
+    
+           &__text {
+                font-size: 1.5rem;
+                font-weight: 600;
+                color: white;
+                text-align: left;
+                animation-name: taglineEmerge;
+                animation-duration: 1400ms;
+                animation-fill-mode: forwards;
+                transform: translateY(50px);
+                opacity: 0;
+                margin: -40px 0 20px 0;
+            }
+    
+            &__btn {
+                height: 50px;
+                border-radius: 6px;
+                background-color: #0078d4;
+                outline: none;
+                border: none;
+                cursor: pointer;
+                color: white;
+                line-height: 1.1;
+                font-weight: 500;
+                text-align: center;
+                font-size: 1.25rem !important;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 665px) {
+    .header {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        top: 0;
+        left: 0;
+        background-color: #2a2112;
+        background-image: url('../../images/banner.jpg');
+        background-size: cover;
+        background-position: 45% center;
+        background-repeat: no-repeat;
+        padding: 0 10px 0 10px;
+    
+        &__title {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: space-around;
+            padding: 0 20px 0 20px;
+    
+            &__name {
+                color: white;
+                font-size: 2.125rem;
+                margin-top: 15px;
+                text-align: left;
+                display: inline-block;
+                line-height: 1;
+                font-weight: 500;
+            }
+    
+            &__text {
+                color: white;
+                font-size: 4.5rem;
+                font-weight: 600;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                line-height: 50px;
+                letter-spacing: -0.02em;
+                padding-bottom: 25px;
+                margin-bottom: 16px;
+                border-bottom: 1px solid white;
+                transform: translateX(-0.0625em);
+                
+                span {
+                    display: inline-block;
+                    text-align: left;
+                    margin-bottom: 0.325em;
+                    letter-spacing: -0.02em;
+                    animation-name: taglineEmerge;
+                    animation-duration: 1400ms;
+                    animation-fill-mode: forwards;
+                }
+            }
+    
+        }
+    
+        &__bottom {
+            width: 100%;
+            height: 82px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            top: -80px;
+            padding: 0 20px 0 20px;
+    
+           &__text {
+                font-size: 1.125rem;
+                font-weight: 600;
+                color: white;
+                text-align: left;
+                animation-name: taglineEmerge;
+                animation-duration: 1400ms;
+                animation-fill-mode: forwards;
+                transform: translateY(50px);
+                opacity: 0;
+                margin: 0px 0 10px 0;
+            }
+    
+            &__btn {
+                width: 42%;
+                height: 50px;
+                border-radius: 6px;
+                background-color: #0078d4;
+                outline: none;
+                border: none;
+                cursor: pointer;
+                color: white;
+                line-height: 1.1;
+                font-weight: 500;
+                text-align: center;
+                font-size: 1.25rem !important;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 760px) {
+    .header {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        top: 0;
+        left: 0;
+        background-color: #2a2112;
+        background-image: url('../../images/banner.jpg');
+        background-size: cover;
+        background-position: 45% center;
+        background-repeat: no-repeat;
+        padding: 0 10px 0 10px;
+    
+        &__title {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: space-around;
+            padding: 0 20px 0 20px;
+    
+            &__name {
+                color: white;
+                font-size: 2.125rem;
+                margin-top: 15px;
+                text-align: left;
+                display: inline-block;
+                line-height: 1;
+                font-weight: 500;
+            }
+    
+            &__text {
+                // width: 100%;
+                color: white;
+                font-size: 4.5rem;
+                font-weight: 600;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                line-height: 50px;
+                letter-spacing: -0.02em;
+                padding-bottom: 25px;
+                margin-bottom: 16px;
+                border-bottom: 1px solid white;
+                transform: translateX(-0.0625em);
+                
+                span {
+                    display: inline-block;
+                    text-align: left;
+                    margin-bottom: 0.325em;
+                    letter-spacing: -0.02em;
+                    animation-name: taglineEmerge;
+                    animation-duration: 1400ms;
+                    animation-fill-mode: forwards;
+                }
+            }
+    
+        }
+    
+        &__bottom {
+            width: 100%;
+            height: 82px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            top: -80px;
+            padding: 0 20px 0 20px;
+    
+           &__text {
+                font-size: 1.125rem;
+                font-weight: 600;
+                color: white;
+                text-align: left;
+                animation-name: taglineEmerge;
+                animation-duration: 1400ms;
+                animation-fill-mode: forwards;
+                transform: translateY(50px);
+                opacity: 0;
+                margin: 0px 0 10px 0;
+            }
+    
+            &__btn {
+                width: 42%;
+                height: 50px;
+                border-radius: 6px;
+                background-color: #0078d4;
+                outline: none;
+                border: none;
+                cursor: pointer;
+                color: white;
+                line-height: 1.1;
+                font-weight: 500;
+                text-align: center;
+                font-size: 1.25rem !important;
+            }
+        }
+    } 
 }
