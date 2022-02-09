@@ -13,7 +13,10 @@ const Header = () => {
                 </p>
             </div>
             <div className={styles.header__bottom}>
-                <p className={styles.header__bottom__text}>Free Outlook email and calender</p>
+                <div className={styles.header__bottom__para}>
+                    <p className={styles.header__bottom__text}>Free Outlook email and calender</p>
+                    <p className={styles.header__bottom__text2}>Everything you need to be your most productive and connected self-at home, on the go, and everywhere in between</p>
+                </div>
                 <button type='button' className={styles.header__bottom__btn}>Create free account</button>
             </div>
         </div>
