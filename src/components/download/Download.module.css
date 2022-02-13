@@ -2,4 +2,45 @@
   width: 100%;
   height: 100vh;
 }
+
+.download__image {
+  width: 87%;
+  height: 180px;
+  position: relative;
+  top: 100px;
+  left: 40px;
+}
+
+.download__image__dev {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.download__overlay {
+  background-color: white;
+  width: 87%;
+  height: 400px;
+  z-index: 3;
+  position: absolute;
+  padding: 15px;
+}
+
+.download__overlay h1 {
+  color: #0078d4;
+  font-weight: 500;
+  font-size: 2.75rem;
+  line-height: 1;
+  text-align: left;
+  margin-top: 40px;
+}
+
+.download__overlay p {
+  font-size: 1.1875rem;
+  line-height: 1.5;
+  max-width: 21em;
+  text-align: left;
+  position: relative;
+  top: 35px;
+}
 /*# sourceMappingURL=Download.module.css.map */

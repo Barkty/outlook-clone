@@ -1,4 +1,43 @@
 .download {
     width: 100%;
     height: 100vh;
+
+    &__image {
+        width: 87%;
+        height: 180px; 
+        position: relative;
+        top: 100px;
+        left: 40px; 
+        
+        &__dev {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__overlay {
+        background-color: white;
+        width: 87%;
+        height: 400px;
+        z-index: 3;
+        position: absolute;
+        padding: 15px;
+
+        h1 {
+            color: #0078d4;
+            font-weight: 500;
+            font-size: 2.75rem;
+            line-height: 1;
+            text-align: left;
+            margin-top: 40px;
+        }
+        p {
+            font-size: 1.1875rem;
+            line-height: 1.5;
+            max-width: 21em;
+            text-align: left;
+            position: relative;
+            top: 35px;
+        }
+    }
 }

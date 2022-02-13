@@ -23,20 +23,20 @@ $fontFamily : segoe, "Segoe UI", Arial, sans-serif;
 
     &__inner {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         height: 100%;
-        width: 100%;
-        max-width: calc(996 * 1px);
+        //width: 100%;
+        //max-width: calc(996 * 1px);
         margin: 0 auto;
         transform: translateY(-1px);
 
         &__logo {
-            width: 50px;
+            width: 100px;
             text-decoration: none;
             color: rgb(255, 255, 255);
             cursor: pointer;
-            margin-left: 15px;
+            //margin-left: 15px;
 
             &__img {
                 width: 100px;
@@ -46,8 +46,9 @@ $fontFamily : segoe, "Segoe UI", Arial, sans-serif;
         &__nav {
             width: 62%;
             height: 100%;
+            margin-left: -50px;
             //padding-right: 30px;
-            display: block;
+            //display: block;
 
             &__ul {
                 display: flex;

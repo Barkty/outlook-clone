@@ -1,0 +1,135 @@
+.interface {
+  width: 100%;
+  height: 417px;
+  background: #dcebfa;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.interface__products {
+  width: 90%;
+  height: 178px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  overflow: hidden;
+  position: relative;
+  top: -100px;
+}
+
+.interface__products__product1 {
+  width: 100%;
+  height: 178px;
+  background-image: url("../../images/email.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.interface__products__product2 {
+  width: 100%;
+  height: 178px;
+  background-image: url("../../images/calender.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.interface__controller {
+  width: 100%;
+  height: 159px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  top: -50px;
+  padding: 10px;
+}
+
+.interface__controller__btns {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.interface__controller__btns button {
+  outline: none;
+  border: none;
+  width: 19.3775100401606%;
+  padding-top: 44px;
+  height: 75px;
+  background: #0078d4;
+  border-radius: 5px;
+  cursor: default;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  color: white;
+  font-size: 0.75rem;
+  letter-spacing: -0.05em;
+  line-height: 1;
+  font-weight: 500;
+  text-align: center;
+}
+
+.interface__controller__btns button p {
+  margin-top: -30px;
+}
+
+.interface__controller__btns__icon {
+  width: 30px;
+  height: 27px;
+  position: relative;
+  top: -40px;
+  left: 15px;
+}
+/*# sourceMappingURL=Interface.module.css.map */
