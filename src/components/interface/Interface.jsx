@@ -27,7 +27,7 @@ const Interface = () => {
                     <img src={task} alt='Tasks' className={styles.interface__products__active1__task}/>
                 </div>
                 <div className={`${styles.interface__products__product1} ${active === 'Search' ? styles.interface__products__active1 : ''}`}>
-                    <img src={search} alt='Search' className={styles.interface__products__product1__people}/>
+                    <img src={search} alt='Search' className={styles.interface__products__active1__search}/>
                 </div>
             </div>
             <div className={styles.interface__controller}>
