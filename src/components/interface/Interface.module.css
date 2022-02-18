@@ -1255,7 +1255,7 @@
   .interface__products__active1 {
     display: block;
     width: 100%;
-    height: 378px;
+    height: 578px;
     opacity: 1;
     z-index: 2;
     background-image: url("../../images/email.png");
@@ -1343,7 +1343,7 @@
     border: none;
     width: 19.3775100401606%;
     padding-top: 44px;
-    height: 75px;
+    height: 95px;
     background: #0078d4;
     border-radius: 5px;
     cursor: default;
@@ -1364,7 +1364,7 @@
     border: none;
     width: 19.3775100401606%;
     padding-top: 44px;
-    height: 75px;
+    height: 95px;
     background: white;
     border-radius: 5px;
     cursor: default;
@@ -1384,7 +1384,250 @@
     height: 27px;
     position: relative;
     top: -40px;
-    left: 52px;
+    left: 43%;
+  }
+  .interface__controller__list {
+    margin-top: 12px;
+    position: relative;
+    width: 100%;
+    height: 4em;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: center;
+  }
+  .interface__controller__list__text {
+    width: 100%;
+    height: inherit;
+    margin: 0 auto 0 auto;
+    font-size: 0.8125rem;
+    color: #0078d4;
+    -webkit-transition: all 400ms;
+    transition: all 400ms;
+    opacity: 0;
+    position: relative;
+    display: block;
+  }
+  .interface__controller__list__active {
+    width: 100%;
+    height: inherit;
+    margin: 0 auto 0 auto;
+    font-size: 0.8125rem;
+    color: #0078d4;
+    -webkit-transition: all 400ms;
+    transition: all 400ms;
+    opacity: 1;
+    position: relative;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1275px) {
+  .interface {
+    width: 100%;
+    height: auto;
+    background: #dcebfa;
+    position: relative;
+    top: 90px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 65px;
+  }
+  .interface__products {
+    width: 98%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    overflow: hidden;
+    position: relative;
+    top: -150px;
+  }
+  .interface__products__product1 {
+    display: none;
+  }
+  .interface__products__product2 {
+    display: none;
+  }
+  .interface__products__active2 {
+    display: block;
+    width: 100%;
+    height: 578px;
+    opacity: 1;
+    z-index: 2;
+    background-image: url("../../images/calender.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    -webkit-transition: all 400ms;
+    transition: all 400ms;
+  }
+  .interface__products__active1 {
+    display: block;
+    width: 100%;
+    height: 578px;
+    opacity: 1;
+    z-index: 2;
+    background-image: url("../../images/email.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    -webkit-transition: all 400ms;
+    transition: all 400ms;
+  }
+  .interface__products__active1__people {
+    width: calc((748 / 2396) * 100%);
+    height: calc((1250 / 1536) * 100%);
+    position: relative;
+    left: 51.5859766277129%;
+    top: 14.5%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .interface__products__active1__task {
+    width: calc((748 / 2396) * 100%);
+    height: calc((1250 / 1536) * 100%);
+    position: relative;
+    right: -67.5%;
+    top: 32px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .interface__products__active1__search {
+    position: relative;
+    top: 50px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .interface__controller {
+    width: 100%;
+    height: 159px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    top: -100px;
+    padding: 10px;
+  }
+  .interface__controller__btns {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .interface__controller__btns__up {
+    display: none;
+  }
+  .interface__controller__btns__upactive {
+    display: block;
+    position: absolute;
+    top: -57px;
+    left: 50px;
+    font-size: 104px;
+    color: white;
+  }
+  .interface__controller__btns__button {
+    outline: none;
+    border: none;
+    width: 19.3775100401606%;
+    padding-top: 44px;
+    height: 105px;
+    background: #0078d4;
+    border-radius: 5px;
+    cursor: default;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+    color: white;
+    font-size: 1.25rem;
+    letter-spacing: -0.05em;
+    line-height: 1;
+    font-weight: 500;
+    text-align: center;
+  }
+  .interface__controller__btns__button p {
+    margin-top: -30px;
+  }
+  .interface__controller__btns__active {
+    outline: none;
+    border: none;
+    width: 19.3775100401606%;
+    padding-top: 44px;
+    height: 105px;
+    background: white;
+    border-radius: 5px;
+    cursor: default;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+    color: #0078d4;
+    font-size: 0.75rem;
+    letter-spacing: -0.05em;
+    line-height: 1;
+    font-weight: 500;
+    text-align: center;
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
+  }
+  .interface__controller__btns__icon {
+    width: 40px;
+    height: 37px;
+    position: relative;
+    top: -40px;
+    left: 43%;
   }
   .interface__controller__list {
     margin-top: 12px;
