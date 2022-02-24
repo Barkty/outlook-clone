@@ -1,5 +1,5 @@
 import styles from './Download.module.css';
-import computer from '../../images/efficient-commuter.jpg';
+//import computer from '../../images/efficient-commuter.jpg';
 
 const Download = () => {
 
