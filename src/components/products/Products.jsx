@@ -47,6 +47,16 @@ const Products = () => {
                     </div>
                 </div>
             </div>
+
+            <div className={styles.productswrap__organize}>
+                <div className={styles.productswrap__organize__family}>
+                    <h2>Keep your busy life organized</h2>
+
+                    <div className={styles.productswrap__organize__family__description}>
+                        Use Outlook's built-in calender to keep track of your appointments and schedule meetings with others.
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }

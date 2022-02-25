@@ -1,0 +1,108 @@
+.scenerio {
+    width: 100%;
+    height: auto;
+    padding: 0 20px;
+    position: relative;
+    top: 300px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+
+    &__events {
+        width: 100%;
+        height: 265px;
+        position: relative;
+
+        &__media {
+            width: 100%;
+            height: 265px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            &__singledevice {
+                height: 265px;
+                position: absolute;
+                width: 45%;
+                height: 100%;
+                animation-duration: 1100ms;
+                animation-fill-mode: forwards;
+                animation-iteration-count: 1;
+                animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+                
+                img {
+                    width: 100%;
+                    height: 265px;
+                }
+            }
+
+            &__singledevice:nth-of-type(1) {
+                animation-name: mobileDeviceMiniFirst;
+                z-index: 1;
+                left: 0;
+                transform: translateX(61%);
+            }
+            &__singledevice:nth-of-type(2) {
+                z-index: 2;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            &__singledevice:nth-of-type(3) {
+                animation-name: mobileDeviceMiniThird;
+                z-index: 3;
+                right: 0;
+                transform: translateX(-61%);
+            }
+        }
+
+        &__caption {
+            order: 1;
+            text-align: center;
+            width: 100%;
+            margin: 30px auto 0;
+            max-width: 12em;
+
+            p {
+                display: block;
+                font-size: 2.125rem;
+                font-weight: 500;
+                line-height: 1.05;
+                color: #0078d4;
+            }
+        }
+    }
+
+    &__flights {
+        width: 100%;
+        height: 265px;
+        position: relative;
+        
+        &__events {
+            width: 100%;
+            height: 265px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+@keyframes mobileDeviceMiniFirst {
+    0% {
+        transform: translateX(61%);
+    }
+    100% {
+        transform: translateX(12%);
+    }
+}
+
+@keyframes mobileDeviceMiniThird {
+    0% {
+        transform: translateX(-61%);
+    }
+    100% {
+        transform: translateX(-12%);
+    }
+}

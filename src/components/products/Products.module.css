@@ -230,6 +230,10 @@
   font-size: 18px;
 }
 
+.productswrap__carousel {
+  display: none;
+}
+
 .productswrap__article {
   width: 100%;
   height: 114px;
@@ -268,7 +272,7 @@
 .productswrap__appIcons__outlook {
   width: 100%;
   height: 320px;
-  background-image: url("../../images/outlook-icons.jpg");
+  background-image: url("../../images/outlook-icon.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -470,6 +474,62 @@
   -webkit-animation-timing-function: linear, ease-in;
           animation-timing-function: linear, ease-in;
   opacity: 0;
+}
+
+.productswrap__organize {
+  width: 100%;
+  height: auto;
+  padding: 0 10px;
+  position: relative;
+  top: 100px;
+  z-index: 1;
+}
+
+.productswrap__organize__family {
+  width: 100%;
+  height: 550px;
+  background-image: url("../../images/family-photo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: auto 100%;
+  background-color: white;
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+  -webkit-animation-name: familyBordersRetract;
+          animation-name: familyBordersRetract;
+  -webkit-animation-duration: 2000ms;
+          animation-duration: 2000ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+.productswrap__organize__family h2 {
+  font-size: 2.75rem;
+  font-weight: 500;
+  max-width: 6em;
+  line-height: 0.89;
+  color: #0078d4;
+  position: relative;
+  top: 350px;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.productswrap__organize__family__description {
+  width: calc(100% - 10%);
+  height: 245px;
+  background: white;
+  position: relative;
+  top: 380px;
+  max-width: 516px;
+  padding: 34px 34px 50px 14px;
+  font-size: 1.1875rem;
+  line-height: 1.68;
+  text-align: left;
+  z-index: 2;
 }
 
 @-webkit-keyframes freeRise {

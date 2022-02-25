@@ -167,6 +167,10 @@
         }
     }
 
+    &__carousel {
+        display: none;
+    }
+
     &__article {
         width: 100%;
         height: 114px;
@@ -198,7 +202,7 @@
         &__outlook {
             width: 100%;
             height: 320px;
-            background-image: url('../../images/outlook-icons.jpg');
+            background-image: url('../../images/outlook-icon.jpg');
             background-repeat: no-repeat;
             background-position: center center;
             background-size: contain;
@@ -351,6 +355,57 @@
                     animation-timing-function: linear, ease-in;
                     opacity: 0;
                 }
+            }
+        }
+    }
+
+    &__organize {
+        width: 100%;
+        height: auto;
+        padding: 0 10px;
+        position: relative;
+        top: 100px;
+        z-index: 1;
+
+        &__family {
+            width: 100%;
+            height: 550px;
+            background-image: url('../../images/family-photo.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: auto 100%;
+            background-color: white;
+            transform-origin: left center;
+            animation-name: familyBordersRetract;
+            animation-duration: 2000ms;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+
+            h2 {
+                font-size: 2.75rem;
+                font-weight: 500;
+                max-width: 6em;
+                line-height: 0.89;
+                color: #0078d4;
+                position: relative;
+                top: 350px;
+                text-align: left;
+                margin-left: 20px;
+            }
+
+            &__description {
+                width: calc(100% - 10%);
+                height: 245px;
+                background: white;
+                position: relative;
+                top: 380px;
+                max-width: 516px;
+                padding: 34px 34px 50px 14px;
+                font-size: 1.1875rem;
+                line-height: 1.68;
+                text-align: left;
+                z-index: 2;
             }
         }
     }
