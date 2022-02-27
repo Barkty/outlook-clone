@@ -1,24 +1,255 @@
 .greet {
     width: 100%;
     height: auto;
+    position: relative;
+    top: 700px;
+    left: 0;
 
     &__background {
         width: 100%;
         height: 304px;
-        background-image: none !important;
+        background-image: url('../../images/coffee-shop.jpg');
         background-color: transparent;
         background-repeat: no-repeat;
         background-position: center center;
-        background-size: cover;
+        background-size: 140% auto;
         margin-bottom: 100px;
         overflow: hidden;
     }
 
     &__con {
-        width: 100%;
-        width: 384px;
+        width: 80%;
+        height: 384px;
         background-color: white;
         position: relative;
+        top: -140px;
+        left: 30px;
         z-index: 1;
+
+        &__primary {
+            width: 100%;
+            height: 354px;
+            position: relative;
+            top: 50px;
+            padding: 15px 0 30px;
+            margin-bottom: 50px;
+
+            h1 {
+                font-size: 3rem;
+                font-weight: 500;
+                margin-bottom: 0.75em;
+                color: #0078d4;
+                text-shadow: none;
+                line-height: 0.9;
+            }
+
+            p {
+                font-size: 1.25rem;
+                margin-bottom: 2.5em;
+                color: #666;
+                font-weight: 400;
+                text-shadow: none;
+                line-height: 1.15;
+                max-width: 20em;
+            }
+
+            button {
+                width: 260px;
+                background-color: #0078d4;
+                border-radius: 5px;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                font-weight: 500;
+                color: white;
+                text-align: center;
+                padding: 15px 15px;
+                display: block;
+                font-size: 1.25rem;
+            }
+        }
+
+        &__second {
+            width: 100%;
+            height: auto;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+
+            &__word {
+                width: 30px;
+                height: 30px;
+                background-image: url('../../images/word-icon.jpg');
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: contain;
+                opacity: 0;
+                -webkit-transform: scaleX(0.01);
+                transform: scaleX(0.01);
+                -webkit-animation-name: welcomeIconEmerge;
+                animation-name: welcomeIconEmerge;
+                -webkit-animation-duration: 800ms;
+                animation-duration: 800ms;
+                -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+                animation-delay: 600ms;
+            }
+
+            &__onedrive {
+                width: 30px;
+                height: 30px;
+                background-image: url('../../images/onedrive-icon.jpg');
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: contain;
+                opacity: 0;
+                -webkit-transform: scaleX(0.01);
+                transform: scaleX(0.01);
+                -webkit-animation-name: welcomeIconEmerge;
+                animation-name: welcomeIconEmerge;
+                -webkit-animation-duration: 800ms;
+                animation-duration: 800ms;
+                -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+                animation-delay: 400ms;
+            }
+
+            &__onenote {
+                width: 30px;
+                height: 30px;
+                background-image: url('../../images/onenote-icon.jpg');
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: contain;
+                opacity: 0;
+                -webkit-transform: scaleX(0.01);
+                transform: scaleX(0.01);
+                -webkit-animation-name: welcomeIconEmerge;
+                animation-name: welcomeIconEmerge;
+                -webkit-animation-duration: 800ms;
+                animation-duration: 800ms;
+                -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+                animation-delay: 200ms;
+            }
+
+            &__outlook {
+                width: 30px;
+                height: 30px;
+                background-image: url('../../images/outlook-icons.jpg');
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: contain;
+                opacity: 0;
+                -webkit-transform: scaleX(0.01);
+                transform: scaleX(0.01);
+                -webkit-animation-name: welcomeIconEmerge;
+                animation-name: welcomeIconEmerge;
+                -webkit-animation-duration: 800ms;
+                animation-duration: 800ms;
+                -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+                animation-delay: 5ms;
+            }
+
+            &__excel {
+                width: 30px;
+                height: 30px;
+                background-image: url('../../images/excel-icon.jpg');
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: contain;
+                opacity: 0;
+                -webkit-transform: scaleX(0.01);
+                transform: scaleX(0.01);
+                -webkit-animation-name: welcomeIconEmerge;
+                animation-name: welcomeIconEmerge;
+                -webkit-animation-duration: 800ms;
+                animation-duration: 800ms;
+                -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+                animation-delay: 200ms;
+            }
+
+            &__skype {
+                width: 30px;
+                height: 30px;
+                background-image: url('../../images/skype-icon.jpg');
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: contain;
+                opacity: 0;
+                -webkit-transform: scaleX(0.01);
+                transform: scaleX(0.01);
+                -webkit-animation-name: welcomeIconEmerge;
+                animation-name: welcomeIconEmerge;
+                -webkit-animation-duration: 800ms;
+                animation-duration: 800ms;
+                -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+                animation-delay: 400ms;
+            }
+
+            &__ppt {
+                width: 30px;
+                height: 30px;
+                background-image: url('../../images/ppt-icon.jpg');
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: contain;
+                opacity: 0;
+                -webkit-transform: scaleX(0.01);
+                transform: scaleX(0.01);
+                -webkit-animation-name: welcomeIconEmerge;
+                animation-name: welcomeIconEmerge;
+                -webkit-animation-duration: 800ms;
+                animation-duration: 800ms;
+                -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+                animation-delay: 600ms;
+            }
+        }
+    }
+
+    &__bottom {
+        width: 100%;
+        height: auto;
+        position: relative;
+
+        &__background {
+            width: 100%;
+            height: 320px;
+            z-index: 1;
+            position: relative;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        &__textcon {
+            background-color: white;
+            width: 87%;
+            height: 557px;
+            position: relative;
+            top: -50px;
+        }
+    }
+}
+
+@keyframes welcomeIconEmerge {
+    0% {
+        opacity: 0;
+        -webkit-transform: scaleX(0.01);
+        transform: scaleX(0.01);
+    }
+    20% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
     }
 }
