@@ -4,11 +4,11 @@
 }
 
 .download__image {
-  width: 87%;
+  width: 85%;
   height: 180px;
   position: relative;
   top: 100px;
-  left: 40px;
+  left: 20px;
   background-image: url("../../images/efficient-commuter.jpg");
   background-repeat: no-repeat;
   background-position: 65% center;

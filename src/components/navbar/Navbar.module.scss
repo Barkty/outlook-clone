@@ -6,7 +6,7 @@ $fontFamily : segoe, "Segoe UI", Arial, sans-serif;
 }
 .topActive {
     height: 54px;
-    width: 93%;
+    width: 100%;
     order: 1;
     z-index: 3;
     position: fixed;
@@ -29,7 +29,7 @@ $fontFamily : segoe, "Segoe UI", Arial, sans-serif;
 .top {
     background-color: hsl(28,61,30);
     height: 54px;
-    width: 93%;
+    width: 100%;
     order: 1;
     z-index: 3;
     position: fixed;
