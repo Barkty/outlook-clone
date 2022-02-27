@@ -102,7 +102,7 @@
   max-width: 12em;
 }
 
-.scenerio__events__caption p {
+.scenerio__events__caption__text {
   display: block;
   font-size: 2.125rem;
   font-weight: 500;
@@ -134,6 +134,21 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.scenerio__flights__caption {
+  text-align: center;
+  width: 100%;
+  margin: 30px 0;
+}
+
+.scenerio__flights__caption__text {
+  display: block;
+  font-size: 2.125rem;
+  color: #0078d4;
+  font-weight: 500;
+  line-height: 1.05;
+  text-align: center;
 }
 
 @-webkit-keyframes mobileDeviceMiniFirst {

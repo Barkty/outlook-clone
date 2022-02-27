@@ -1,3 +1,4 @@
+import Accessible from "../../components/accessible/Accessible";
 import Download from "../../components/download/Download";
 import Header from "../../components/header/Header";
 import Interface from "../../components/interface/Interface";
@@ -16,6 +17,7 @@ const Home = () => {
             <Security/>
             <Products/>
             <Scenerio/>
+            <Accessible/>
         </Layout>
     )
 }

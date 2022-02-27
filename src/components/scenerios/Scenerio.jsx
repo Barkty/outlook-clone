@@ -40,8 +40,8 @@ const Scenerio = () => {
                         <img src={android3} alt='Android' className={styles.scenerio__events__media__singledevice__img}/>
                     </div>
                 </div>
-                <div className={styles.scenerio__events__caption}>
-                    <p className={styles.scenerio__events__caption__text}>
+                <div className={styles.scenerio__flights__caption}>
+                    <p className={styles.scenerio__flights__caption__text}>
                         Easily check in to upcoming flights
                     </p>
                 </div>

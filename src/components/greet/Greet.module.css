@@ -1,0 +1,25 @@
+.greet {
+  width: 100%;
+  height: auto;
+}
+
+.greet__background {
+  width: 100%;
+  height: 304px;
+  background-image: none !important;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin-bottom: 100px;
+  overflow: hidden;
+}
+
+.greet__con {
+  width: 100%;
+  width: 384px;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+}
+/*# sourceMappingURL=Greet.module.css.map */
