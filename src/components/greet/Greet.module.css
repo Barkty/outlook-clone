@@ -240,6 +240,7 @@
   height: 320px;
   z-index: 1;
   position: relative;
+  background-image: url("../../images/premium-appeal.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -247,10 +248,21 @@
 
 .greet__bottom__textcon {
   background-color: white;
-  width: 87%;
+  width: 93%;
   height: 557px;
   position: relative;
-  top: -50px;
+  top: -40px;
+  z-index: 2;
+  padding: 30px 0 0 20px;
+}
+
+.greet__bottom__textcon h1 {
+  font-size: 3rem;
+  line-height: 1;
+  color: #0078d4;
+  font-weight: 500;
+  margin-bottom: 1em;
+  text-align: left;
 }
 
 @-webkit-keyframes welcomeIconEmerge {

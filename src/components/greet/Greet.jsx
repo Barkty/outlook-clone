@@ -24,7 +24,7 @@ const Greet = () => {
             <div className={styles.greet__bottom}>
                 <div className={styles.greet__bottom__background}></div>
                 <div className={styles.greet__bottom__textcon}>
-                    
+                    <h1>Expand your Outlook</h1>
                 </div>
             </div>
         </div>
