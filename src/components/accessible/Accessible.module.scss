@@ -24,18 +24,14 @@
         box-sizing: border-box;
         width: calc(100% - 7.5%);
         height: 447px;
-        margin-left: 7.5%;
+        margin-left: 9%;
         padding: 0 20px;
         background: #0078d4;
         color: white;
-        //width: 51.3846153846154%;
         z-index: 1;
         position: relative;
         top: -100px;
-        // display: flex;
-        // flex-direction: column;
-        // align-items: flex-start;
-
+        
         &__headline {
             font-size: 2rem;
             line-height: 1.0875;

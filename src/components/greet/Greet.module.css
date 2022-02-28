@@ -265,6 +265,100 @@
   text-align: left;
 }
 
+.greet__bottom__textcon p {
+  font-size: 1.1875rem;
+  line-height: 1.42;
+  max-width: 24em;
+  color: #666;
+  text-align: left;
+}
+
+.greet__bottom__textcon p a {
+  color: #0078d4;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.greet__bottom__textcon p a svg {
+  position: relative;
+  top: -22px;
+  right: -220px;
+}
+
+.bottomnav {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: #666;
+  position: relative;
+  top: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  z-index: 1;
+  padding: 0 20px;
+}
+
+.bottomnav__icon {
+  width: 100%;
+  height: 320px;
+  background-image: url("../../images/outlook-icon.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border-bottom: 1px rgba(102, 102, 102, 0.692) solid;
+  margin-bottom: 2.5rem;
+}
+
+.bottomnav__primary, .bottomnav__android {
+  width: 100%;
+  height: 152px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style-type: none;
+}
+
+.bottomnav__primary li, .bottomnav__android li {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.bottomnav__primary li a, .bottomnav__android li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.bottomnav__primary li a svg, .bottomnav__android li a svg {
+  position: relative;
+  top: 20px;
+  left: -30px;
+}
+
+.bottomnav__desktop {
+  display: none;
+}
+
 @-webkit-keyframes welcomeIconEmerge {
   0% {
     opacity: 0;

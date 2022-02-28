@@ -1,6 +1,6 @@
 import Accessible from "../../components/accessible/Accessible";
 import Download from "../../components/download/Download";
-import Greet from "../../components/greet/Greet";
+import Greet, { BottomNav } from "../../components/greet/Greet";
 import Header from "../../components/header/Header";
 import Interface from "../../components/interface/Interface";
 import Layout from "../../components/layout/Layout";
@@ -20,6 +20,7 @@ const Home = () => {
             <Scenerio/>
             <Accessible/>
             <Greet/>
+            <BottomNav/>
         </Layout>
     )
 }
