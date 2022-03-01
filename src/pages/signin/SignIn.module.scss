@@ -1,4 +1,4 @@
-.signup {
+.signin {
     width: 100%;
     height: 100vh;
     background-color: white;
@@ -31,23 +31,13 @@
         align-items: center;
         justify-content: center;
 
-        &__field {
-            width: 100%;
-            height: auto;
-            display: flex;
-            flex-direction: row;
-            align-items: flex-end;
-            justify-content: space-between;
-
-            &__error {
-                color: red;
-                width: 100%;
-                position: absolute;
-                top: 110px;
-                left: -40px;
-                margin-bottom: 30px;
-            }
+        &__icon {
+            position: relative;
+            top: -20px;
+            left: 185px;
+            width: 24px;
         }
+
         form {
             width: 100%;
             display: flex;
@@ -55,44 +45,39 @@
             align-items: center;
             justify-content: space-between;
 
-            input, select {
-                border-bottom: 1.8px solid #666;
-            }
-
             input {
-                width: 56%;
+                width: 100%;
                 height: 50px;
                 border: none;
                 outline: none;
                 border-bottom: 1.8px solid #666;
             }
             input::placeholder {
-                font-size: 1rem;
+                font-size: 1.2rem;
                 font-weight: normal;
                 color: #666;
             }
 
-            select {
-                width: 40%;
-                height: 50px;
+            p {
+                text-align:  left;
+                margin: 20px 0 0 -100px;
 
-                option {
-                    font-size: 0.8rem;
+                a {
+                    color: #0078d4;
                 }
             }
-        }
-
-        button {
-            width: 120px;
-            height: 40px;
-            background-color: #0078d4;
-            border: none;
-            outline: none;
-            cursor: pointer;
-            color: white;
-            position: relative;
-            top: 130px;
-            right: -80px;
+            button {
+                width: 120px;
+                height: 40px;
+                background-color: #0078d4;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                color: white;
+                position: relative;
+                top: 30px;
+                right: -80px;
+            }
         }
     }
 
@@ -100,16 +85,39 @@
         width: 100%;
         height: 30px;
         position: relative;
-        top: calc(100vh - 40%);
+        top: calc(100vh - 70%);
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: left;
         justify-content: space-around;
 
         a {
             color: #666;
             text-decoration: none;
+        }
+    }
+
+    &__options {
+        width: 100%;
+        height: 50px;
+        border: 1.5px solid #666;
+        position: relative;
+        top: 90px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-weight: normal;
+        font-size: 1.2rem;
+
+        p {
+            margin-bottom: 20px;
+        }
+        &__icon {
+            position: relative;
+            top: 20px;
+            left: -30px;
         }
     }
 }

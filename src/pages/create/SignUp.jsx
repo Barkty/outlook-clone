@@ -1,18 +1,24 @@
 import styles from './Sign.module.css';
 import logo from '../../images/microsoftLogo.png';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useFormik } from 'formik';
+import * as Yup from 'yup'
 
 const SignUp = () => {
-    const [formValues, setFormValues] = useState({
-        mail: '',
-        domain: ''
-    });
-    const handleClick = () => {
-        let email = formValues.mail.concat(formValues.domain);
-        console.log(email);
-    }
-    console.log(formValues);
+    const validationSchema = Yup.object().shape({
+        email: Yup.string().min(5, 'Invalid email').required('An email address is required'),
+        domain: Yup.string().min(3, 'Domain is invalid').required('A domain is required'),
+    })
+    const formik = useFormik({
+        initialValues: {
+            email: '',
+            domain: '',
+        },
+        onSubmit: values => {
+            console.log(JSON.stringify(values, null, 2))
+        },
+        validationSchema,
+    })
 
     return (
         <div className={styles.signup}>
@@ -21,19 +27,29 @@ const SignUp = () => {
             </div>
             <h1 className={styles.signup__title}>Create account</h1>
             <div className={styles.signup__form}>
-                <form>
-                    <input 
-                    type='text'
-                    id='email'
-                    name='email'
-                    onChange={e=>{setFormValues({mail: e.target.value})}}
-                    placeholder='New email'/>
-                    <select title='Listed emails' onChange={e=>{setFormValues({domain: e.target.value})}} value={formValues.domain}>
-                        <option value='@outlook.com'>@outlook.com</option>
-                        <option value='@hotmail.com'>@hotmail.com</option>
-                    </select>
+                <form onSubmit={formik.handleSubmit}>
+                    <div className={styles.signup__form__field}>
+                        <input 
+                        type='text'
+                        id='email'
+                        name='email'
+                        onChange={formik.handleChange}
+                        value={formik.values.email}
+                        placeholder='New email'/>
+                        <select title='Listed emails'
+                            name='domain' 
+                            id='domain' 
+                            onChange={formik.handleChange} 
+                            value={formik.values.domain}>
+                            <option value='@outlook.com'>@outlook.com</option>
+                            <option value='@hotmail.com'>@hotmail.com</option>
+                        </select>
+                    </div>
+                    {formik.errors.email && formik.touched.email ? (
+                        <span className={styles.signup__form__field__error}>{formik.errors.email}</span>
+                    ) : null}
+                    <button type='submit'>Next</button>
                 </form>
-                <button type='button' onClick={handleClick}>Next</button>
             </div>
             <div className={styles.signup__links}>
                 <Link to='/'>Terms of Use</Link>

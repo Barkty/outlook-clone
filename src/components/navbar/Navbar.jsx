@@ -53,7 +53,7 @@ const Navbar = () => {
                             <a href='https://www.microsoft.com/en-ww/microsoft-365/outlook/outlook-personal-email-plans?ocid=PROD_outlook_cons_outlook_ups_OL-Web_May19UI&rtc=1' role='button'>Try Premium</a>
                         </li>
                         <li className={navbar ? styles.top__inner__nav__ul__premium : styles.top__inner__nav__ul__sec}>
-                            <a role='button' href='/signin'>Sign in</a>
+                            <a role='button' href='/login'>Sign in</a>
                         </li>
                         <li className={navbar ? styles.top__inner__nav__ul__create : styles.top__inner__nav__ul__last}>
                             <a role='button' href='/signup'>Create account</a>

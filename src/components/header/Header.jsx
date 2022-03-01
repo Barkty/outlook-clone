@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from './Header.module.css'
 
 const Header = () => {
@@ -17,7 +18,9 @@ const Header = () => {
                     <p className={styles.header__bottom__text}>Free Outlook email and calender</p>
                     <p className={styles.header__bottom__text2}>Everything you need to be your most productive and connected self-at home, on the go, and everywhere in between</p>
                 </div>
-                <button type='button' className={styles.header__bottom__btn}>Create free account</button>
+                <button type='button' className={styles.header__bottom__btn}>
+                    <Link to='/signup'>Create free account</Link>
+                </button>
             </div>
         </div>
     )
