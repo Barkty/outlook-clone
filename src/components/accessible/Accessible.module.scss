@@ -5,8 +5,8 @@
     top: 600px;
 
     &__speaker {
-        width: calc(100vw - 7.5%);
-        height: 197px;
+        width: calc(100vw - 15.5%);
+        height: 180px;
         position: relative;
         z-index: 2;
         transform: translateY(5%);
@@ -17,12 +17,12 @@
         background-image: url('../../images/accessibility-scene.jpg');
         background-position: center;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
     }
 
     &__text {
         box-sizing: border-box;
-        width: calc(100% - 7.5%);
+        width: calc(100% - 10.5%);
         height: 447px;
         margin-left: 9%;
         padding: 0 20px;
@@ -103,6 +103,118 @@
                 text-align: center;
                 font-weight: 400;
                 font-size: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 425px){
+    .accessible {
+        width:  100%;
+        height: auto;
+        position: relative;
+        top: 600px;
+    
+        &__speaker {
+            width: calc(100vw - 15.5%);
+            height: 180px;
+            position: relative;
+            z-index: 2;
+            transform: translateY(5%);
+            animation-name: accessibilityRise;
+            animation-duration: 1000ms;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+            background-image: url('../../images/accessibility-scene.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    
+        &__text {
+            box-sizing: border-box;
+            width: calc(100% - 9.1%);
+            height: 447px;
+            margin-left: 9%;
+            padding: 0 20px;
+            background: #0078d4;
+            color: white;
+            z-index: 1;
+            position: relative;
+            top: -100px;
+            
+            &__headline {
+                font-size: 2rem;
+                line-height: 1.0875;
+                font-weight: 500;
+                margin-bottom: 0.75em;
+                max-width: 9em;
+                text-align: left;
+                position: relative;
+                top: 120px;
+            }
+    
+            p {
+                text-align: left;
+                font-size: 1.1875rem;
+                line-height: 1.4;
+                position: relative;
+                top: 130px;
+            }
+        }
+    
+        &__hotmail {
+            width: 87%;
+            height: auto;
+            max-width: calc(996 * 1px);
+            margin: 0 auto;
+            position: relative;
+    
+            &__check__icon {
+                display: block;
+                position: absolute;
+                left: 50%;
+                top: 0;
+                opacity: 0;
+                transform: translate(-50%, 0);
+                width: 34px;
+                height: 34px;
+                z-index: 1;
+                color: #0078d4;
+                animation-name: ornamentRise;
+                -webkit-animation-duration: 700ms;
+                animation-duration: 700ms;
+                -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+                -webkit-animation-iteration-count: 1;
+                animation-iteration-count: 1;
+            }
+    
+            &__text {
+                width: 100%;
+                height: 167px;
+    
+                h3 {
+                    font-weight: 500;
+                    font-size: 1.25rem;
+                    margin-bottom: 0.5em;
+                    position: relative;
+                    z-index: 2;
+                    color: #333;
+                    text-align: center;
+                }
+    
+                p {
+                    line-height: 1.45;
+                    max-width: 33em;
+                    margin: 0 auto;
+                    position: relative;
+                    z-index: 2;
+                    color: #333;
+                    text-align: center;
+                    font-weight: 400;
+                    font-size: 16px;
+                }
             }
         }
     }
