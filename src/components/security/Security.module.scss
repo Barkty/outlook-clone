@@ -137,6 +137,146 @@
     }
 }
 
+@media screen and (min-width: 768px){
+    .wrapper {
+        width: 100%;
+        height: auto;
+        padding: 0 10px;
+        background-image: url('../../images/security-large.jpg');
+        //background-color: black;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+    
+        &__top {
+            width: 100%;
+            height: 400px;
+            // background-image: url('../../images/security-small.jpg');
+        }
+    
+        &__bottom {
+            background: inherit;
+            width: 100%;
+            height: auto;
+    
+            &__con {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                position: relative;
+                top: 50px;
+            }
+    
+            &__text {
+                position: relative;
+                height: 300px;
+                padding: 0 10px;
+    
+                h1, p {
+                    color: white;
+                    text-align: left;
+                }
+    
+                h1 {
+                    font-size: 3rem;
+                    line-height: 0.95;
+                    margin-bottom: 1em;
+                    font-weight: 500;
+                }
+    
+                p {
+                    font-size: 1.1875rem;
+                    line-height: 1.4;
+                    max-width: 23em;
+                    font-weight: 500;
+                }
+            }
+    
+            &__icon {
+                width: 35%;
+                height: auto;
+                padding-bottom: 50px;
+                position: relative;
+                top: 25px;
+                border-right: 2px solid white;
+    
+                &__list {
+                    width: 100%;
+                    height: 670px;
+                    list-style-type: none;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-around;
+    
+                    li {
+                        width: 100%;
+                        text-align: center;
+                        color: white;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        animation-name: securityIconReveal;
+                        animation-duration: 800ms;
+                        animation-delay: 200ms;
+                        //transform: scaleX(0.02);
+                    }
+    
+                    &__icons {
+                        width: 37px;
+                        height: 37px;
+                    }
+                    &__icon1 {
+                        position: relative;
+                        left: -25px;
+                        color: black;
+                    }
+                }
+            }
+    
+            &__iconText {
+                width: 80%;
+                height: auto;
+                position: relative;
+                top: 30px;
+                right: 0px;
+                background-color: black;
+    
+                &__list {
+                    width: 100%;
+                    height: 660px;
+                    list-style-type: none;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-around;
+                    padding: 20px;
+    
+                    li {
+                        width: 100%;
+                        text-align: left;
+                        color: white;
+                        font-size: 0.9375rem;
+                        font-weight: 500;
+    
+                        span {
+                            color: #edaa24;
+                            margin-top: 0.25em;
+                            display: inline-flex;
+                        }
+                    }
+    
+                    &__icon {
+                        width: 12px;
+                        height: 12px;
+                        //color: #edaa24;
+                        background-color: #edaa24;
+                    }
+                }
+            }
+        }
+    } 
+}
 @keyframes securityIconReveal {
     0% {
         opacity: 0;

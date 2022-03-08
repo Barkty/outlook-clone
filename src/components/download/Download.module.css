@@ -190,23 +190,23 @@
     height: 100vh;
   }
   .download__image {
-    width: 87%;
-    height: 320px;
+    width: 67%;
+    height: 412px;
     position: relative;
     top: 100px;
-    left: 70px;
+    left: 200px;
     background-image: url("../../images/efficient-commuter.jpg");
     background-repeat: no-repeat;
-    background-position: 80% center;
+    background-position: left center;
     background-size: auto 100%;
   }
   .download__overlay {
     background-color: white;
-    width: 90%;
+    width: 60%;
     height: 350px;
     z-index: 1;
     position: relative;
-    top: 0;
+    top: -250px;
     padding: 45px;
     -webkit-animation-name: introPlateRaise;
             animation-name: introPlateRaise;
@@ -236,13 +236,13 @@
   }
 }
 
-@media screen and (min-width: 760px) and (min-width: 809px) {
+@media screen and (min-width: 768px) and (min-width: 809px) {
   .download {
     width: 100%;
     height: 100vh;
   }
   .download__image {
-    width: 67%;
+    width: 57%;
     height: 390px;
     position: relative;
     top: 100px;

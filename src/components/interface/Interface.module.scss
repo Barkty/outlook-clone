@@ -821,7 +821,7 @@
     }  
 }
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 768px) {
     .interface {
         width: 100%;
         height: auto;
@@ -856,13 +856,13 @@
             &__active2 {
                 display: block;
                 width: 100%;
-                height: 378px;
+                height: 478px;
                 opacity: 1;
                 z-index: 2;
                 background-image: url('../../images/calender.png');
-                background-position: center top;
+                background-position: center center;
                 background-repeat: no-repeat;
-                background-size: cover;
+                background-size: 100% auto;
                 background-color: transparent;
                 transition: all 400ms;
             }
@@ -884,8 +884,8 @@
                     width: calc((748 / 2396) * 100%);
                     height: calc((1250 / 1536) * 100%);
                     position: relative;
-                    left: 51.5859766277129%;
-                    top: 14.5%;
+                    left: 48%;
+                    top: 17.5%;
                     object-fit: contain;
                 }
 
@@ -894,13 +894,13 @@
                     height: calc((1250 / 1536) * 100%);
                     position: relative;
                     right: -67.5%;
-                    top: 32px;
+                    top: 0px;
                     object-fit: contain;
                 }
 
                 &__search {
                     position: relative;
-                    top: 50px;
+                    top: 0px;
                     object-fit: contain;
                 }
             }
