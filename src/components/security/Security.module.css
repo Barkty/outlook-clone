@@ -170,20 +170,22 @@
 
 @media screen and (min-width: 768px) {
   .wrapper {
-    width: 100%;
+    width: 97.5%;
     height: auto;
     padding: 0 10px;
+    margin: 0 10px;
     background-image: url("../../images/security-large.jpg");
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: 65% bottom;
     background-size: cover;
   }
   .wrapper__top {
     width: 100%;
     height: 400px;
+    background: transparent;
   }
   .wrapper__bottom {
-    background: inherit;
+    background: transparent;
     width: 100%;
     height: auto;
   }
@@ -221,7 +223,7 @@
     font-weight: 500;
   }
   .wrapper__bottom__icon {
-    width: 35%;
+    width: 15%;
     height: auto;
     padding-bottom: 50px;
     position: relative;
@@ -275,12 +277,12 @@
     color: black;
   }
   .wrapper__bottom__iconText {
-    width: 80%;
+    width: 45%;
     height: auto;
     position: relative;
     top: 30px;
     right: 0px;
-    background-color: black;
+    background: transparent;
   }
   .wrapper__bottom__iconText__list {
     width: 100%;

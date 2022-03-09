@@ -407,7 +407,7 @@
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   .top {
     background-color: #7b491e;
     height: 54px;
@@ -429,9 +429,8 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -462,9 +461,8 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -490,7 +488,7 @@
     text-decoration: none;
     font-size: 1rem;
     font-weight: 500;
-    padding: 9px 27px 12px;
+    padding: 19px 27px 12px;
     cursor: pointer;
   }
   .top__inner__nav__ul__link:last-child {
@@ -511,6 +509,43 @@
     font-weight: 500;
     padding: 8px 15px 11px;
     cursor: pointer;
+  }
+  .top__inner__nav__ul__premium {
+    max-width: 32%;
+    margin-left: 0;
+    margin-right: -90px;
+    padding: 4px 27px;
+    border: 1.5px solid #666;
+    border-radius: 2px;
+  }
+  .top__inner__nav__ul__premium a {
+    background: white;
+    color: #666;
+    font-size: 1rem;
+    cursor: pointer;
+    line-height: 1;
+    font-weight: 500;
+    -webkit-transition: all 180ms;
+    transition: all 180ms;
+  }
+  .top__inner__nav__ul__create {
+    display: block;
+    background-color: #0078d4;
+    color: white;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    margin-right: -30px;
+    border-radius: 2px;
+    padding: 6px 27px;
+  }
+  .top__inner__nav__ul__create a {
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0 5px;
+    line-height: 1;
+    -webkit-transition: all 180ms;
+    transition: all 180ms;
   }
 }
 

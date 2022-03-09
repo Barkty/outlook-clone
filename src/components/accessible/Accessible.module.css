@@ -227,6 +227,121 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .accessible {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 700px;
+  }
+  .accessible__speaker {
+    width: calc(100vw - 45.5%);
+    height: 249px;
+    position: relative;
+    z-index: 2;
+    -webkit-transform: translateY(5%);
+            transform: translateY(5%);
+    -webkit-animation-name: accessibilityRise;
+            animation-name: accessibilityRise;
+    -webkit-animation-duration: 1000ms;
+            animation-duration: 1000ms;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    background-image: url("../../images/accessibility-scene.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .accessible__text {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: calc(100% - 45.1%);
+    height: 367px;
+    margin-left: 9%;
+    padding: 0 20px;
+    background: #0078d4;
+    color: white;
+    z-index: 1;
+    position: relative;
+    top: -250px;
+    left: 275px;
+  }
+  .accessible__text__headline {
+    font-size: 2rem;
+    line-height: 1.0875;
+    font-weight: 500;
+    margin-bottom: 0.75em;
+    max-width: 9em;
+    text-align: left;
+    position: relative;
+    top: 70px;
+    left: 90px;
+  }
+  .accessible__text p {
+    text-align: left;
+    font-size: 1.1875rem;
+    line-height: 1.4;
+    position: relative;
+    top: 80px;
+    left: 90px;
+    max-width: 15em;
+  }
+  .accessible__hotmail {
+    width: 87%;
+    height: auto;
+    max-width: calc(996 * 1px);
+    margin: 0 auto;
+    position: relative;
+  }
+  .accessible__hotmail__check__icon {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    opacity: 0;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    width: 34px;
+    height: 34px;
+    z-index: 1;
+    color: #0078d4;
+    -webkit-animation-name: ornamentRise;
+            animation-name: ornamentRise;
+    -webkit-animation-duration: 700ms;
+    animation-duration: 700ms;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+  }
+  .accessible__hotmail__text {
+    width: 100%;
+    height: 167px;
+  }
+  .accessible__hotmail__text h3 {
+    font-weight: 500;
+    font-size: 1.25rem;
+    margin-bottom: 0.5em;
+    position: relative;
+    z-index: 2;
+    color: #333;
+    text-align: center;
+  }
+  .accessible__hotmail__text p {
+    line-height: 1.45;
+    max-width: 33em;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    color: #333;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+
 @-webkit-keyframes accessibilityRise {
   0% {
     -webkit-transform: translateY(5%);

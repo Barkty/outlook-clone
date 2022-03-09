@@ -830,6 +830,424 @@
         }
     }
 }
+
+@media screen and (min-width: 768px){
+    .productswrap {
+        width: 100%;
+        height: auto;
+        padding-top: 200px;
+        //background-color: #dcebfa;
+    
+        &__header {
+            width: 100%;
+            height: 146px;
+            margin-bottom: 50px;
+    
+            h1 {
+                //width: 100%;
+                font-size: 4.75rem;
+                font-weight: 500;
+                line-height: 1;
+                padding: 0 20px;
+                display: flex;
+                flex-direction: column;
+                //align-items: center;
+                //justify-content: center;
+            }
+            &__span {
+                //width: 100%;
+                color: #333;
+                display: block;
+                margin-bottom: 0.625em;
+            }
+    
+            &__child {
+                color: #0078d4;
+                opacity: 0;
+                animation-name: freeRise;
+                animation-duration: 700ms;
+                animation-delay: 50ms;
+                animation-fill-mode: forwards;
+                animation-iteration-count: 1;
+                transform: translateY(0.5em);
+            }
+        }
+    
+        &__carouselMini {
+            width: 100%;
+            height: auto;
+            padding: 0 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            z-index: 1;
+    
+            &__word {
+                width: 100%;
+                height: 195px;
+                z-index: 2;
+                opacity: 0;
+                transform: translateX(75%);
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                animation-name: emergeFromEast;
+                animation-iteration-count: 1;
+                animation-duration: 1200ms;
+                animation-fill-mode: forwards;
+    
+                &__art {
+                    width: 70%;
+                    height: 195px;
+                    background-image: url('../../images/word_mini.png');
+                    background-repeat: no-repeat;
+                    background-position: auto center;
+                    background-size: contain;
+                    box-shadow: 0 20px 35px rgb(0, 0, 0 / 3%);
+                    position: relative;
+                    z-index: 2;
+                }
+    
+                h1 {
+                    color: #2c579b;
+                    font-size: 0.875rem;
+                    display: block;
+                    width: 32%;
+                    text-align: center;
+                    font-weight: 500;
+                    font-size: 18px;
+                    margin-left: 5%;
+                }
+            }
+    
+            &__excel {
+                width: 100%;
+                height: 195px;
+                margin-top: 8%;
+                z-index: 3;
+                opacity: 0;
+                transform: translateX(-75%);
+                position: relative;
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                align-items: center;
+                animation-name: emergeFromWest;
+                animation-iteration-count: 1;
+                animation-duration: 1200ms;
+                animation-fill-mode: forwards;
+    
+                &__art {
+                    width: 70%;
+                    height: 195px;
+                    background-image: url('../../images/excel-mini.png');
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: contain;
+                    box-shadow: 0 20px 35px rgb(0, 0, 0 / 40%);
+                    position: relative;
+                    z-index: 2;
+                }
+    
+                h1 {
+                    color: #217245;
+                    font-size: 0.875rem;
+                    display: block;
+                    width: 32%;
+                    text-align: center;
+                    font-weight: 500;
+                    font-size: 18px;
+                }
+            }
+    
+            &__ppt {
+                width: 100%;
+                height: 195px;
+                margin-top: 8%;
+                z-index: 4;
+                opacity: 0;
+                transform: translateX(75%);
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                animation-name: emergeFromEast;
+                animation-iteration-count: 1;
+                animation-duration: 1200ms;
+                animation-fill-mode: forwards;
+    
+                &__art {
+                    width: 70%;
+                    height: 195px;
+                    margin-right: 20px;
+                    background-image: url('../../images/ppt_mini.png');
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: contain;
+                    box-shadow: 0 20px 35px rgb(0, 0, 0 / 40%);
+                    position: relative;
+                    z-index: 2;
+                }
+    
+                h1 {
+                    color: #b6472a;
+                    font-size: 0.875rem;
+                    display: block;
+                    width: 32%;
+                    text-align: center;
+                    font-weight: 500;
+                    font-size: 18px;
+                }
+            }
+        }
+    
+        &__carousel {
+            display: none;
+        }
+    
+        &__article {
+            width: 100%;
+            height: 114px;
+            padding: 0 150px;
+            position: relative;
+            top: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            p {
+                text-align: left;
+                font-size: 1.1875rem;
+                line-height: 1.5;
+    
+                span {
+                    font-weight: 500;
+                }
+            }
+        }
+    
+        &__appIcons {
+            width: 100%;
+            height: 320px;
+            padding: 30px;
+            position: relative;
+            top: 80px;
+    
+            &__outlook {
+                width: 320px;
+                height: 320px;
+                background-image: url('../../images/outlook-icon.jpg');
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: contain;
+                margin: 0 auto;
+                transform-origin: center center;
+                transform: scale(0.75);
+    
+                &__spinner {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    width: 82%;
+                    height: 82%;
+                    border-radius: 100%;
+                    animation-name: appTilesTrackRotate;
+                    animation-duration: 5000ms;
+                    animation-iteration-count: infinite;
+                    animation-fill-mode: forwards;
+                    animation-timing-function: linear;
+                    transform: translate(-50%, -50%) rotate(0deg);
+    
+                    &__word {
+                        display: block;
+                        position: absolute;
+                        left: 24.5%;
+                        top: 9%;
+                        width: 44px;
+                        height: 44px;
+                        border-radius: 10px;
+                        background-image: url('../../images/word-icon.jpg');
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: contain;
+                        transform: translate(-50%, -50%) rotate(0deg);
+                        animation-name: appTileCorrectiveRotate, appTileEmerge;
+                        //animation-delay: 0s, 200ms;
+                        animation-duration: 5000ms, 750ms;
+                        animation-iteration-count: infinite, 1;
+                        animation-fill-mode: forwards, forwards;
+                        animation-timing-function: linear, ease-in;
+                        opacity: 0;
+                    }
+    
+                    &__ppt {
+                        display: block;
+                        position: absolute;
+                        left: 75.5%;
+                        top: 9%;
+                        width: 44px;
+                        height: 44px;
+                        border-radius: 10px;
+                        background-image: url('../../images/ppt-icon.jpg');
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: contain;
+                        transform: translate(-50%, -50%) rotate(0deg);
+                        animation-name: appTileCorrectiveRotate, appTileEmerge;
+                        animation-delay: 0s, 1000ms;
+                        animation-duration: 5000ms, 750ms;
+                        animation-iteration-count: infinite, 1;
+                        animation-fill-mode: forwards, forwards;
+                        animation-timing-function: linear, ease-in;
+                        opacity: 0;
+                    }
+    
+                    &__onedrive {
+                        display: block;
+                        position: absolute;
+                        left: 100%;
+                        top: 50%;
+                        width: 44px;
+                        height: 44px;
+                        border-radius: 10px;
+                        background-image: url('../../images/onedrive-icon.jpg');
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: contain;
+                        transform: translate(-50%, -50%) rotate(0deg);
+                        animation-name: appTileCorrectiveRotate, appTileEmerge;
+                        animation-delay: 0s, 800ms;
+                        animation-duration: 5000ms, 750ms;
+                        animation-iteration-count: infinite, 1;
+                        animation-fill-mode: forwards, forwards;
+                        animation-timing-function: linear, ease-in;
+                        opacity: 0;
+                    }
+    
+                    &__onenote {
+                        display: block;
+                        position: absolute;
+                        left: 75.5%;
+                        top: 91%;
+                        width: 44px;
+                        height: 44px;
+                        border-radius: 10px;
+                        background-image: url('../../images/onenote-icon.jpg');
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: contain;
+                        transform: translate(-50%, -50%) rotate(0deg);
+                        animation-name: appTileCorrectiveRotate, appTileEmerge;
+                        animation-delay: 0s, 600ms;
+                        animation-duration: 5000ms, 750ms;
+                        animation-iteration-count: infinite, 1;
+                        animation-fill-mode: forwards, forwards;
+                        animation-timing-function: linear, ease-in;
+                        opacity: 0;
+                    }
+    
+                    &__skype {
+                        display: block;
+                        position: absolute;
+                        left: 24.5%;
+                        top: 91%;
+                        width: 44px;
+                        height: 44px;
+                        border-radius: 10px;
+                        background-image: url('../../images/skype-icon.jpg');
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: contain;
+                        transform: translate(-50%, -50%) rotate(0deg);
+                        animation-name: appTileCorrectiveRotate, appTileEmerge;
+                        animation-delay: 0s, 400ms;
+                        animation-duration: 5000ms, 750ms;
+                        animation-iteration-count: infinite, 1;
+                        animation-fill-mode: forwards, forwards;
+                        animation-timing-function: linear, ease-in;
+                        opacity: 0;
+                    }
+    
+                    &__excel {
+                        display: block;
+                        position: absolute;
+                        left: 0%;
+                        top: 50%;
+                        width: 44px;
+                        height: 44px;
+                        border-radius: 10px;
+                        background-image: url('../../images/excel-icon.jpg');
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: contain;
+                        transform: translate(-50%, -50%) rotate(0deg);
+                        animation-name: appTileCorrectiveRotate, appTileEmerge;
+                        animation-delay: 0s, 200ms;
+                        animation-duration: 5000ms, 750ms;
+                        animation-iteration-count: infinite, 1;
+                        animation-fill-mode: forwards, forwards;
+                        animation-timing-function: linear, ease-in;
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+    
+        &__organize {
+            width: 100%;
+            height: auto;
+            padding: 0 10px;
+            position: relative;
+            top: 100px;
+            z-index: 1;
+    
+            &__family {
+                width: 100%;
+                height: 800px;
+                background-image: url('../../images/family-photo.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center top;
+                background-size: auto 100%;
+                background-color: white;
+                transform-origin: left center;
+                animation-name: familyBordersRetract;
+                animation-duration: 2000ms;
+                animation-fill-mode: forwards;
+                animation-iteration-count: 1;
+    
+                h2 {
+                    font-size: 4.5rem;
+                    font-weight: 500;
+                    max-width: 6em;
+                    line-height: 0.89;
+                    color: #0078d4;
+                    position: relative;
+                    top: 450px;
+                    text-align: left;
+                    margin-left: 20px;
+                }
+    
+                &__description {
+                    width: calc(100% - 10%);
+                    height: 245px;
+                    background: white;
+                    position: relative;
+                    top: 520px;
+                    max-width: 516px;
+                    padding: 34px 34px 50px 14px;
+                    font-size: 1.1875rem;
+                    line-height: 1.68;
+                    text-align: left;
+                    z-index: 2;
+                }
+            }
+        }
+    }
+}
 @keyframes freeRise {
     0% {
         opacity: 0;
