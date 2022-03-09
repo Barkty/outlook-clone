@@ -748,6 +748,8 @@
     text-shadow: none;
     line-height: 1.15;
     max-width: 20em;
+    position: relative;
+    left: 60px;
   }
   .greet__con__primary button {
     width: 260px;
@@ -763,6 +765,8 @@
     display: block;
     font-size: 1.25rem;
     margin-left: 50px;
+    position: relative;
+    left: 120px;
   }
   .greet__con__second {
     width: 100%;

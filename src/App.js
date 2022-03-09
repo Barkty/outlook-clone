@@ -1,4 +1,5 @@
 import './App.css';
+import 'aos/dist/aos.css';
 import { Routes, Route } from 'react-router-dom'
 import Home from './pages/home/Home';
 import SignUp from './pages/create/SignUp';
@@ -15,5 +16,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
