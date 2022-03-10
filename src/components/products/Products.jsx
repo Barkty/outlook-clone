@@ -7,21 +7,21 @@ const Products = () => {
             <div className={styles.productswrap__header}>
                 <h1>
                     <span className={styles.productswrap__header__span}>Access to Office.</span>
-                    <span className={styles.productswrap__header__child}>For free.</span>
+                    <span className={styles.productswrap__header__child} data-aos='fade-up'>For free.</span>
                 </h1>
             </div>
 
             {/* Carousel mini */}
             <div className={styles.productswrap__carouselMini}>
-                <div className={styles.productswrap__carouselMini__word}>
+                <div className={styles.productswrap__carouselMini__word} data-aos='fade-right'>
                     <div className={styles.productswrap__carouselMini__word__art}></div>
                     <h1>Word</h1>
                 </div>
-                <div className={styles.productswrap__carouselMini__excel}>
+                <div className={styles.productswrap__carouselMini__excel} data-aos='fade-left'>
                     <div className={styles.productswrap__carouselMini__excel__art}></div>
                     <h1>Excel</h1>
                 </div>
-                <div className={styles.productswrap__carouselMini__ppt}>
+                <div className={styles.productswrap__carouselMini__ppt} data-aos='fade-right'>
                     <div className={styles.productswrap__carouselMini__ppt__art}></div>
                     <h1>PowerPoint</h1>
                 </div>

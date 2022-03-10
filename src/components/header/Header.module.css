@@ -132,32 +132,6 @@
   font-size: 1.25rem !important;
 }
 
-@-webkit-keyframes taglineEmerge {
-  0% {
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-    opacity: 1;
-  }
-}
-
-@keyframes taglineEmerge {
-  0% {
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-    opacity: 1;
-  }
-}
-
 @media screen and (min-width: 421px) {
   .header {
     width: 100%;

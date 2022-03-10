@@ -12,13 +12,13 @@ const Scenerio = () => {
         <div className={styles.scenerio}>
             <div className={styles.scenerio__events}>
                 <div className={styles.scenerio__events__media}>
-                    <div className={styles.scenerio__events__media__singledevice}>
+                    <div className={styles.scenerio__events__media__singledevice} data-aos='zoom-in-left'>
                         <img src={androidOne} alt='Android' className={styles.scenerio__events__media__singledevice__img}/>
                     </div>
                     <div className={styles.scenerio__events__media__singledevice}>
                         <img src={androidTwo} alt='Android' className={styles.scenerio__events__media__singledevice__img}/>
                     </div>
-                    <div className={styles.scenerio__events__media__singledevice}>
+                    <div className={styles.scenerio__events__media__singledevice} data-aos='zoom-in-right'>
                         <img src={androidThree} alt='Android' className={styles.scenerio__events__media__singledevice__img}/>
                     </div>
                 </div>
@@ -30,13 +30,13 @@ const Scenerio = () => {
             </div>
             <div className={styles.scenerio__flights}>
                 <div className={styles.scenerio__flights__events}>
-                    <div className={styles.scenerio__events__media__singledevice}>
+                    <div className={styles.scenerio__events__media__singledevice} data-aos='zoom-in-left'>
                         <img src={android1} alt='Android' className={styles.scenerio__events__media__singledevice__img}/>
                     </div>
                     <div className={styles.scenerio__events__media__singledevice}>
                         <img src={android2} alt='Android' className={styles.scenerio__events__media__singledevice__img}/>
                     </div>
-                    <div className={styles.scenerio__events__media__singledevice}>
+                    <div className={styles.scenerio__events__media__singledevice} data-aos='zoom-in-right'>
                         <img src={android3} alt='Android' className={styles.scenerio__events__media__singledevice__img}/>
                     </div>
                 </div>

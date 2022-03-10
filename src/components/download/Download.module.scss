@@ -46,16 +46,16 @@
     }
 }
 
-@keyframes introPlateRaise {
-    0% {
-        transform: translateY(17%);
-        box-shadow: 70px 60px 90px rgb(0, 0, 0);
-    }   
-    100% {
-        transform: translateY(0);
-        box-shadow: none;
-    }
-}
+// @keyframes introPlateRaise {
+//     0% {
+//         transform: translateY(17%);
+//         box-shadow: 70px 60px 90px rgb(0, 0, 0);
+//     }   
+//     100% {
+//         transform: translateY(0);
+//         box-shadow: none;
+//     }
+// }
 
 @media screen and (min-width: 425px) {
     .download {

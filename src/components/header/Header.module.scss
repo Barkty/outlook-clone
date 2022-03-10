@@ -103,16 +103,16 @@ $fontFamily : segoe, "Segoe UI", Arial, sans-serif;
     }
 }
 
-@keyframes taglineEmerge {
-    0% {
-        transform: translateY(50px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0px);
-        opacity: 1;
-    }
-}
+// @keyframes taglineEmerge {
+//     0% {
+//         transform: translateY(50px);
+//         opacity: 0;
+//     }
+//     100% {
+//         transform: translateY(0px);
+//         opacity: 1;
+//     }
+// }
 
 @media screen and (min-width: 421px) {
     .header {

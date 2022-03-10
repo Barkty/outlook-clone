@@ -434,48 +434,4 @@
     text-align: center;
   }
 }
-
-@-webkit-keyframes mobileDeviceMiniFirst {
-  0% {
-    -webkit-transform: translateX(61%);
-            transform: translateX(61%);
-  }
-  100% {
-    -webkit-transform: translateX(12%);
-            transform: translateX(12%);
-  }
-}
-
-@keyframes mobileDeviceMiniFirst {
-  0% {
-    -webkit-transform: translateX(61%);
-            transform: translateX(61%);
-  }
-  100% {
-    -webkit-transform: translateX(12%);
-            transform: translateX(12%);
-  }
-}
-
-@-webkit-keyframes mobileDeviceMiniThird {
-  0% {
-    -webkit-transform: translateX(-61%);
-            transform: translateX(-61%);
-  }
-  100% {
-    -webkit-transform: translateX(-12%);
-            transform: translateX(-12%);
-  }
-}
-
-@keyframes mobileDeviceMiniThird {
-  0% {
-    -webkit-transform: translateX(-61%);
-            transform: translateX(-61%);
-  }
-  100% {
-    -webkit-transform: translateX(-12%);
-            transform: translateX(-12%);
-  }
-}
 /*# sourceMappingURL=Scenerio.module.css.map */

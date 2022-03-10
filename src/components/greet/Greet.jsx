@@ -16,13 +16,13 @@ const Greet = () => {
                     <button type='button'>Create free account</button>
                 </div>
                 <div className={styles.greet__con__second}>
-                    <i className={styles.greet__con__second__word}></i>
-                    <i className={styles.greet__con__second__onedrive}></i>
-                    <i className={styles.greet__con__second__onenote}></i>
-                    <i className={styles.greet__con__second__outlook}></i>
-                    <i className={styles.greet__con__second__excel}></i>
-                    <i className={styles.greet__con__second__skype}></i>
-                    <i className={styles.greet__con__second__ppt}></i>
+                    <i className={styles.greet__con__second__word} data-aos="flip-right"></i>
+                    <i className={styles.greet__con__second__onedrive} data-aos="flip-right"></i>
+                    <i className={styles.greet__con__second__onenote} data-aos="flip-right"></i>
+                    <i className={styles.greet__con__second__outlook} data-aos="flip-right"></i>
+                    <i className={styles.greet__con__second__excel} data-aos="flip-right"></i>
+                    <i className={styles.greet__con__second__skype} data-aos="flip-right"></i>
+                    <i className={styles.greet__con__second__ppt} data-aos="flip-right"></i>
                 </div>
             </div>
             <div className={styles.greet__bottom}>

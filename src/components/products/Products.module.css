@@ -1566,58 +1566,6 @@
   }
 }
 
-@-webkit-keyframes emergeFromEast {
-  0% {
-    -webkit-transform: translateX(75%);
-            transform: translateX(75%);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-@keyframes emergeFromEast {
-  0% {
-    -webkit-transform: translateX(75%);
-            transform: translateX(75%);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes emergeFromWest {
-  0% {
-    -webkit-transform: translateX(-75%);
-            transform: translateX(-75%);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-@keyframes emergeFromWest {
-  0% {
-    -webkit-transform: translateX(-75%);
-            transform: translateX(-75%);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
 @-webkit-keyframes appTilesTrackRotate {
   0% {
     -webkit-transform: translate(-50%, -50%) rotate(0deg);

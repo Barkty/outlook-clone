@@ -19,16 +19,16 @@ const Security = () => {
                 <div className={styles.wrapper__bottom__con}>
                     <div className={styles.wrapper__bottom__icon}>
                         <ul className={styles.wrapper__bottom__icon__list}>
-                            <li>
+                            <li data-aos="flip-left">
                                 <BsMicrosoft className={styles.wrapper__bottom__icon__list__icons}/>
                             </li>
-                            <li>
+                            <li data-aos='flip-left'>
                                 <VscShield className={styles.wrapper__bottom__icon__list__icons}/>
                             </li>
-                            <li>
+                            <li data-aos='flip-left'>
                                 <MdOutlineAttachEmail className={styles.wrapper__bottom__icon__list__icons}/>
                             </li>
-                            <li>
+                            <li data-aos='flip-left'>
                                 <AiFillFolder className={styles.wrapper__bottom__icon__list__icons}/>
                                 <GrOnedrive className={styles.wrapper__bottom__icon__list__icon1}/>
                             </li>

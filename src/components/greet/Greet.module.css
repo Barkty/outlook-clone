@@ -1036,36 +1036,4 @@
     display: none;
   }
 }
-
-@-webkit-keyframes welcomeIconEmerge {
-  0% {
-    opacity: 0;
-    -webkit-transform: scaleX(0.01);
-    transform: scaleX(0.01);
-  }
-  20% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-  }
-}
-
-@keyframes welcomeIconEmerge {
-  0% {
-    opacity: 0;
-    -webkit-transform: scaleX(0.01);
-    transform: scaleX(0.01);
-  }
-  20% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-  }
-}
 /*# sourceMappingURL=Greet.module.css.map */
