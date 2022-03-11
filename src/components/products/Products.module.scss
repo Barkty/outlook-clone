@@ -1261,28 +1261,28 @@
     }
 }
 
-// @keyframes emergeFromEast {
-//     0% {
-//         transform: translateX(75%);
-//         opacity: 0;
-//     }
-//     100% {
-//         transform: translateX(0);
-//         opacity: 1;
-//     }
-// }
+@keyframes emergeFromEast {
+    0% {
+        transform: translateX(75%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 
-// @keyframes emergeFromWest {
-//     0% {
-//         transform: translateX(-75%);
-//         opacity: 0;
-//     }
-//     100% {
-//         -webkit-transform: translateX(0);
-//         transform: translateX(0);
-//         opacity: 1;
-//     }
-// }
+@keyframes emergeFromWest {
+    0% {
+        transform: translateX(-75%);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 
 @keyframes appTilesTrackRotate {
     0% {

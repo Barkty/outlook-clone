@@ -16,18 +16,18 @@ const Greet = () => {
                     <button type='button'>Create free account</button>
                 </div>
                 <div className={styles.greet__con__second}>
-                    <i className={styles.greet__con__second__word} data-aos="flip-right"></i>
-                    <i className={styles.greet__con__second__onedrive} data-aos="flip-right"></i>
-                    <i className={styles.greet__con__second__onenote} data-aos="flip-right"></i>
-                    <i className={styles.greet__con__second__outlook} data-aos="flip-right"></i>
-                    <i className={styles.greet__con__second__excel} data-aos="flip-right"></i>
-                    <i className={styles.greet__con__second__skype} data-aos="flip-right"></i>
-                    <i className={styles.greet__con__second__ppt} data-aos="flip-right"></i>
+                    <div className={styles.greet__con__second__word} data-aos='flip-left'></div>
+                    <div className={styles.greet__con__second__onedrive} data-aos='flip-left'></div>
+                    <div className={styles.greet__con__second__onenote} data-aos="flip-right"></div>
+                    <div className={styles.greet__con__second__outlook} data-aos="flip-right"></div>
+                    <div className={styles.greet__con__second__excel} data-aos="flip-right"></div>
+                    <div className={styles.greet__con__second__skype} data-aos="flip-right"></div>
+                    <div className={styles.greet__con__second__ppt} data-aos="flip-right"></div>
                 </div>
             </div>
             <div className={styles.greet__bottom}>
                 <div className={styles.greet__bottom__background}></div>
-                <div className={styles.greet__bottom__textcon}>
+                <div className={styles.greet__bottom__textcon} data-aos='fade-up'>
                     <h1>Expand your Outlook</h1>
                     <p>We've developed a suite of premium Outlook features for people with advanced email and calender needs. A Microsoft 365 subscription offers an ad-free interface, custom domains, enhanced security options, the full desktop version of Office, 1 TB of cloud storage. <Link to='/'>Learn about premium Outlook features that come with Microsoft 365 <HiOutlineArrowNarrowRight className={styles.__icon}/></Link></p>
                 </div>

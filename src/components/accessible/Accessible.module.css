@@ -72,7 +72,6 @@
   position: absolute;
   left: 50%;
   top: 0;
-  opacity: 0;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
   width: 34px;
@@ -185,7 +184,6 @@
     position: absolute;
     left: 50%;
     top: 0;
-    opacity: 0;
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
     width: 34px;
@@ -265,7 +263,7 @@
     color: white;
     z-index: 1;
     position: relative;
-    top: -250px;
+    top: -200px;
     left: 275px;
   }
   .accessible__text__headline {
@@ -295,12 +293,16 @@
     margin: 0 auto;
     position: relative;
   }
+  .accessible__hotmail__check {
+    width: auto;
+    height: auto;
+    position: relative;
+  }
   .accessible__hotmail__check__icon {
     display: block;
     position: absolute;
     left: 50%;
-    top: 0;
-    opacity: 0;
+    top: -50px;
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
     width: 34px;

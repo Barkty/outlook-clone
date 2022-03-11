@@ -13,15 +13,15 @@ const Products = () => {
 
             {/* Carousel mini */}
             <div className={styles.productswrap__carouselMini}>
-                <div className={styles.productswrap__carouselMini__word} data-aos='fade-right'>
+                <div className={styles.productswrap__carouselMini__word}>
                     <div className={styles.productswrap__carouselMini__word__art}></div>
                     <h1>Word</h1>
                 </div>
-                <div className={styles.productswrap__carouselMini__excel} data-aos='fade-left'>
+                <div className={styles.productswrap__carouselMini__excel}>
                     <div className={styles.productswrap__carouselMini__excel__art}></div>
                     <h1>Excel</h1>
                 </div>
-                <div className={styles.productswrap__carouselMini__ppt} data-aos='fade-right'>
+                <div className={styles.productswrap__carouselMini__ppt}>
                     <div className={styles.productswrap__carouselMini__ppt__art}></div>
                     <h1>PowerPoint</h1>
                 </div>
