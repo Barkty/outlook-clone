@@ -752,21 +752,21 @@
     left: 60px;
   }
   .greet__con__primary button {
-    width: 260px;
-    background-color: #0078d4;
+    width: 320px;
+    background-color: inherit;
+    border: 2px solid white;
     border-radius: 5px;
-    border: none;
     outline: none;
     cursor: pointer;
     font-weight: 500;
     color: white;
     text-align: center;
-    padding: 15px 15px;
+    padding: 15px 25px;
     display: block;
     font-size: 1.25rem;
     margin-left: 50px;
     position: relative;
-    left: 120px;
+    left: 90px;
   }
   .greet__con__second {
     width: 100%;

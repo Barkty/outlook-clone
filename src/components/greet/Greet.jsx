@@ -10,7 +10,7 @@ const Greet = () => {
         <div className={styles.greet}>
             <div className={styles.greet__background}></div>
             <div className={styles.greet__con}>
-                <div className={styles.greet__con__primary}>
+                <div className={styles.greet__con__primary} data-aos='fade-up'>
                     <h1>Welcome to Outlook</h1>
                     <p>Email and calender,<br/> plus so much more</p>
                     <button type='button'>Create free account</button>
