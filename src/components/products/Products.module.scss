@@ -1248,6 +1248,12 @@
         }
     }
 }
+
+@media screen and (min-width: 1024px){
+    .productswrap__carouselMini {
+        display: none;
+    }
+}
 @keyframes freeRise {
     0% {
         opacity: 0;

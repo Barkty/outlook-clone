@@ -1540,6 +1540,12 @@
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .productswrap__carouselMini {
+    display: none;
+  }
+}
+
 @-webkit-keyframes freeRise {
   0% {
     opacity: 0;
