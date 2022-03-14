@@ -148,7 +148,7 @@
   width: 100%;
   height: 30px;
   position: relative;
-  top: calc(100vh - 40%);
+  top: 370px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -303,7 +303,7 @@
     width: 100%;
     height: 30px;
     position: relative;
-    top: calc(100vh - 50%);
+    top: 370px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

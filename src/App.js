@@ -4,7 +4,7 @@ import 'aos/dist/aos.css';
 import { Routes, Route } from 'react-router-dom'
 import Home from './pages/home/Home';
 import SignUp from './pages/create/SignUp';
-import SignIn from './pages/signin/SignIn';
+import SignIn, { EnterPassword } from './pages/signin/SignIn';
 import { useEffect } from 'react';
 
 function App() {
@@ -19,6 +19,7 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/signup' element={<SignUp/>}/>
         <Route path='/login' element={<SignIn/>}/>
+        <Route path='/login/set_password' element={<EnterPassword/>}/>
       </Routes>
     </div>
   );
