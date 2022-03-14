@@ -380,7 +380,7 @@ $fontFamily : segoe, "Segoe UI", Arial, sans-serif;
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px){
     .top {
         background-color: hsl(28,61,30);
         height: 54px;
@@ -423,6 +423,8 @@ $fontFamily : segoe, "Segoe UI", Arial, sans-serif;
                 height: 100%;
                 padding-right: 10px;
                 display: block;
+                position: relative;
+                right: -70px;
     
                 &__ul {
                     display: flex;
@@ -497,7 +499,29 @@ $fontFamily : segoe, "Segoe UI", Arial, sans-serif;
                             transition: all 180ms;
                         }
                     }
-    
+                    
+                    &__sec {
+                        background-color: white;
+                        border-radius: 2px;
+                        transition: none;
+                        line-height: 1;
+                        font-weight: 500;
+                        padding: 8px 20px;
+                        margin: 0;
+                        border: 2px solid white;
+                        //box-shadow: 0 3px 9px rgb(0 0 0 / 5%);
+                        
+                        a {
+                            //text-align: center;
+                            color: #0078d4;
+                            text-decoration: none;
+                            font-size: 1.1rem;
+                            font-weight: 500;
+                            padding: 8px 11px 9px;
+                            cursor: pointer;
+                        }
+                    }
+
                     &__create {
                         display: block;
                         background-color: #0078d4;
@@ -523,7 +547,7 @@ $fontFamily : segoe, "Segoe UI", Arial, sans-serif;
     }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1024px) {
+@media screen and (min-width: 992px) {
     .top {
         background-color: hsl(28,61,30);
         height: 54px;
@@ -629,12 +653,12 @@ $fontFamily : segoe, "Segoe UI", Arial, sans-serif;
 @media screen and (min-width: 1024px) {
     .top {
         background-color: hsl(28,61,30);
-        height: 70px;
+        height: 54px;
         width: 100%;
         order: 1;
         z-index: 3;
         position: fixed;
-        padding: 15px 70px 15px 70px;
+        padding: 15px 40px 15px 40px;
         border-bottom: 1px solid hsl(28,61,30);
         background-image: inherit;
         background-repeat: no-repeat;
@@ -646,7 +670,7 @@ $fontFamily : segoe, "Segoe UI", Arial, sans-serif;
 
         &__inner {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
             height: 100%;
             width: 100%;
@@ -665,15 +689,17 @@ $fontFamily : segoe, "Segoe UI", Arial, sans-serif;
             }
     
             &__nav {
-                width: 62%;
+                width: 42%;
                 height: 100%;
                 padding-right: 10px;
                 display: block;
+                position: relative;
+                right: -90px;
     
                 &__ul {
                     display: flex;
                     align-items: center;
-                    justify-content: flex-end;
+                    justify-content: space-around;
                     list-style-type: none;
                     margin: 0;
                     padding: 0;
@@ -697,7 +723,7 @@ $fontFamily : segoe, "Segoe UI", Arial, sans-serif;
                             text-decoration: none;
                             font-size: 1rem;
                             font-weight: 500;
-                            padding: 9px 27px 12px;
+                            padding: 19px 27px 12px;
                             cursor: pointer;
                         }
                     }
@@ -721,6 +747,68 @@ $fontFamily : segoe, "Segoe UI", Arial, sans-serif;
                             font-weight: 500;
                             padding: 8px 15px 11px;
                             cursor: pointer;
+                        }
+                    }
+
+                    &__premium {
+                        max-width: 32%;
+                        margin-left: 0;
+                        margin-right: -90px;
+                        padding: 4px 27px;
+                        border: 1.5px solid #666;
+                        border-radius: 2px;
+    
+                        a {
+                            background: white;
+                            color: #666;
+                            font-size: 1rem;
+                            //padding: 0 6px;
+                            cursor: pointer;
+                            line-height: 1;
+                            font-weight: 500;
+                            transition: all 180ms;
+                        }
+                    }
+                    
+                    &__sec {
+                        background-color: white;
+                        border-radius: 2px;
+                        transition: none;
+                        line-height: 1;
+                        font-weight: 500;
+                        padding: 8px 20px;
+                        margin: 0;
+                        border: 2px solid white;
+                        //box-shadow: 0 3px 9px rgb(0 0 0 / 5%);
+                        
+                        a {
+                            //text-align: center;
+                            color: #0078d4;
+                            text-decoration: none;
+                            font-size: 1.1rem;
+                            font-weight: 500;
+                            padding: 8px 11px 9px;
+                            cursor: pointer;
+                        }
+                    }
+
+                    &__create {
+                        display: block;
+                        background-color: #0078d4;
+                        color: white;
+                        box-shadow: none;
+                        margin-right: -30px;
+                        border-radius: 2px;
+                        padding: 6px 27px;
+    
+                        a {
+                            font-weight: 600;
+                            font-size: 1rem;
+                            cursor: pointer;
+                            padding: 0 5px;
+                            line-height: 1;
+                            //font-weight: 500;
+                            transition: all 180ms;
                         }
                     }
                 }
