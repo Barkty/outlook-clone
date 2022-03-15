@@ -8,7 +8,7 @@ import { useState} from 'react';
 import { useNavigate } from 'react-router-dom';
 //import FormContext from '../../store/formContext';
 import FormState from '../../store/FormState';
-//import useContextGetter from '../../hooks/UseContextGetter';
+import useContextGetter from '../../hooks/UseContextGetter';
 
 const SignIn = () => {
     const [email, setEmail] = useState('');
@@ -56,7 +56,7 @@ export default SignIn;
 
 export const EnterPassword = () => {
     const navigate = useNavigate();
-    //const context = useContextGetter();
+    const context = useContextGetter();
     const email = localStorage.getItem('email');
     const [formValues, setFormValues] = useState({email: email, password: ''});
     const handleSubmit = (values) => {
@@ -64,7 +64,8 @@ export const EnterPassword = () => {
         localStorage.setItem('isAuth', true);
         navigate('/', {replace: true});
     }
-    //console.log(context);
+    console.log(context);
+    
     return (
         <FormState>
             <div className={styles.signin}>
