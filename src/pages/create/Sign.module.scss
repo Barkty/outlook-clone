@@ -53,6 +53,17 @@
                 margin-bottom: 30px;
             }
         }
+
+        &__control {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            
+        }
         form {
             width: 100%;
             display: flex;

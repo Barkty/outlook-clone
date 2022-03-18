@@ -17,6 +17,29 @@
   width: 100%;
 }
 
+.signin__back {
+  width: 100%;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.signin__back__text {
+  color: #666;
+  display: block;
+}
+
+.signin__back__text a {
+  text-decoration: none;
+}
+.signin__back__text__icon {
+  position: relative;
+  left: -20px;
+  top: 0px;
+}
+
 .signup__title {
   font-size: 2rem;
   font-weight: 500;
@@ -24,6 +47,10 @@
   margin-bottom: 15px;
 }
 
+.signup__text {
+  text-align: left;
+
+}
 .signup__form {
   width: 100%;
   height: auto;
