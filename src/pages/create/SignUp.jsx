@@ -3,6 +3,7 @@ import logo from '../../images/microsoftLogo.png';
 import { Link, useNavigate } from 'react-router-dom';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
+import { BsArrowLeft } from 'react-icons/bs'
 
 const SignUp = () => {
     const navigate = useNavigate();
@@ -21,7 +22,8 @@ const SignUp = () => {
         validationSchema,
     })
     const handleSubmit = (values) => {
-        console.log(values);
+        localStorage.setItem('newAccount', JSON.stringify(values));
+        //console.log(values);
         navigate('create_password');
     }
 
@@ -69,8 +71,12 @@ const SignUp = () => {
 export default SignUp;
 
 export const AccountPassword = () => {
+    const navigate = useNavigate();
+    const retrievedUser = localStorage.getItem('newAccount')
+    const user = JSON.parse(retrievedUser);
     const handleSubmit = (values) => {
-        console.log(values)
+        // console.log(values);
+        navigate('/', {replace: true});
     }
 
     return (
@@ -79,12 +85,15 @@ export const AccountPassword = () => {
                 <div className={styles.signup__logo}>
                     <img src={logo} alt="Microsoft logo" className={styles.signup__logo__img}/>
                 </div>
-                <h1 className={styles.signup__title}>Create account</h1>
-                <p>Enter the password you would like to use with your account.</p>
+                <div className={styles.signin__back}>
+                    <p className={styles.signin__back__text}><Link to='/signup'><BsArrowLeft className={styles.signin__back__text__icon}/></Link>{user.email + user.domain}</p> 
+                </div>
+                <h1 className={styles.signup__title}>Create a password</h1>
+                <p className={styles.signup__text}>Enter the password you would like to use with your account.</p>
                 <div className={styles.signup__form}>
                     <form>
                         <input
-                        type='text'
+                        type='password'
                         placeholder='Create password'
                         // value={formValues.password}
                         // onChange={(e)=>{
@@ -102,7 +111,7 @@ export const AccountPassword = () => {
                             <input type="checkbox" name="inform" id="inform" defaultChecked/>
                             <label htmlFor='inform'>I would like information, tips and offers about Microsoft products and services.</label>
                         </div>
-                        <p>Choosing <b>Next</b> means that you agree to the <Link to='/policies'>Microsoft Services Agreement</Link> and <Link>privacy and cookies statement.</Link></p>
+                        <p>Choosing <b>Next</b> means that you agree to the <Link to='/policies'>Microsoft Services Agreement</Link> and <Link to='/privacy'>privacy and cookies statement.</Link></p>
                         <button type='button' onClick={()=>{handleSubmit()}}>Next</button>
                     </form>
                 </div>

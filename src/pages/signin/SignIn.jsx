@@ -18,7 +18,7 @@ const SignIn = () => {
         if(values) {
             localStorage.setItem('email', values);
             navigate('set_password');
-        }
+        };
     }
 
     return (
@@ -74,13 +74,13 @@ export const EnterPassword = () => {
                         <img src={logo} alt="Microsoft logo" className={styles.signin__logo__img}/>
                     </div>
                     <div className={styles.signin__back}>
-                    <p className={styles.signin__back__text}><Link to='/login'><BsArrowLeft className={styles.signin__back__text__icon}/></Link>{email}</p> 
+                        <p className={styles.signin__back__text}><Link to='/login'><BsArrowLeft className={styles.signin__back__text__icon}/></Link>{email}</p> 
                     </div>
                     <h1 className={styles.signin__title}>Enter password</h1>
                     <div className={styles.signin__form}>
                         <form>
                             <input
-                            type='text'
+                            type='password'
                             placeholder='Password'
                             value={formValues.password}
                             onChange={(e)=>{
