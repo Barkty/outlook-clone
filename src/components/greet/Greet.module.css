@@ -1,0 +1,1355 @@
+.greet {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 700px;
+  left: 0;
+}
+
+.greet__background {
+  width: 100%;
+  height: 304px;
+  background-image: url("../../images/coffee-shop.jpg");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 140% auto;
+  margin-bottom: 100px;
+  overflow: hidden;
+}
+
+.greet__con {
+  width: 80%;
+  height: 384px;
+  background-color: white;
+  position: relative;
+  top: -140px;
+  left: 30px;
+  z-index: 1;
+}
+
+.greet__con__primary {
+  width: 100%;
+  height: 354px;
+  position: relative;
+  top: 50px;
+  padding: 15px 0 30px;
+  margin-bottom: 50px;
+}
+
+.greet__con__primary h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 0.75em;
+  color: #0078d4;
+  text-shadow: none;
+  line-height: 0.9;
+}
+
+.greet__con__primary p {
+  font-size: 1.25rem;
+  margin-bottom: 2.5em;
+  color: #666;
+  font-weight: 400;
+  text-shadow: none;
+  line-height: 1.15;
+  max-width: 20em;
+}
+
+.greet__con__primary button {
+  width: 260px;
+  background-color: #0078d4;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  padding: 15px 15px;
+  display: block;
+  font-size: 1.25rem;
+}
+
+.greet__con__second {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.greet__con__second__word {
+  width: 30px;
+  height: 30px;
+  background-image: url("../../images/word-icon.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  -webkit-transform: scaleX(0.01);
+  transform: scaleX(0.01);
+  -webkit-animation-name: welcomeIconEmerge;
+  animation-name: welcomeIconEmerge;
+  -webkit-animation-duration: 800ms;
+  animation-duration: 800ms;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+
+.greet__con__second__onedrive {
+  width: 30px;
+  height: 30px;
+  background-image: url("../../images/onedrive-icon.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  -webkit-transform: scaleX(0.01);
+  transform: scaleX(0.01);
+  -webkit-animation-name: welcomeIconEmerge;
+  animation-name: welcomeIconEmerge;
+  -webkit-animation-duration: 800ms;
+  animation-duration: 800ms;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+
+.greet__con__second__onenote {
+  width: 30px;
+  height: 30px;
+  background-image: url("../../images/onenote-icon.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  -webkit-transform: scaleX(0.01);
+  transform: scaleX(0.01);
+  -webkit-animation-name: welcomeIconEmerge;
+  animation-name: welcomeIconEmerge;
+  -webkit-animation-duration: 800ms;
+  animation-duration: 800ms;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+.greet__con__second__outlook {
+  width: 30px;
+  height: 30px;
+  background-image: url("../../images/outlook-icons.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  -webkit-transform: scaleX(0.01);
+  transform: scaleX(0.01);
+  -webkit-animation-name: welcomeIconEmerge;
+  animation-name: welcomeIconEmerge;
+  -webkit-animation-duration: 800ms;
+  animation-duration: 800ms;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 5ms;
+          animation-delay: 5ms;
+}
+
+.greet__con__second__excel {
+  width: 30px;
+  height: 30px;
+  background-image: url("../../images/excel-icon.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  -webkit-transform: scaleX(0.01);
+  transform: scaleX(0.01);
+  -webkit-animation-name: welcomeIconEmerge;
+  animation-name: welcomeIconEmerge;
+  -webkit-animation-duration: 800ms;
+  animation-duration: 800ms;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+.greet__con__second__skype {
+  width: 30px;
+  height: 30px;
+  background-image: url("../../images/skype-icon.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  -webkit-transform: scaleX(0.01);
+  transform: scaleX(0.01);
+  -webkit-animation-name: welcomeIconEmerge;
+  animation-name: welcomeIconEmerge;
+  -webkit-animation-duration: 800ms;
+  animation-duration: 800ms;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+
+.greet__con__second__ppt {
+  width: 30px;
+  height: 30px;
+  background-image: url("../../images/ppt-icon.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  -webkit-transform: scaleX(0.01);
+  transform: scaleX(0.01);
+  -webkit-animation-name: welcomeIconEmerge;
+  animation-name: welcomeIconEmerge;
+  -webkit-animation-duration: 800ms;
+  animation-duration: 800ms;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+
+.greet__bottom {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.greet__bottom__background {
+  width: 100%;
+  height: 320px;
+  z-index: 1;
+  position: relative;
+  background-image: url("../../images/premium-appeal.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.greet__bottom__textcon {
+  background-color: white;
+  width: 93%;
+  height: 557px;
+  position: relative;
+  top: -40px;
+  z-index: 2;
+  padding: 30px 0 0 20px;
+}
+
+.greet__bottom__textcon h1 {
+  font-size: 3rem;
+  line-height: 1;
+  color: #0078d4;
+  font-weight: 500;
+  margin-bottom: 1em;
+  text-align: left;
+}
+
+.greet__bottom__textcon p {
+  font-size: 1.1875rem;
+  line-height: 1.42;
+  max-width: 24em;
+  color: #666;
+  text-align: left;
+}
+
+.greet__bottom__textcon p a {
+  color: #0078d4;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.greet__bottom__textcon p a svg {
+  position: relative;
+  top: -22px;
+  right: -220px;
+}
+
+.bottomnav {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: #666;
+  position: relative;
+  top: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  z-index: 1;
+  padding: 0 20px;
+}
+
+.bottomnav__icon {
+  width: 100%;
+  height: 320px;
+  background-image: url("../../images/outlook-icon.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border-bottom: 1px rgba(102, 102, 102, 0.692) solid;
+  margin-bottom: 2.5rem;
+}
+
+.bottomnav__primary, .bottomnav__android {
+  width: 100%;
+  height: 152px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style-type: none;
+}
+
+.bottomnav__primary li, .bottomnav__android li {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.bottomnav__primary li a, .bottomnav__android li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.bottomnav__primary li a svg, .bottomnav__android li a svg {
+  position: relative;
+  top: 20px;
+  left: -30px;
+}
+
+.bottomnav__desktop {
+  display: none;
+}
+
+@media screen and (min-width: 425px) {
+  .greet {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 700px;
+    left: 0;
+  }
+  .greet__background {
+    width: 100%;
+    height: 304px;
+    background-image: url("../../images/coffee-shop.jpg");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 140% auto;
+    margin-bottom: 100px;
+    overflow: hidden;
+  }
+  .greet__con {
+    width: 80%;
+    height: 384px;
+    background-color: white;
+    position: relative;
+    top: -140px;
+    left: 30px;
+    z-index: 1;
+  }
+  .greet__con__primary {
+    width: 100%;
+    height: 354px;
+    position: relative;
+    top: 50px;
+    padding: 15px 0 30px;
+    margin-bottom: 50px;
+  }
+  .greet__con__primary h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 0.75em;
+    color: #0078d4;
+    text-shadow: none;
+    line-height: 0.9;
+  }
+  .greet__con__primary p {
+    font-size: 1.25rem;
+    margin-bottom: 2.5em;
+    color: #666;
+    font-weight: 400;
+    text-shadow: none;
+    line-height: 1.15;
+    max-width: 20em;
+  }
+  .greet__con__primary button {
+    width: 260px;
+    background-color: #0078d4;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    padding: 15px 15px;
+    display: block;
+    font-size: 1.25rem;
+    margin-left: 50px;
+  }
+  .greet__con__second {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .greet__con__second__word {
+    width: 30px;
+    height: 30px;
+    background-image: url("../../images/word-icon.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    -webkit-transform: scaleX(0.01);
+    transform: scaleX(0.01);
+    -webkit-animation-name: welcomeIconEmerge;
+    animation-name: welcomeIconEmerge;
+    -webkit-animation-duration: 800ms;
+    animation-duration: 800ms;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 600ms;
+            animation-delay: 600ms;
+  }
+  .greet__con__second__onedrive {
+    width: 30px;
+    height: 30px;
+    background-image: url("../../images/onedrive-icon.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    -webkit-transform: scaleX(0.01);
+    transform: scaleX(0.01);
+    -webkit-animation-name: welcomeIconEmerge;
+    animation-name: welcomeIconEmerge;
+    -webkit-animation-duration: 800ms;
+    animation-duration: 800ms;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 400ms;
+            animation-delay: 400ms;
+  }
+  .greet__con__second__onenote {
+    width: 30px;
+    height: 30px;
+    background-image: url("../../images/onenote-icon.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    -webkit-transform: scaleX(0.01);
+    transform: scaleX(0.01);
+    -webkit-animation-name: welcomeIconEmerge;
+    animation-name: welcomeIconEmerge;
+    -webkit-animation-duration: 800ms;
+    animation-duration: 800ms;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 200ms;
+            animation-delay: 200ms;
+  }
+  .greet__con__second__outlook {
+    width: 30px;
+    height: 30px;
+    background-image: url("../../images/outlook-icons.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    -webkit-transform: scaleX(0.01);
+    transform: scaleX(0.01);
+    -webkit-animation-name: welcomeIconEmerge;
+    animation-name: welcomeIconEmerge;
+    -webkit-animation-duration: 800ms;
+    animation-duration: 800ms;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 5ms;
+            animation-delay: 5ms;
+  }
+  .greet__con__second__excel {
+    width: 30px;
+    height: 30px;
+    background-image: url("../../images/excel-icon.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    -webkit-transform: scaleX(0.01);
+    transform: scaleX(0.01);
+    -webkit-animation-name: welcomeIconEmerge;
+    animation-name: welcomeIconEmerge;
+    -webkit-animation-duration: 800ms;
+    animation-duration: 800ms;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 200ms;
+            animation-delay: 200ms;
+  }
+  .greet__con__second__skype {
+    width: 30px;
+    height: 30px;
+    background-image: url("../../images/skype-icon.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    -webkit-transform: scaleX(0.01);
+    transform: scaleX(0.01);
+    -webkit-animation-name: welcomeIconEmerge;
+    animation-name: welcomeIconEmerge;
+    -webkit-animation-duration: 800ms;
+    animation-duration: 800ms;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 400ms;
+            animation-delay: 400ms;
+  }
+  .greet__con__second__ppt {
+    width: 30px;
+    height: 30px;
+    background-image: url("../../images/ppt-icon.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    -webkit-transform: scaleX(0.01);
+    transform: scaleX(0.01);
+    -webkit-animation-name: welcomeIconEmerge;
+    animation-name: welcomeIconEmerge;
+    -webkit-animation-duration: 800ms;
+    animation-duration: 800ms;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 600ms;
+            animation-delay: 600ms;
+  }
+  .greet__bottom {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .greet__bottom__background {
+    width: 100%;
+    height: 320px;
+    z-index: 1;
+    position: relative;
+    background-image: url("../../images/premium-appeal.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  .greet__bottom__textcon {
+    background-color: white;
+    width: 93%;
+    height: 557px;
+    position: relative;
+    top: -40px;
+    z-index: 2;
+    padding: 30px 0 0 20px;
+  }
+  .greet__bottom__textcon h1 {
+    font-size: 3rem;
+    line-height: 1;
+    color: #0078d4;
+    font-weight: 500;
+    margin-bottom: 1em;
+    text-align: left;
+  }
+  .greet__bottom__textcon p {
+    font-size: 1.1875rem;
+    line-height: 1.42;
+    max-width: 24em;
+    color: #666;
+    text-align: left;
+  }
+  .greet__bottom__textcon p a {
+    color: #0078d4;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .greet__bottom__textcon p a svg {
+    position: relative;
+    top: -22px;
+    right: -220px;
+  }
+  .bottomnav {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: #666;
+    position: relative;
+    top: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    z-index: 1;
+    padding: 0 20px;
+  }
+  .bottomnav__icon {
+    width: 100%;
+    height: 320px;
+    background-image: url("../../images/outlook-icon.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-bottom: 1px rgba(102, 102, 102, 0.692) solid;
+    margin-bottom: 2.5rem;
+  }
+  .bottomnav__primary, .bottomnav__android {
+    width: 100%;
+    height: 152px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    list-style-type: none;
+  }
+  .bottomnav__primary li, .bottomnav__android li {
+    display: block;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .bottomnav__primary li a, .bottomnav__android li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  .bottomnav__primary li a svg, .bottomnav__android li a svg {
+    position: relative;
+    top: 20px;
+    left: -30px;
+  }
+  .bottomnav__desktop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .greet {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 700px;
+    left: 0;
+  }
+  .greet__background {
+    width: 100%;
+    height: 879px;
+    background-image: url("../../images/coffee-shop.jpg");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 140% auto;
+    margin-bottom: 100px;
+    overflow: hidden;
+  }
+  .greet__con {
+    width: 80%;
+    height: 150px;
+    background-color: white;
+    position: relative;
+    top: -230px;
+    left: 30px;
+    z-index: 1;
+  }
+  .greet__con__primary {
+    width: 100%;
+    height: 354px;
+    position: relative;
+    top: -450px;
+    left: 50px;
+    padding: 15px 0 30px;
+    margin-bottom: 50px;
+  }
+  .greet__con__primary h1 {
+    font-size: 4.5rem;
+    font-weight: 500;
+    margin-bottom: 0.75em;
+    color: white;
+    text-shadow: none;
+    line-height: 0.9;
+  }
+  .greet__con__primary p {
+    font-size: 1.5rem;
+    margin-bottom: 2.5em;
+    color: white;
+    font-weight: 400;
+    text-shadow: none;
+    line-height: 1.15;
+    max-width: 20em;
+    position: relative;
+    left: 60px;
+  }
+  .greet__con__primary button {
+    width: 320px;
+    background-color: inherit;
+    border: 2px solid white;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    padding: 15px 25px;
+    display: block;
+    font-size: 1.25rem;
+    margin-left: 50px;
+    position: relative;
+    left: 90px;
+  }
+  .greet__con__second {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: -350px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .greet__con__second__word {
+    width: 30px;
+    height: 30px;
+    background-image: url("../../images/word-icon.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    -webkit-transform: scaleX(0.01);
+    transform: scaleX(0.01);
+    -webkit-animation-name: welcomeIconEmerge;
+    animation-name: welcomeIconEmerge;
+    -webkit-animation-duration: 800ms;
+    animation-duration: 800ms;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 600ms;
+            animation-delay: 600ms;
+  }
+  .greet__con__second__onedrive {
+    width: 30px;
+    height: 30px;
+    background-image: url("../../images/onedrive-icon.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    -webkit-transform: scaleX(0.01);
+    transform: scaleX(0.01);
+    -webkit-animation-name: welcomeIconEmerge;
+    animation-name: welcomeIconEmerge;
+    -webkit-animation-duration: 800ms;
+    animation-duration: 800ms;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 400ms;
+            animation-delay: 400ms;
+  }
+  .greet__con__second__onenote {
+    width: 30px;
+    height: 30px;
+    background-image: url("../../images/onenote-icon.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    -webkit-transform: scaleX(0.01);
+    transform: scaleX(0.01);
+    -webkit-animation-name: welcomeIconEmerge;
+    animation-name: welcomeIconEmerge;
+    -webkit-animation-duration: 800ms;
+    animation-duration: 800ms;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 200ms;
+            animation-delay: 200ms;
+  }
+  .greet__con__second__outlook {
+    width: 30px;
+    height: 30px;
+    background-image: url("../../images/outlook-icons.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    -webkit-transform: scaleX(0.01);
+    transform: scaleX(0.01);
+    -webkit-animation-name: welcomeIconEmerge;
+    animation-name: welcomeIconEmerge;
+    -webkit-animation-duration: 800ms;
+    animation-duration: 800ms;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 5ms;
+            animation-delay: 5ms;
+  }
+  .greet__con__second__excel {
+    width: 30px;
+    height: 30px;
+    background-image: url("../../images/excel-icon.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    -webkit-transform: scaleX(0.01);
+    transform: scaleX(0.01);
+    -webkit-animation-name: welcomeIconEmerge;
+    animation-name: welcomeIconEmerge;
+    -webkit-animation-duration: 800ms;
+    animation-duration: 800ms;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 200ms;
+            animation-delay: 200ms;
+  }
+  .greet__con__second__skype {
+    width: 30px;
+    height: 30px;
+    background-image: url("../../images/skype-icon.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    -webkit-transform: scaleX(0.01);
+    transform: scaleX(0.01);
+    -webkit-animation-name: welcomeIconEmerge;
+    animation-name: welcomeIconEmerge;
+    -webkit-animation-duration: 800ms;
+    animation-duration: 800ms;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 400ms;
+            animation-delay: 400ms;
+  }
+  .greet__con__second__ppt {
+    width: 30px;
+    height: 30px;
+    background-image: url("../../images/ppt-icon.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    -webkit-transform: scaleX(0.01);
+    transform: scaleX(0.01);
+    -webkit-animation-name: welcomeIconEmerge;
+    animation-name: welcomeIconEmerge;
+    -webkit-animation-duration: 800ms;
+    animation-duration: 800ms;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 600ms;
+            animation-delay: 600ms;
+  }
+  .greet__bottom {
+    width: 100%;
+    height: 1006px;
+    position: relative;
+  }
+  .greet__bottom__background {
+    width: 49%;
+    height: 820px;
+    z-index: 1;
+    position: relative;
+    left: 51%;
+    background-image: url("../../images/premium-appeal.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  .greet__bottom__textcon {
+    background-color: white;
+    width: 69%;
+    height: 557px;
+    position: relative;
+    top: -740px;
+    z-index: 2;
+    padding: 30px 120px 0 80px;
+    opacity: 1;
+  }
+  .greet__bottom__textcon h1 {
+    font-size: 3rem;
+    line-height: 1;
+    color: #0078d4;
+    font-weight: 500;
+    margin-bottom: 1em;
+    text-align: left;
+  }
+  .greet__bottom__textcon p {
+    font-size: 1.1875rem;
+    line-height: 1.42;
+    max-width: 24em;
+    color: #666;
+    text-align: left;
+  }
+  .greet__bottom__textcon p a {
+    color: #0078d4;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .greet__bottom__textcon p a svg {
+    position: relative;
+    top: -22px;
+    right: -220px;
+  }
+  .bottomnav {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: #666;
+    position: relative;
+    top: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 0 20px;
+  }
+  .bottomnav__icon {
+    width: 100%;
+    height: 320px;
+    background-image: url("../../images/outlook-icon.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-bottom: 1px rgba(102, 102, 102, 0.692) solid;
+    margin-bottom: 2.5rem;
+  }
+  .bottomnav__primary, .bottomnav__android {
+    width: 80%;
+    height: 102px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    list-style-type: none;
+  }
+  .bottomnav__primary li, .bottomnav__android li {
+    display: block;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .bottomnav__primary li a, .bottomnav__android li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  .bottomnav__primary li a svg, .bottomnav__android li a svg {
+    position: relative;
+    top: 20px;
+    left: -30px;
+  }
+  .bottomnav__desktop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .greet {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 700px;
+    left: 0;
+  }
+  .greet__background {
+    width: 100%;
+    height: 879px;
+    background-image: url("../../images/coffee-shop.jpg");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 140% auto;
+    margin-bottom: 100px;
+    overflow: hidden;
+  }
+  .greet__con {
+    width: 80%;
+    height: 150px;
+    background-color: white;
+    position: relative;
+    top: -230px;
+    left: 30px;
+    z-index: 1;
+  }
+  .greet__con__primary {
+    width: 90%;
+    height: 354px;
+    position: relative;
+    top: -600px;
+    left: 100px;
+    padding: 15px 0 30px;
+    margin-bottom: 50px;
+  }
+  .greet__con__primary h1 {
+    font-size: 6.25rem;
+    font-weight: 500;
+    margin-bottom: 0.75em;
+    color: white;
+    text-shadow: none;
+    line-height: 0.9;
+  }
+  .greet__con__primary p {
+    font-size: 1.5rem;
+    margin-bottom: 2.5em;
+    color: white;
+    font-weight: 400;
+    text-shadow: none;
+    line-height: 1.15;
+    max-width: 20em;
+    position: relative;
+    left: 120px;
+  }
+  .greet__con__primary button {
+    width: 320px;
+    background-color: inherit;
+    border: 2px solid white;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    padding: 15px 25px;
+    display: block;
+    font-size: 1.25rem;
+    margin-left: 50px;
+    position: relative;
+    left: 170px;
+  }
+  .greet__con__second {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: -350px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .greet__con__second__word {
+    width: 30px;
+    height: 30px;
+    background-image: url("../../images/word-icon.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    -webkit-transform: scaleX(0.01);
+    transform: scaleX(0.01);
+    -webkit-animation-name: welcomeIconEmerge;
+    animation-name: welcomeIconEmerge;
+    -webkit-animation-duration: 800ms;
+    animation-duration: 800ms;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 600ms;
+            animation-delay: 600ms;
+  }
+  .greet__con__second__onedrive {
+    width: 30px;
+    height: 30px;
+    background-image: url("../../images/onedrive-icon.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    -webkit-transform: scaleX(0.01);
+    transform: scaleX(0.01);
+    -webkit-animation-name: welcomeIconEmerge;
+    animation-name: welcomeIconEmerge;
+    -webkit-animation-duration: 800ms;
+    animation-duration: 800ms;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 400ms;
+            animation-delay: 400ms;
+  }
+  .greet__con__second__onenote {
+    width: 30px;
+    height: 30px;
+    background-image: url("../../images/onenote-icon.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    -webkit-transform: scaleX(0.01);
+    transform: scaleX(0.01);
+    -webkit-animation-name: welcomeIconEmerge;
+    animation-name: welcomeIconEmerge;
+    -webkit-animation-duration: 800ms;
+    animation-duration: 800ms;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 200ms;
+            animation-delay: 200ms;
+  }
+  .greet__con__second__outlook {
+    width: 30px;
+    height: 30px;
+    background-image: url("../../images/outlook-icons.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    -webkit-transform: scaleX(0.01);
+    transform: scaleX(0.01);
+    -webkit-animation-name: welcomeIconEmerge;
+    animation-name: welcomeIconEmerge;
+    -webkit-animation-duration: 800ms;
+    animation-duration: 800ms;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 5ms;
+            animation-delay: 5ms;
+  }
+  .greet__con__second__excel {
+    width: 30px;
+    height: 30px;
+    background-image: url("../../images/excel-icon.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    -webkit-transform: scaleX(0.01);
+    transform: scaleX(0.01);
+    -webkit-animation-name: welcomeIconEmerge;
+    animation-name: welcomeIconEmerge;
+    -webkit-animation-duration: 800ms;
+    animation-duration: 800ms;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 200ms;
+            animation-delay: 200ms;
+  }
+  .greet__con__second__skype {
+    width: 30px;
+    height: 30px;
+    background-image: url("../../images/skype-icon.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    -webkit-transform: scaleX(0.01);
+    transform: scaleX(0.01);
+    -webkit-animation-name: welcomeIconEmerge;
+    animation-name: welcomeIconEmerge;
+    -webkit-animation-duration: 800ms;
+    animation-duration: 800ms;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 400ms;
+            animation-delay: 400ms;
+  }
+  .greet__con__second__ppt {
+    width: 30px;
+    height: 30px;
+    background-image: url("../../images/ppt-icon.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    -webkit-transform: scaleX(0.01);
+    transform: scaleX(0.01);
+    -webkit-animation-name: welcomeIconEmerge;
+    animation-name: welcomeIconEmerge;
+    -webkit-animation-duration: 800ms;
+    animation-duration: 800ms;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 600ms;
+            animation-delay: 600ms;
+  }
+  .greet__bottom {
+    width: 100%;
+    height: 1006px;
+    position: relative;
+  }
+  .greet__bottom__background {
+    width: 49%;
+    height: 820px;
+    z-index: 1;
+    position: relative;
+    left: 51%;
+    background-image: url("../../images/premium-appeal.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  .greet__bottom__textcon {
+    background-color: white;
+    width: 69%;
+    height: 557px;
+    position: relative;
+    top: -740px;
+    z-index: 2;
+    padding: 30px 120px 0 80px;
+    opacity: 1;
+  }
+  .greet__bottom__textcon h1 {
+    font-size: 3rem;
+    line-height: 1;
+    color: #0078d4;
+    font-weight: 500;
+    margin-bottom: 1em;
+    text-align: left;
+  }
+  .greet__bottom__textcon p {
+    font-size: 1.1875rem;
+    line-height: 1.42;
+    max-width: 24em;
+    color: #666;
+    text-align: left;
+  }
+  .greet__bottom__textcon p a {
+    color: #0078d4;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .greet__bottom__textcon p a svg {
+    position: relative;
+    top: -22px;
+    right: -220px;
+  }
+  .bottomnav {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: #666;
+    position: relative;
+    top: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 0 20px;
+  }
+  .bottomnav__icon {
+    width: 100%;
+    height: 320px;
+    background-image: url("../../images/outlook-icon.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-bottom: 1px rgba(102, 102, 102, 0.692) solid;
+    margin-bottom: 2.5rem;
+  }
+  .bottomnav__primary, .bottomnav__android {
+    width: 80%;
+    height: 102px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    list-style-type: none;
+  }
+  .bottomnav__primary li, .bottomnav__android li {
+    display: block;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .bottomnav__primary li a, .bottomnav__android li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  .bottomnav__primary li a svg, .bottomnav__android li a svg {
+    position: relative;
+    top: 20px;
+    left: -30px;
+  }
+  .bottomnav__desktop {
+    display: none;
+  }
+}
+/*# sourceMappingURL=Greet.module.css.map */

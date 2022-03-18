@@ -1,0 +1,366 @@
+.download {
+    width: 100%;
+    height: 100vh;
+
+    &__image {
+        width: 85%;
+        height: 180px; 
+        position: relative;
+        top: 100px;
+        left: 20px;
+        background-image: url('../../images/efficient-commuter.jpg');
+        background-repeat: no-repeat;
+        background-position: 65% center; 
+        background-size: auto 100%;
+        transform: translateX(10%);
+    }
+
+    &__overlay {
+        background-color: white;
+        width: 87%;
+        height: 400px;
+        z-index: 1;
+        position: relative;
+        padding: 25px;
+        animation-name: introPlateRaise;
+        animation-duration: 1300ms;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+
+        h1 {
+            color: #0078d4;
+            font-weight: 500;
+            font-size: 2.75rem;
+            line-height: 1;
+            text-align: left;
+            margin-top: 40px;
+        }
+        p {
+            font-size: 1.1875rem;
+            line-height: 1.5;
+            max-width: 21em;
+            text-align: left;
+            position: relative;
+            top: 35px;
+        }
+    }
+}
+
+// @keyframes introPlateRaise {
+//     0% {
+//         transform: translateY(17%);
+//         box-shadow: 70px 60px 90px rgb(0, 0, 0);
+//     }   
+//     100% {
+//         transform: translateY(0);
+//         box-shadow: none;
+//     }
+// }
+
+@media screen and (min-width: 425px) {
+    .download {
+        width: 100%;
+        height: 100vh;
+    
+        &__image {
+            width: 87%;
+            height: 240px; 
+            position: relative;
+            top: 100px;
+            left: 15px;
+            background-image: url('../../images/efficient-commuter.jpg');
+            background-repeat: no-repeat;
+            background-position: 80% center; 
+            background-size: auto 100%; 
+        }
+    
+        &__overlay {
+            background-color: white;
+            width: 87%;
+            height: 400px;
+            z-index: 1;
+            position: relative;
+            top: 30px;
+            padding: 25px;
+            animation-name: introPlateRaise;
+            animation-duration: 1300ms;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+    
+            h1 {
+                color: #0078d4;
+                font-weight: 500;
+                font-size: 3rem;
+                line-height: 1;
+                text-align: left;
+                margin-top: 40px;
+            }
+            p {
+                font-size: 1.1875rem;
+                line-height: 1.5;
+                max-width: 21em;
+                text-align: left;
+                position: relative;
+                top: 35px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 499px) {
+    .download {
+        width: 100%;
+        height: 100vh;
+    
+        &__image {
+            width: 87%;
+            height: 280px; 
+            position: relative;
+            top: 100px;
+            left: 70px;
+            background-image: url('../../images/efficient-commuter.jpg');
+            background-repeat: no-repeat;
+            background-position: 80% center; 
+            background-size: auto 100%; 
+        }
+    
+        &__overlay {
+            background-color: white;
+            width: 87%;
+            height: 350px;
+            z-index: 1;
+            position: relative;
+            top: 30px;
+            padding: 25px;
+            animation-name: introPlateRaise;
+            animation-duration: 1300ms;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+    
+            h1 {
+                color: #0078d4;
+                font-weight: 500;
+                font-size: 3rem;
+                line-height: 1;
+                text-align: left;
+                margin-top: 40px;
+            }
+            p {
+                font-size: 1.1875rem;
+                line-height: 1.5;
+                max-width: 21em;
+                text-align: left;
+                position: relative;
+                top: 35px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 665px) {
+    .download {
+        width: 100%;
+        height: 100vh;
+    
+        &__image {
+            width: 67%;
+            height: 412px; 
+            position: relative;
+            top: 100px;
+            left: 200px;
+            background-image: url('../../images/efficient-commuter.jpg');
+            background-repeat: no-repeat;
+            background-position: left center; 
+            background-size: auto 100%; 
+        }
+    
+        &__overlay {
+            background-color: white;
+            width: 60%;
+            height: 350px;
+            z-index: 1;
+            position: relative;
+            top: -250px;
+            padding: 45px;
+            animation-name: introPlateRaise;
+            animation-duration: 1300ms;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+    
+            h1 {
+                color: #0078d4;
+                font-weight: 500;
+                font-size: 3rem;
+                line-height: 1;
+                text-align: left;
+                margin-top: 0px;
+                font-weight: 500;
+            }
+            p {
+                font-size: 1.1875rem;
+                line-height: 1.5;
+                max-width: 21em;
+                text-align: left;
+                position: relative;
+                top: 35px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (min-width: 809px) {
+    .download {
+        width: 100%;
+        height: 100vh;
+    
+        &__image {
+            width: 57%;
+            height: 390px; 
+            position: relative;
+            top: 100px;
+            left: 200px;
+            background-image: url('../../images/efficient-commuter.jpg');
+            background-repeat: no-repeat;
+            background-position: left center; 
+            background-size: auto 100%; 
+        }
+    
+        &__overlay {
+            background-color: white;
+            width: 60%;
+            height: 450px;
+            z-index: 1;
+            position: relative;
+            top: -240px;
+            padding: 45px;
+            animation-name: introPlateRaise;
+            animation-duration: 1300ms;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+    
+            h1 {
+                color: #0078d4;
+                font-weight: 500;
+                font-size: 3.5rem;
+                line-height: 1;
+                text-align: left;
+                margin-top: 0px;
+                font-weight: 500;
+                max-width: 6.5em;
+            }
+            p {
+                font-size: 1.1875rem;
+                line-height: 1.5;
+                max-width: 21em;
+                text-align: left;
+                position: relative;
+                top: 35px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .download {
+        width: 100%;
+        height: 100vh;
+    
+        &__image {
+            width: 67%;
+            height: 390px; 
+            position: relative;
+            top: 100px;
+            left: 200px;
+            background-image: url('../../images/efficient-commuter.jpg');
+            background-repeat: no-repeat;
+            background-position: left center; 
+            background-size: auto 100%; 
+        }
+    
+        &__overlay {
+            background-color: white;
+            width: 60%;
+            height: 450px;
+            z-index: 1;
+            position: relative;
+            top: -240px;
+            padding: 45px;
+            animation-name: introPlateRaise;
+            animation-duration: 1300ms;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+    
+            h1 {
+                color: #0078d4;
+                font-weight: 500;
+                font-size: 4.375rem;
+                line-height: 1;
+                text-align: left;
+                margin-top: 0px;
+                font-weight: 500;
+                max-width: 6.5em;
+            }
+            p {
+                font-size: 1.1875rem;
+                line-height: 1.5;
+                max-width: 21em;
+                text-align: left;
+                position: relative;
+                top: 35px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1275px) {
+    .download {
+        width: 100%;
+        height: 100vh;
+    
+        &__image {
+            width: 67%;
+            height: 390px; 
+            position: relative;
+            top: 100px;
+            left: 350px;
+            background-image: url('../../images/efficient-commuter.jpg');
+            background-repeat: no-repeat;
+            background-position: left center; 
+            background-size: auto 100%; 
+        }
+    
+        &__overlay {
+            background-color: white;
+            width: 45%;
+            height: 450px;
+            z-index: 1;
+            position: relative;
+            top: -240px;
+            left: 90px;
+            padding: 45px;
+            animation-name: introPlateRaise;
+            animation-duration: 1300ms;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+    
+            h1 {
+                color: #0078d4;
+                font-weight: 500;
+                font-size: 4.375rem;
+                line-height: 1;
+                text-align: left;
+                margin-top: 0px;
+                font-weight: 500;
+                max-width: 6.5em;
+            }
+            p {
+                font-size: 1.1875rem;
+                line-height: 1.5;
+                max-width: 21em;
+                text-align: left;
+                position: relative;
+                top: 35px;
+            }
+        }
+    }
+}

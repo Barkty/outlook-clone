@@ -1,0 +1,368 @@
+.download {
+  width: 100%;
+  height: 100vh;
+}
+
+.download__image {
+  width: 85%;
+  height: 180px;
+  position: relative;
+  top: 100px;
+  left: 20px;
+  background-image: url("../../images/efficient-commuter.jpg");
+  background-repeat: no-repeat;
+  background-position: 65% center;
+  background-size: auto 100%;
+  -webkit-transform: translateX(10%);
+          transform: translateX(10%);
+}
+
+.download__overlay {
+  background-color: white;
+  width: 87%;
+  height: 400px;
+  z-index: 1;
+  position: relative;
+  padding: 25px;
+  -webkit-animation-name: introPlateRaise;
+          animation-name: introPlateRaise;
+  -webkit-animation-duration: 1300ms;
+          animation-duration: 1300ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+.download__overlay h1 {
+  color: #0078d4;
+  font-weight: 500;
+  font-size: 2.75rem;
+  line-height: 1;
+  text-align: left;
+  margin-top: 40px;
+}
+
+.download__overlay p {
+  font-size: 1.1875rem;
+  line-height: 1.5;
+  max-width: 21em;
+  text-align: left;
+  position: relative;
+  top: 35px;
+}
+
+@media screen and (min-width: 425px) {
+  .download {
+    width: 100%;
+    height: 100vh;
+  }
+  .download__image {
+    width: 87%;
+    height: 240px;
+    position: relative;
+    top: 100px;
+    left: 15px;
+    background-image: url("../../images/efficient-commuter.jpg");
+    background-repeat: no-repeat;
+    background-position: 80% center;
+    background-size: auto 100%;
+  }
+  .download__overlay {
+    background-color: white;
+    width: 87%;
+    height: 400px;
+    z-index: 1;
+    position: relative;
+    top: 30px;
+    padding: 25px;
+    -webkit-animation-name: introPlateRaise;
+            animation-name: introPlateRaise;
+    -webkit-animation-duration: 1300ms;
+            animation-duration: 1300ms;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  .download__overlay h1 {
+    color: #0078d4;
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 1;
+    text-align: left;
+    margin-top: 40px;
+  }
+  .download__overlay p {
+    font-size: 1.1875rem;
+    line-height: 1.5;
+    max-width: 21em;
+    text-align: left;
+    position: relative;
+    top: 35px;
+  }
+}
+
+@media screen and (min-width: 499px) {
+  .download {
+    width: 100%;
+    height: 100vh;
+  }
+  .download__image {
+    width: 87%;
+    height: 280px;
+    position: relative;
+    top: 100px;
+    left: 70px;
+    background-image: url("../../images/efficient-commuter.jpg");
+    background-repeat: no-repeat;
+    background-position: 80% center;
+    background-size: auto 100%;
+  }
+  .download__overlay {
+    background-color: white;
+    width: 87%;
+    height: 350px;
+    z-index: 1;
+    position: relative;
+    top: 30px;
+    padding: 25px;
+    -webkit-animation-name: introPlateRaise;
+            animation-name: introPlateRaise;
+    -webkit-animation-duration: 1300ms;
+            animation-duration: 1300ms;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  .download__overlay h1 {
+    color: #0078d4;
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 1;
+    text-align: left;
+    margin-top: 40px;
+  }
+  .download__overlay p {
+    font-size: 1.1875rem;
+    line-height: 1.5;
+    max-width: 21em;
+    text-align: left;
+    position: relative;
+    top: 35px;
+  }
+}
+
+@media screen and (min-width: 665px) {
+  .download {
+    width: 100%;
+    height: 100vh;
+  }
+  .download__image {
+    width: 67%;
+    height: 412px;
+    position: relative;
+    top: 100px;
+    left: 200px;
+    background-image: url("../../images/efficient-commuter.jpg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: auto 100%;
+  }
+  .download__overlay {
+    background-color: white;
+    width: 60%;
+    height: 350px;
+    z-index: 1;
+    position: relative;
+    top: -250px;
+    padding: 45px;
+    -webkit-animation-name: introPlateRaise;
+            animation-name: introPlateRaise;
+    -webkit-animation-duration: 1300ms;
+            animation-duration: 1300ms;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  .download__overlay h1 {
+    color: #0078d4;
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 1;
+    text-align: left;
+    margin-top: 0px;
+    font-weight: 500;
+  }
+  .download__overlay p {
+    font-size: 1.1875rem;
+    line-height: 1.5;
+    max-width: 21em;
+    text-align: left;
+    position: relative;
+    top: 35px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 809px) {
+  .download {
+    width: 100%;
+    height: 100vh;
+  }
+  .download__image {
+    width: 57%;
+    height: 390px;
+    position: relative;
+    top: 100px;
+    left: 200px;
+    background-image: url("../../images/efficient-commuter.jpg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: auto 100%;
+  }
+  .download__overlay {
+    background-color: white;
+    width: 60%;
+    height: 450px;
+    z-index: 1;
+    position: relative;
+    top: -240px;
+    padding: 45px;
+    -webkit-animation-name: introPlateRaise;
+            animation-name: introPlateRaise;
+    -webkit-animation-duration: 1300ms;
+            animation-duration: 1300ms;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  .download__overlay h1 {
+    color: #0078d4;
+    font-weight: 500;
+    font-size: 3.5rem;
+    line-height: 1;
+    text-align: left;
+    margin-top: 0px;
+    font-weight: 500;
+    max-width: 6.5em;
+  }
+  .download__overlay p {
+    font-size: 1.1875rem;
+    line-height: 1.5;
+    max-width: 21em;
+    text-align: left;
+    position: relative;
+    top: 35px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .download {
+    width: 100%;
+    height: 100vh;
+  }
+  .download__image {
+    width: 67%;
+    height: 390px;
+    position: relative;
+    top: 100px;
+    left: 200px;
+    background-image: url("../../images/efficient-commuter.jpg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: auto 100%;
+  }
+  .download__overlay {
+    background-color: white;
+    width: 60%;
+    height: 450px;
+    z-index: 1;
+    position: relative;
+    top: -240px;
+    padding: 45px;
+    -webkit-animation-name: introPlateRaise;
+            animation-name: introPlateRaise;
+    -webkit-animation-duration: 1300ms;
+            animation-duration: 1300ms;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  .download__overlay h1 {
+    color: #0078d4;
+    font-weight: 500;
+    font-size: 4.375rem;
+    line-height: 1;
+    text-align: left;
+    margin-top: 0px;
+    font-weight: 500;
+    max-width: 6.5em;
+  }
+  .download__overlay p {
+    font-size: 1.1875rem;
+    line-height: 1.5;
+    max-width: 21em;
+    text-align: left;
+    position: relative;
+    top: 35px;
+  }
+}
+
+@media screen and (min-width: 1275px) {
+  .download {
+    width: 100%;
+    height: 100vh;
+  }
+  .download__image {
+    width: 67%;
+    height: 390px;
+    position: relative;
+    top: 100px;
+    left: 350px;
+    background-image: url("../../images/efficient-commuter.jpg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: auto 100%;
+  }
+  .download__overlay {
+    background-color: white;
+    width: 45%;
+    height: 450px;
+    z-index: 1;
+    position: relative;
+    top: -240px;
+    left: 90px;
+    padding: 45px;
+    -webkit-animation-name: introPlateRaise;
+            animation-name: introPlateRaise;
+    -webkit-animation-duration: 1300ms;
+            animation-duration: 1300ms;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  .download__overlay h1 {
+    color: #0078d4;
+    font-weight: 500;
+    font-size: 4.375rem;
+    line-height: 1;
+    text-align: left;
+    margin-top: 0px;
+    font-weight: 500;
+    max-width: 6.5em;
+  }
+  .download__overlay p {
+    font-size: 1.1875rem;
+    line-height: 1.5;
+    max-width: 21em;
+    text-align: left;
+    position: relative;
+    top: 35px;
+  }
+}
+/*# sourceMappingURL=Download.module.css.map */
