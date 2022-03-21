@@ -16,17 +16,15 @@ const SignUp = () => {
             email: '',
             domain: '',
         },
-        // onSubmit: values => {
-        //     console.log(values);
-        // },
+        //onSubmit: handleSubmit(formik.values),
         validationSchema,
     })
     const handleSubmit = (values) => {
         localStorage.setItem('newAccount', JSON.stringify(values));
-        //console.log(values);
+        console.log(values);
         navigate('create_password');
     }
-
+    
     return (
         <div className={styles.signup}>
             <div className={styles.signup__wrap}>
@@ -35,7 +33,7 @@ const SignUp = () => {
                 </div>
                 <h1 className={styles.signup__title}>Create account</h1>
                 <div className={styles.signup__form}>
-                    <form>
+                    <form onSubmit={formik.handleSubmit}>
                         <div className={styles.signup__form__field}>
                             <input 
                             type='text'
@@ -71,17 +69,28 @@ const SignUp = () => {
 export default SignUp;
 
 export const AccountPassword = () => {
+    const validationSchema = Yup.object().shape({
+        password: Yup.string().min(8, 'Password must be 8 characters or more').required('Password is required!')
+    });
     const navigate = useNavigate();
     const retrievedUser = localStorage.getItem('newAccount')
     const user = JSON.parse(retrievedUser);
     const handleSubmit = (values) => {
-        // console.log(values);
-        navigate('/', {replace: true});
+        console.log(values);
+        navigate('/set_name', {replace: true});
     }
-
+    const formik = useFormik({
+        initialValues: {
+            email: user.email + user.domain,
+            password: '',
+            inform: 1
+        },
+        validationSchema: validationSchema,
+        //onSubmit: handleSubmit(formik.values)
+    })
     return (
         <div className={styles.signup}>
-            <div className={styles.signup__wrap}>
+            <div className={styles.signup__wrapper}>
                 <div className={styles.signup__logo}>
                     <img src={logo} alt="Microsoft logo" className={styles.signup__logo__img}/>
                 </div>
@@ -91,31 +100,40 @@ export const AccountPassword = () => {
                 <h1 className={styles.signup__title}>Create a password</h1>
                 <p className={styles.signup__text}>Enter the password you would like to use with your account.</p>
                 <div className={styles.signup__form}>
-                    <form>
-                        <input
-                        type='password'
-                        placeholder='Create password'
-                        // value={formValues.password}
-                        // onChange={(e)=>{
-                        //     const val = e.target.value;
-                        //     setFormValues(prevState => { 
-                        //         return {...prevState, password: val}
-                        //     })
-                        // }}
-                        />
+                    <form onSubmit={formik.handleSubmit}>
                         <div className={styles.signup__form__control}>
-                            <input type="checkbox" name="show" id="show" />
+                            <input
+                            type='password'
+                            id='password'
+                            name='password'
+                            placeholder='Create password'
+                            className={styles.signup__form__control__input}
+                            value={formik.values.password}
+                            onChange={formik.handleChange}
+                            />
+                        </div>
+                        {formik.errors.password && formik.touched.password ? (
+                            <span className={styles.signup__form__field__error}>{formik.errors.password}</span>
+                        ) : null}
+                        <div className={styles.signup__form__control}>
+                            <input type="checkbox" name="show" id="show" className={styles.signup__form__control__checkbox}/>
                             <label htmlFor='show'>Show password</label>
                         </div>
                         <div className={styles.signup__form__control}>
-                            <input type="checkbox" name="inform" id="inform" defaultChecked/>
+                            <input type="checkbox" 
+                            name="inform"
+                            id="inform" 
+                            defaultChecked 
+                            className={styles.signup__form__control__checkbox}
+                            value={formik.values.inform}
+                            onChange={formik.handleChange}/>
                             <label htmlFor='inform'>I would like information, tips and offers about Microsoft products and services.</label>
                         </div>
-                        <p>Choosing <b>Next</b> means that you agree to the <Link to='/policies'>Microsoft Services Agreement</Link> and <Link to='/privacy'>privacy and cookies statement.</Link></p>
-                        <button type='button' onClick={()=>{handleSubmit()}}>Next</button>
+                        <p className={styles.signup__info}>Choosing <b>Next</b> means that you agree to the <Link to='/policies'>Microsoft Services Agreement</Link> and <Link to='/privacy'>privacy and cookies statement.</Link></p>
+                        <button type='submit' onClick={()=>{handleSubmit(formik.values)}}>Next</button>
                     </form>
                 </div>
-                <div className={styles.signup__links}>
+                <div className={styles.signup__elinks}>
                     <Link to='/'>Terms of Use</Link>
                     <Link to='/'>Privacy &amp; Cookies</Link>
                 </div>
