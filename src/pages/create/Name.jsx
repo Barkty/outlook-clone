@@ -80,3 +80,26 @@ const Name = () => {
 }
 
 export default Name;
+
+export const Birthday = () => {
+
+    return (
+        <div className={styles.signup}>
+            <div className={styles.signup__wrapname}>
+                <div className={styles.signup__logo}>
+                    <img src={logo} alt="Microsoft logo" className={styles.signup__logo__img}/>
+                </div>
+                <div className={styles.signin__back}>
+                    <p className={styles.signin__back__text}><Link to='/signup/create_password'><BsArrowLeft className={styles.signin__back__text__icon}/></Link>{user.email + user.domain}</p> 
+                </div>
+                <h1 className={styles.signup__title}>What's your birthdate?</h1>
+                <p className={styles.signup__text}>We need just a little more info to set up your account. Your date of birth helps us to provide you with age-appropriate settings.</p>
+                <div className={styles.signup__form}>
+                    <form onSubmit={formik.handleSubmit}>
+                        <div className={styles.signup__form__control}></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    )
+}
