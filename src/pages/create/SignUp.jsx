@@ -130,7 +130,7 @@ export const AccountPassword = () => {
                             <label htmlFor='inform'>I would like information, tips and offers about Microsoft products and services.</label>
                         </div>
                         <p className={styles.signup__info}>Choosing <b>Next</b> means that you agree to the <Link to='/policies'>Microsoft Services Agreement</Link> and <Link to='/privacy'>privacy and cookies statement.</Link></p>
-                        <button type='submit' onClick={()=>{handleSubmit(formik.values)}}>Next</button>
+                        <button type='button' onClick={()=>{handleSubmit(formik.values)}}>Next</button>
                     </form>
                 </div>
                 <div className={styles.signup__elinks}>

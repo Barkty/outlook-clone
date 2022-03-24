@@ -23,7 +23,7 @@ const Name = () => {
     })
     const handleSubmit = (values) => {
         console.log(values);
-        navigate('/');
+        navigate('/set_birthday');
     }
 
     return (
@@ -82,6 +82,26 @@ const Name = () => {
 export default Name;
 
 export const Birthday = () => {
+    const navigate = useNavigate();
+    const retrievedUser = localStorage.getItem('newAccount')
+    const user = JSON.parse(retrievedUser);
+    const validationSchema = Yup.object().shape({
+        
+    });
+    const formik = useFormik({
+        initialValues: {
+            country: '',
+            month: '',
+            day: '',
+            year: '',
+        },
+        validationSchema: validationSchema,
+        //onSubmit: handleSubmit(formik.values)
+    })
+    const handleSubmit = (values) => {
+        console.log(values);
+        navigate('/');
+    }
 
     return (
         <div className={styles.signup}>
@@ -96,8 +116,42 @@ export const Birthday = () => {
                 <p className={styles.signup__text}>We need just a little more info to set up your account. Your date of birth helps us to provide you with age-appropriate settings.</p>
                 <div className={styles.signup__form}>
                     <form onSubmit={formik.handleSubmit}>
-                        <div className={styles.signup__form__control}></div>
+                        <div className={styles.signup__form__control}>
+                            <label>Country/region</label>
+                            <select>
+                                <option>Ghana</option>
+                                <option>Niger</option>
+                                <option>Nigeria</option>
+                                <option>Canada</option>
+                                <option>Algeria</option>
+                            </select>
+                        </div>
+                        <div className={styles.signup__form__control}>
+                            <label>Birthdate</label>
+                            <div className={styles.signup__form__control}>
+                                <select>
+                                    <option>Month</option>
+                                    <option>Jan</option>
+                                    <option>Feb</option>
+                                    <option>Mar</option>
+                                    <option>Apr</option>
+                                    <option>May</option>
+                                    <option>June</option>
+                                    <option>July</option>
+                                    <option>Aug</option>
+                                    <option>Sept</option>
+                                    <option>Oct</option>
+                                    <option>Nov</option>
+                                    <option>Dec</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type='button' onClick={()=>{handleSubmit(formik.values)}}>Next</button>
                     </form>
+                </div>
+                <div className={styles.signup__elinks}>
+                    <Link to='/'>Terms of Use</Link>
+                    <Link to='/'>Privacy &amp; Cookies</Link>
                 </div>
             </div>
         </div>
