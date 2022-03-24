@@ -1439,7 +1439,7 @@
     height: auto;
     background: #dcebfa;
     position: relative;
-    top: 90px;
+    top: 50px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1453,10 +1453,10 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 265px;
+    padding: 265px 165px;
   }
   .interface__products {
-    width: 98%;
+    width: 100%;
     height: auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1484,13 +1484,13 @@
   .interface__products__active2 {
     display: block;
     width: 100%;
-    height: 578px;
+    height: 628px;
     opacity: 1;
     z-index: 2;
     background-image: url("../../images/calender.png");
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     background-color: transparent;
     -webkit-transition: all 400ms;
     transition: all 400ms;
@@ -1498,13 +1498,13 @@
   .interface__products__active1 {
     display: block;
     width: 100%;
-    height: 578px;
+    height: 628px;
     opacity: 1;
     z-index: 2;
     background-image: url("../../images/email.png");
     background-position: center top;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     background-color: transparent;
     -webkit-transition: all 400ms;
     transition: all 400ms;
@@ -1529,7 +1529,7 @@
   }
   .interface__products__active1__search {
     position: relative;
-    top: 50px;
+    top: 0px;
     -o-object-fit: contain;
        object-fit: contain;
   }

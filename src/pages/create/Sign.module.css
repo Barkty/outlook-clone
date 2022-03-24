@@ -17,29 +17,6 @@
   width: 100%;
 }
 
-.signin__back {
-  width: 100%;
-  padding-left: 20px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.signin__back__text {
-  color: #666;
-  display: block;
-}
-
-.signin__back__text a {
-  text-decoration: none;
-}
-.signin__back__text__icon {
-  position: relative;
-  left: -20px;
-  top: 20px;
-}
-
 .signup__title {
   font-size: 2rem;
   font-weight: 500;
@@ -49,8 +26,8 @@
 
 .signup__text {
   text-align: left;
-
 }
+
 .signup__form {
   width: 100%;
   height: auto;
@@ -96,6 +73,24 @@
   margin-bottom: 30px;
 }
 
+.signup__form__control {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .signup__form form {
   width: 100%;
   display: -webkit-box;
@@ -113,54 +108,12 @@
           justify-content: space-between;
 }
 
-.signup__form__control {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: left;
-  margin-bottom: 15px;
-}
-
-label {
-  font-size: 0.9rem;
-  font-weight: normal;
-  color: #666;
-  text-align: left;
-}
-
-.signup__info {
-  font-size: 1rem;
-  font-weight: normal;
-  color: #666;
-  text-align: left;
-}
-
-.signup__info a {
-  color: #0078d4;
-  text-decoration: none;
-}
-
-.signup__form__control__input {
-  width: 100%;
-  height: 50px;
-  border: none;
-  outline: none;
-  border-bottom: 1.8px solid #666;
-}
-/* 
 .signup__form form input, .signup__form form select {
   border-bottom: 1.8px solid #666;
-} 
-*/
-
-.signup__form__control__checkbox {
-  margin-right: 15px;
-  width: 30px;
 }
-.signup__form form input[type=text] {
-  width: 100%;
+
+.signup__form form input {
+  width: 56%;
   height: 50px;
   border: none;
   outline: none;
@@ -194,7 +147,6 @@ label {
 .signup__form form select {
   width: 40%;
   height: 50px;
-  border-bottom: 1.8px solid #666;
 }
 
 .signup__form form select option {
@@ -214,37 +166,11 @@ label {
   right: -80px;
 }
 
-.signup__elinks {
-  width: 100%;
-  height: 30px;
-  position: relative;
-  top: 300px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.signup__elinks a {
-  color: #666;
-  text-decoration: none;
-}
 .signup__links {
   width: 100%;
   height: 30px;
   position: relative;
-  top: 300px;
+  top: 370px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -348,7 +274,7 @@ label {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .signup__form form input[type=text] {
+  .signup__form form input {
     width: 100%;
     height: 50px;
     border: none;
@@ -375,14 +301,14 @@ label {
     font-weight: normal;
     color: #666;
   }
-  /* .signup__form form p {
+  .signup__form form p {
     text-align: left;
     margin: 20px 0 0 -180px;
     font-size: 0.8rem;
   }
   .signup__form form p a {
     color: #0078d4;
-  } */
+  }
   .signup__form form button {
     width: 120px;
     height: 40px;
@@ -394,39 +320,6 @@ label {
     position: relative;
     top: 30px;
     right: -110px;
-  }
-  .signup__info {
-    font-size: 1rem;
-    font-weight: normal;
-    color: #666;
-    text-align: left;
-  }
-  
-  .signup__info a {
-    color: #0078d4;
-    text-decoration: none;
-  }
-  .signup__elinks {
-    width: 100%;
-    height: 30px;
-    position: relative;
-    top: 370px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  .signup__elinks a {
-    color: #666;
-    text-decoration: none;
   }
   .signup__links {
     width: 100%;
@@ -533,7 +426,7 @@ label {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .signup__form form input[type=text] {
+  .signup__form form input {
     width: 100%;
     height: 50px;
     border: none;
@@ -560,16 +453,13 @@ label {
     font-weight: normal;
     color: #666;
   }
-  .signup__info {
-    font-size: 1rem;
-    font-weight: normal;
-    color: #666;
+  .signup__form form p {
     text-align: left;
+    margin: 20px 0 0 -180px;
+    font-size: 0.8rem;
   }
-  
-  .signup__info a {
+  .signup__form form p a {
     color: #0078d4;
-    text-decoration: none;
   }
   .signup__form form button {
     width: 120px;
@@ -582,28 +472,6 @@ label {
     position: relative;
     top: 80px;
     right: -130px;
-  }
-  .signup__elinks {
-    width: 100%;
-    height: 30px;
-    position: relative;
-    top: 370px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  .signup__elinks a {
-    color: #666;
-    text-decoration: none;
   }
   .signup__links {
     width: 100%;
@@ -647,33 +515,11 @@ label {
   }
   .signup__wrap {
     width: 450px;
-    height: 390px;
+    height: 350px;
     background-color: #fff;
     z-index: 1;
     position: relative;
     top: -50px;
-    padding: 20px 50px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-  .signup__wrapname {
-    width: 450px;
-    height: 400px;
-    background-color: #fff;
-    z-index: 1;
-    position: relative;
-    top: -50px;
-    padding: 20px 50px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-  .signup__wrapper {
-    width: 450px;
-    height: 550px;
-    background-color: #fff;
-    z-index: 1;
-    position: relative;
-    top: 0px;
     padding: 20px 50px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -689,7 +535,7 @@ label {
     width: 100%;
   }
   .signup__title {
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: 500;
     text-align: left;
     margin-bottom: 15px;
@@ -733,7 +579,7 @@ label {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .signup__form form input[type=text] {
+  .signup__form form input {
     width: 100%;
     height: 50px;
     border: none;
@@ -760,16 +606,13 @@ label {
     font-weight: normal;
     color: #666;
   }
-  .signup__info {
-    font-size: 1rem;
-    font-weight: normal;
-    color: #666;
+  .signup__form form p {
     text-align: left;
+    margin: 20px 0 0 -200px;
+    font-size: 0.8rem;
   }
-  
-  .signup__info a {
+  .signup__form form p a {
     color: #0078d4;
-    text-decoration: none;
   }
   .signup__form form button {
     width: 120px;
@@ -804,31 +647,6 @@ label {
             justify-content: center;
   }
   .signup__links a {
-    color: #666;
-    text-decoration: none;
-    font-size: 0.78rem;
-  }
-  .signup__elinks {
-    width: 100%;
-    height: 30px;
-    position: relative;
-    top: 100px;
-    left: 190px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .signup__elinks a {
     color: #666;
     text-decoration: none;
     font-size: 0.78rem;

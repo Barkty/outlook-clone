@@ -1259,15 +1259,15 @@
         height: auto;
         background: #dcebfa;
         position: relative;
-        top: 90px;
+        top: 50px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 265px;
+        padding: 265px 165px;
     
         &__products {
-            width: 98%;
+            width: 100%;
             height: auto;
             display: flex;
             flex-direction: column;
@@ -1288,13 +1288,13 @@
             &__active2 {
                 display: block;
                 width: 100%;
-                height: 578px;
+                height: 628px;
                 opacity: 1;
                 z-index: 2;
                 background-image: url('../../images/calender.png');
                 background-position: center center;
                 background-repeat: no-repeat;
-                background-size: cover;
+                background-size: 100%;
                 background-color: transparent;
                 transition: all 400ms;
             }
@@ -1302,13 +1302,13 @@
             &__active1 {
                 display: block;
                 width: 100%;
-                height: 578px;
+                height: 628px;
                 opacity: 1;
                 z-index: 2;
                 background-image: url('../../images/email.png');
                 background-position: center top;
                 background-repeat: no-repeat;
-                background-size: cover;
+                background-size: 100%;
                 background-color: transparent;
                 transition: all 400ms;
     
@@ -1332,7 +1332,7 @@
 
                 &__search {
                     position: relative;
-                    top: 50px;
+                    top: 0px;
                     object-fit: contain;
                 }
             }
