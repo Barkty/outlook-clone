@@ -23,7 +23,7 @@ const Name = () => {
     })
     const handleSubmit = (values) => {
         console.log(values);
-        navigate('/set_birthday');
+        navigate('set_birthday');
     }
 
     return (
