@@ -60,6 +60,14 @@
             width: 24px;
         }
 
+        &__error {
+            color: red;
+            width: 100%;
+            position: absolute;
+            top: 110px;
+            left: -40px;
+            margin-bottom: 30px;
+        }
         form {
             width: 100%;
             display: flex;

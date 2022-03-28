@@ -7,19 +7,33 @@ import { BsArrowLeft } from 'react-icons/bs'
 import { useState} from 'react';
 import { useNavigate } from 'react-router-dom';
 //import FormContext from '../../store/formContext';
+import { useFormik } from 'formik';
+import * as Yup from 'yup';
 import FormState from '../../store/FormState';
 import useContextGetter from '../../hooks/UseContextGetter';
+import { Spinner } from 'react-bootstrap';
 
 const SignIn = () => {
     const [email, setEmail] = useState('');
     const navigate = useNavigate();
-
-    const handleSubmit = (values) => {
+    const validationSchema = Yup.object().shape({
+        email: Yup.string().required('An email address is required'),
+        //domain: Yup.string().min(3, 'Domain is invalid').required('A domain is required'),
+    })
+    const handleSignin = (values) => {
         if(values) {
             localStorage.setItem('email', values);
             navigate('set_password');
         };
     }
+    const formik = useFormik({
+        initialValues: {
+            email: '',
+            //password: '',
+        },
+        onSubmit: handleSignin,
+        validationSchema,
+    })
 
     return (
             <div className={styles.signin}>
@@ -29,15 +43,22 @@ const SignIn = () => {
                     </div>
                     <h1 className={styles.signin__title}>Sign in</h1>
                     <div className={styles.signin__form}>
-                        <form>
+                        <form onSubmit={formik.handleSubmit}>
                             <input
                             type='text'
+                            id='email'
+                            name='email'
                             placeholder='Email, phone, Skype'
-                            value={email}
-                            onChange={(e)=>{setEmail(e.target.value)}}/>
+                            value={formik.values.email}
+                            onChange={formik.handleChange}/>
+                            {formik.errors.email && formik.touched.email ? (
+                            <span className={styles.signin__form__error}>{formik.errors.email}</span>
+                        ) : null}
                             <p>No account? <Link to='/signup'>Create one!</Link></p>
                             <p><Link to='/'>Sign in with a security key</Link><AiOutlineQuestionCircle className={styles.signin__form__icon}/></p>
-                            <button type='button' onClick={()=>{handleSubmit(email)}}>Next</button>
+                            <button type='submit' disabled={formik.isSubmitting}>
+                                {!formik.isSubmitting ? ("Next") : (<Spinner animation="border" variant="light"/>)}
+                            </button>
                         </form>
                     </div>
                     <div className={styles.signin__options}>
