@@ -141,6 +141,15 @@
   justify-content: left;
 }
 
+.signup__form__control__error {
+  color: red;
+  width: 100%;
+  position: absolute;
+  top: 200px;
+  left: 0px;
+  margin-bottom: 30px;
+}
+
 .signup__form__control__input {
   width: 100%;
 }

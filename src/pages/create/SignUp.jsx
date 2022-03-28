@@ -3,6 +3,7 @@ import logo from '../../images/microsoftLogo.png';
 import { Link, useNavigate } from 'react-router-dom';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
+import { Spinner } from 'react-bootstrap'
 import { BsArrowLeft } from 'react-icons/bs'
 
 const SignUp = () => {
@@ -11,19 +12,19 @@ const SignUp = () => {
         email: Yup.string().min(5, 'Invalid email').required('An email address is required'),
         domain: Yup.string().min(3, 'Domain is invalid').required('A domain is required'),
     })
+    const handleSignup = async (values) => {
+        console.log(values);
+        await localStorage.setItem('newAccount', JSON.stringify(values));
+        navigate('create_password');
+    }
     const formik = useFormik({
         initialValues: {
             email: '',
             domain: '',
         },
-        //onSubmit: handleSubmit(formik.values),
+        onSubmit: handleSignup,
         validationSchema,
     })
-    const handleSubmit = (values) => {
-        localStorage.setItem('newAccount', JSON.stringify(values));
-        console.log(values);
-        navigate('create_password');
-    }
     
     return (
         <div className={styles.signup}>
@@ -56,7 +57,9 @@ const SignUp = () => {
                         {formik.errors.email && formik.touched.email ? (
                             <span className={styles.signup__form__field__error}>{formik.errors.email}</span>
                         ) : null}
-                        <button type='button' onClick={()=>{handleSubmit(formik.values)}} className={styles.signup__form__button}>Next</button>
+                        <button type='submit' className={styles.signup__form__button} disabled={formik.isSubmitting}>
+                            {!formik.isSubmitting ? ("Next") : (<Spinner animation="border" variant="light"/>)}
+                        </button>
                     </form>
                 </div>
                 <div className={styles.signup__links}>
@@ -77,7 +80,7 @@ export const AccountPassword = () => {
     const navigate = useNavigate();
     const retrievedUser = localStorage.getItem('newAccount')
     const user = JSON.parse(retrievedUser);
-    const handleSubmit = (values) => {
+    const handlePassword = (values) => {
         console.log(values);
         navigate('/set_name', {replace: true});
     }
@@ -87,8 +90,8 @@ export const AccountPassword = () => {
             password: '',
             inform: 1
         },
-        validationSchema: validationSchema,
-        //onSubmit: handleSubmit(formik.values)
+        onSubmit: handlePassword,
+        validationSchema,
     })
     return (
         <div className={styles.signup}>
@@ -115,7 +118,7 @@ export const AccountPassword = () => {
                             />
                         </div>
                         {formik.errors.password && formik.touched.password ? (
-                            <span className={styles.signup__form__field__error}>{formik.errors.password}</span>
+                            <span className={styles.signup__form__control__error}>{formik.errors.password}</span>
                         ) : null}
                         <div className={styles.signup__form__control}>
                             <input type="checkbox" name="show" id="show" className={styles.signup__form__control__checkbox}/>
@@ -132,7 +135,9 @@ export const AccountPassword = () => {
                             <label htmlFor='inform'>I would like information, tips and offers about Microsoft products and services.</label>
                         </div>
                         <p className={styles.signup__info}>Choosing <b>Next</b> means that you agree to the <Link to='/policies'>Microsoft Services Agreement</Link> and <Link to='/privacy'>privacy and cookies statement.</Link></p>
-                        <button type='button' onClick={()=>{handleSubmit(formik.values)}} className={styles.signup__button}>Next</button>
+                        <button type='submit' className={styles.signup__button} disabled={formik.isSubmitting}>
+                            {!formik.isSubmitting ? ("Next") : (<Spinner animation="border" variant="light"/>)}
+                        </button>
                     </form>
                 </div>
                 <div className={styles.signup__elinks}>

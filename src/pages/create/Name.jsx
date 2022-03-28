@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { BsArrowLeft } from 'react-icons/bs';
+import { Spinner } from 'react-bootstrap';
 
 const Name = () => {
     const navigate = useNavigate();
@@ -13,18 +14,18 @@ const Name = () => {
         firstname: Yup.string().min(3, 'Firstname must be 3 characters or more').required('Firstname is required!'),
         lastname: Yup.string().min(3, 'Lasttname must be 3 characters or more').required('Lastname is required!')
     });
+    const handleName = async (values) => {
+        await console.log(values);
+        navigate('set_birthday');
+    }
     const formik = useFormik({
         initialValues: {
             firstname: '',
             lastname: '',
         },
-        validationSchema: validationSchema,
-        //onSubmit: handleSubmit(formik.values)
+        onSubmit: handleName,
+        validationSchema,
     })
-    const handleSubmit = (values) => {
-        console.log(values);
-        navigate('set_birthday');
-    }
 
     return (
         <div className={styles.signup}>
@@ -51,7 +52,7 @@ const Name = () => {
                             />
                         </div>
                         {formik.errors.firstname && formik.touched.firstname ? (
-                            <span className={styles.signup__form__field__error}>{formik.errors.firstname}</span>
+                            <span className={styles.signup__form__control__error}>{formik.errors.firstname}</span>
                         ) : null}
                         <div className={styles.signup__form__control}>
                             <input
@@ -65,9 +66,11 @@ const Name = () => {
                             />
                         </div>
                         {formik.errors.lastname && formik.touched.lastname ? (
-                            <span className={styles.signup__form__field__error}>{formik.errors.firstname}</span>
+                            <span className={styles.signup__form__control__error}>{formik.errors.lastname}</span>
                         ) : null}
-                        <button type='button' onClick={()=>{handleSubmit(formik.values)}} className={styles.signup__form__button}>Next</button>
+                        <button type='submit' className={styles.signup__form__button} disabled={formik.isSubmitting}>
+                            {!formik.isSubmitting ? ("Next") : (<Spinner animation="border" variant="light"/>)}
+                        </button>
                     </form>
                 </div>
                 <div className={styles.signup__namelinks}>
@@ -86,8 +89,15 @@ export const Birthday = () => {
     const retrievedUser = localStorage.getItem('newAccount')
     const user = JSON.parse(retrievedUser);
     const validationSchema = Yup.object().shape({
-        
+        country: Yup.string().required('Country of Residence is required'),
+        month: Yup.string().required('Date of birth is required'),
+        day: Yup.string().required('Date of birth is required'),
+        year: Yup.string().required('Date of birth is required')
     });
+    const handleBirthday = async (values) => {
+        await console.log(values);
+        navigate('puzzle');
+    }
     const formik = useFormik({
         initialValues: {
             country: '',
@@ -95,13 +105,9 @@ export const Birthday = () => {
             day: '',
             year: '',
         },
-        validationSchema: validationSchema,
-        //onSubmit: handleSubmit(formik.values)
+        onSubmit: handleBirthday,
+        validationSchema,
     })
-    const handleSubmit = (values) => {
-        console.log(values);
-        navigate('puzzle');
-    }
 
     return (
         <div className={styles.signup}>
@@ -118,18 +124,30 @@ export const Birthday = () => {
                     <form onSubmit={formik.handleSubmit}>
                         <div className={`${styles.signup__form__controls}`}>
                             <label>Country/region</label>
-                            <select className={styles.signup__form__controls__select}>
+                            <select className={styles.signup__form__controls__select}
+                            id='country'
+                            name='country'
+                            value={formik.values.country}
+                            onChange={formik.handleChange}>
                                 <option>Ghana</option>
                                 <option>Niger</option>
                                 <option>Nigeria</option>
                                 <option>Canada</option>
                                 <option>Algeria</option>
                             </select>
+                            {formik.errors.country && formik.touched.country ? (
+                            <span className={styles.signup__form__control__error}>{formik.errors.country}</span>
+                            ) : null}
                         </div>
                         <div className={`${styles.signup__form__controls}`}>
                             <label>Birthdate</label>
                             <div className={styles.signup__form__controlsel}>
-                                <select className={styles.signup__form__controlsel__select}>
+                                <select className={styles.signup__form__controlsel__select}
+                                id='month'
+                                name='month'
+                                value={formik.values.month}
+                                onChange={formik.handleChange}
+                                >
                                     <option>Month</option>
                                     <option>Jan</option>
                                     <option>Feb</option>
@@ -144,7 +162,15 @@ export const Birthday = () => {
                                     <option>Nov</option>
                                     <option>Dec</option>
                                 </select>
-                                <select className={styles.signup__form__controlsel__select}>
+                                {formik.errors.month && formik.touched.month ? (
+                                <span className={styles.signup__form__control__error}>{formik.errors.month}</span>
+                                ) : null}
+                                <select className={styles.signup__form__controlsel__select}
+                                id='day'
+                                name='day'
+                                value={formik.values.day}
+                                onChange={formik.handleChange}
+                                >
                                     <option>Day</option>
                                     <option>1</option>
                                     <option>2</option>
@@ -178,10 +204,23 @@ export const Birthday = () => {
                                     <option>30</option>
                                     <option>31</option>
                                 </select>
-                                <input type='text' id='year' name='year' className={styles.signup__form__controlsel__input}/>
+                                {formik.errors.day && formik.touched.day ? (
+                                <span className={styles.signup__form__control__error}>{formik.errors.day}</span>
+                            ) : null}
+                                <input type='text' 
+                                id='year' 
+                                name='year' 
+                                value={formik.values.year}
+                                onChange={formik.handleChange}
+                                className={styles.signup__form__controlsel__input}/>
+                                {formik.errors.year && formik.touched.year ? (
+                            <span className={styles.signup__form__control__error}>{formik.errors.year}</span>
+                            ) : null}
                             </div>
                         </div>
-                        <button type='button' onClick={()=>{handleSubmit(formik.values)}} className={styles.signup__form__button1}>Next</button>
+                        <button type='submit' className={styles.signup__form__button1} disabled={formik.isSubmitting}>
+                            {!formik.isSubmitting ? ("Next") : (<Spinner animation="border" variant="light"/>)}
+                        </button>
                     </form>
                 </div>
                 <div className={styles.signup__namelinks}>

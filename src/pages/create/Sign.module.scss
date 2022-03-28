@@ -122,6 +122,15 @@
       -ms-flex-pack: justify;
       justify-content: left;
 
+      &__error {
+        color: red;
+        width: 100%;
+        position: absolute;
+        top: 200px;
+        left: 0px;
+        margin-bottom: 30px;
+      }
+
       &__input {
         width: 100%;
       }
