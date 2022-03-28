@@ -40,12 +40,14 @@ const SignUp = () => {
                             id='email'
                             name='email'
                             onChange={formik.handleChange}
+                            className={styles.signup__form__field__input}
                             value={formik.values.email}
                             placeholder='New email'/>
                             <select title='Listed emails'
                                 name='domain' 
                                 id='domain' 
-                                onChange={formik.handleChange} 
+                                onChange={formik.handleChange}
+                                className={styles.signup__form__field__select} 
                                 value={formik.values.domain}>
                                 <option value='@outlook.com'>@outlook.com</option>
                                 <option value='@hotmail.com'>@hotmail.com</option>
@@ -54,7 +56,7 @@ const SignUp = () => {
                         {formik.errors.email && formik.touched.email ? (
                             <span className={styles.signup__form__field__error}>{formik.errors.email}</span>
                         ) : null}
-                        <button type='button' onClick={()=>{handleSubmit(formik.values)}}>Next</button>
+                        <button type='button' onClick={()=>{handleSubmit(formik.values)}} className={styles.signup__form__button}>Next</button>
                     </form>
                 </div>
                 <div className={styles.signup__links}>
@@ -94,8 +96,8 @@ export const AccountPassword = () => {
                 <div className={styles.signup__logo}>
                     <img src={logo} alt="Microsoft logo" className={styles.signup__logo__img}/>
                 </div>
-                <div className={styles.signin__back}>
-                    <p className={styles.signin__back__text}><Link to='/signup'><BsArrowLeft className={styles.signin__back__text__icon}/></Link>{user.email + user.domain}</p> 
+                <div className={styles.signup__back}>
+                    <p className={styles.signup__back__text}><Link to='/signup'><BsArrowLeft className={styles.signin__back__text__icon}/></Link>{user.email + user.domain}</p> 
                 </div>
                 <h1 className={styles.signup__title}>Create a password</h1>
                 <p className={styles.signup__text}>Enter the password you would like to use with your account.</p>
@@ -130,7 +132,7 @@ export const AccountPassword = () => {
                             <label htmlFor='inform'>I would like information, tips and offers about Microsoft products and services.</label>
                         </div>
                         <p className={styles.signup__info}>Choosing <b>Next</b> means that you agree to the <Link to='/policies'>Microsoft Services Agreement</Link> and <Link to='/privacy'>privacy and cookies statement.</Link></p>
-                        <button type='button' onClick={()=>{handleSubmit(formik.values)}}>Next</button>
+                        <button type='button' onClick={()=>{handleSubmit(formik.values)}} className={styles.signup__button}>Next</button>
                     </form>
                 </div>
                 <div className={styles.signup__elinks}>

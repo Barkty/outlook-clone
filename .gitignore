@@ -8,6 +8,8 @@
 # testing
 /coverage
 
+/src/pages/create/styles.css
+
 # production
 /build
 
