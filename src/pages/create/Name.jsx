@@ -235,6 +235,10 @@ export const Birthday = () => {
 export const Puzzle = () => {
     const retrievedUser = localStorage.getItem('newAccount')
     const user = JSON.parse(retrievedUser);
+    const navigate = useNavigate();
+    const handleClick = () => {
+        navigate('/');
+    }
 
     return (
         <div className={styles.signup}>
@@ -247,7 +251,7 @@ export const Puzzle = () => {
                 </div>
                 <h1 className={styles.signup__title}>Create account</h1>
                 <p className={styles.signup__text}>Please solve the puzzle so we know you are not a robot.</p>
-                <button type='button' className={styles.signup__pbutton}>Next</button>
+                <button type='button' className={styles.signup__pbutton} onClick={()=>{handleClick()}}>Next</button>
 
                 <div className={styles.signup__namelinks}>
                     <Link to='/'>Terms of Use</Link>
