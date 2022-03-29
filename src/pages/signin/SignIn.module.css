@@ -57,6 +57,37 @@
   margin-bottom: 15px;
 }
 
+.signin__text {
+  text-align: left;
+}
+
+.signin__control {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: left;
+  margin-top: 15px;
+}
+
+.signin__control label {
+  text-align: left;
+}
+
+.signin__control__checkbox {
+  margin-right: 15px;
+}
+
 .signin__form {
   width: 100%;
   height: auto;
@@ -218,6 +249,43 @@
   position: relative;
   top: 20px;
   left: -30px;
+}
+
+.signin__buttons {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: flex-end;
+  margin-top: 15px;
+}
+
+.signin__buttons button {
+  width: 120px;
+  height: 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+}
+
+.signin__buttons__yes {
+  background-color: #0078d4;
+  margin-left: 15px;
+}
+
+.signin__buttons__no {
+  background-color: grey;
 }
 
 @media screen and (min-width: 375px) {

@@ -11,6 +11,7 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup';
 //import useContextGetter from '../../hooks/UseContextGetter';
 import { Spinner } from 'react-bootstrap';
+import { useState } from 'react';
 
 const SignIn = () => {
     const navigate = useNavigate();
@@ -87,7 +88,7 @@ export const EnterPassword = () => {
         if(values) {
             console.log(values)
             //localStorage.setItem('email', values);
-            navigate('/');
+            navigate('secure');
         };
     }
     const formik = useFormik({
@@ -134,5 +135,47 @@ export const EnterPassword = () => {
                 </div>
             </div>
         
+    )
+}
+
+export const SignedIn = () => {
+    const navigate = useNavigate();
+    const email = localStorage.getItem('email');
+    const reversedEmail = JSON.parse(email)
+    const [signedIn, setSignedIn] = useState('')
+    const handleStaySigned = (value) => {
+        setSignedIn(value);
+        console.log(signedIn)
+        navigate('/')
+    }
+    return (
+        <div className={styles.signin}>
+            <div className={styles.signin__wrap}>
+                    <div className={styles.signin__logo}>
+                        <img src={logo} alt="Microsoft logo" className={styles.signin__logo__img}/>
+                    </div>
+                    <div className={styles.signin__back}>
+                        <p className={styles.signin__back__text}>{reversedEmail.email}</p> 
+                    </div>
+                    <h1 className={styles.signin__title}>Stay signed in?</h1>
+                    <p className={styles.signin__text}>Stay signed in so you don't have to sign in again next time.</p>
+                    <div className={styles.signin__control}>
+                        <input type="checkbox" name="show" id="show" className={styles.signin__control__checkbox}/>
+                        <label htmlFor='show'>Don't show this again</label>
+                    </div>
+                    <div className={styles.signin__buttons}>
+                        <button type='button' className={styles.signin__buttons__no} onClick={()=>{handleStaySigned('No')}}>
+                           No 
+                        </button>
+                        <button type='button' className={styles.signin__buttons__yes} onClick={()=>{handleStaySigned('Yes')}}>
+                           Yes 
+                        </button>
+                    </div>
+                    <div className={styles.signin__links}>
+                        <Link to='/'>Terms of Use</Link>
+                        <Link to='/'>Privacy &amp; Cookies</Link>
+                    </div> 
+            </div>
+        </div>
     )
 }
