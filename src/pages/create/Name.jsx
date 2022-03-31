@@ -237,7 +237,7 @@ export const Puzzle = () => {
     const user = JSON.parse(retrievedUser);
     const navigate = useNavigate();
     const handleClick = () => {
-        navigate('/');
+        navigate('/mail/0/inbox');
     }
 
     return (

@@ -7,6 +7,7 @@ import Name, { Birthday, Puzzle } from './pages/create/Name';
 import SignUp, { AccountPassword } from './pages/create/SignUp';
 import SignIn, { EnterPassword, SignedIn } from './pages/signin/SignIn';
 import { useEffect } from 'react';
+import Dashboard from './pages/dashboard/Dashboard';
 
 function App() {
   useEffect(() =>{
@@ -26,6 +27,7 @@ function App() {
         <Route path='/login' element={<SignIn/>}/>
         <Route path='/login/set_password' element={<EnterPassword/>}/>
         <Route path='/login/set_password/secure' element={<SignedIn/>}/>
+        <Route path='/mail/0/inbox' element={<Dashboard/>}/>
       </Routes>
     </div>
   );

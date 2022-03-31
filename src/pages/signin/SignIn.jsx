@@ -146,7 +146,7 @@ export const SignedIn = () => {
     const handleStaySigned = (value) => {
         setSignedIn(value);
         console.log(signedIn)
-        navigate('/')
+        navigate('/mail/0/inbox')
     }
     return (
         <div className={styles.signin}>
