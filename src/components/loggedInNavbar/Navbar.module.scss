@@ -68,3 +68,48 @@
         }
     }
 }
+
+.icons {
+    width: 50px;
+    height: calc(100vh - 48px);
+    background-color: black;
+    padding: 0 15px;
+
+    &__wrap {
+        width: 100%;
+        height: calc(100% - 200px);
+        border-bottom: 1.5px solid white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    &__icon {
+        color: white;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__active {
+        color: #0078d4;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-left: 2px solid #0078d4;
+    }
+
+    &__word {
+        color: #0078d4;
+    }
+
+    &__excel {
+        color: green;
+    }
+    &__power {
+        color: orangered;
+    }
+}

@@ -1,11 +1,15 @@
 import styles from './Navbar.module.css'
 import { CgMenuGridR } from 'react-icons/cg'
 import { VscSearch } from 'react-icons/vsc'
-import { BsCameraVideo, BsSkype } from 'react-icons/bs'
+import { BsCameraVideo, BsSkype, BsPeople } from 'react-icons/bs'
 import { AiOutlineQrcode, AiOutlineQuestion } from 'react-icons/ai'
-import { SiMicrosoftonenote } from 'react-icons/si'
-import { RiCalendarCheckLine } from 'react-icons/ri'
-import { HiOutlineCog, HiSpeakerphone } from 'react-icons/hi'
+import { SiMicrosoftonenote, SiMicrosoftexcel, SiMicrosoftpowerpoint, SiMicrosoftword} from 'react-icons/si'
+import { RiCalendarCheckLine, RiAttachment2 } from 'react-icons/ri'
+import { HiOutlineCog, HiSpeakerphone, HiOutlineMail } from 'react-icons/hi'
+import { IoCalendarOutline } from 'react-icons/io5'
+import { ImCheckmark } from 'react-icons/im'
+import { useState } from 'react'
+//import word from '../../images/word-icon.jpg'
 
 const TopNav = () => {
 
@@ -53,3 +57,42 @@ const TopNav = () => {
     )
 }
 export default TopNav;
+
+export const Icons = () => {
+    const [click, setClick] = useState('Mail')
+    const handleClick = (menu) => {
+        setClick(menu);
+    }
+
+    return (
+        <div className={styles.icons}>
+            <div className={styles.icons__wrap}>
+                <div className={click === 'Mail' ? styles.icons__active : styles.icons__icon} onClick={()=>{handleClick('Mail')}}>
+                    <HiOutlineMail/>
+                </div>
+                <div className={click === 'Calendar' ? styles.icons__active : styles.icons__icon} onClick={()=>{handleClick('Calendar')}}>
+                    <IoCalendarOutline/>
+                </div>
+                <div className={click === 'People' ? styles.icons__active : styles.icons__icon} onClick={()=>{handleClick('People')}}>
+                    <BsPeople/>
+                </div>
+                <div className={click === 'Attachment' ? styles.icons__active : styles.icons__icon} onClick={()=>{handleClick('Attachment')}}>
+                    <RiAttachment2/>
+                </div>
+                <div className={click === 'To-do' ? styles.icons__active : styles.icons__icon} onClick={()=>{handleClick('To-do')}}>
+                    <ImCheckmark/>
+                </div>
+                <div className={styles.icons__word}>
+                    <SiMicrosoftword/>
+                    {/* <img alt='Word' src={word}/> */}
+                </div>
+                <div className={styles.icons__excel}>
+                    <SiMicrosoftexcel/>
+                </div>
+                <div className={styles.icons__power}>
+                    <SiMicrosoftpowerpoint/>
+                </div>
+            </div>
+        </div>
+    )
+}
