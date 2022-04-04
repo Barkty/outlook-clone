@@ -91,19 +91,21 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        cursor: pointer;
     }
 
     &__active {
-        color: #0078d4;
+        color: #69afe5;
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-        border-left: 2px solid #0078d4;
+        border-left: 2px solid #69afe5;
+        cursor: pointer;
     }
 
     &__word {
-        color: #0078d4;
+        color: #69afe5;
     }
 
     &__excel {
@@ -111,5 +113,83 @@
     }
     &__power {
         color: orangered;
+    }
+}
+
+.navigation {
+    width: calc(100% - 50px);
+    height: 48px;
+    margin: 0;
+    //padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    position: absolute;
+    top: 48px;
+    left: 50px;
+
+    &__actions {
+        background-color: inherit;
+        width: 35%;
+        height: 48px;
+        margin: 0;
+        padding: 10px 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+
+        &__menu {
+            color: #69afe5;
+            width: 60px;
+            height: 38px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &__icon {
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        &__action {
+            color: #69afe5;
+            width: 150px;
+            height: 38px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            button {
+                cursor: pointer;
+                width: 150px;
+                height: 38px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+            }
+
+            &__message {
+                background-color: #69afe5;
+                border-radius: 4px;
+                margin: 6px 3px 6px 0;
+                color: #333;
+                font-weight: 400;
+                font-size: 18px;
+            }
+
+            &__mark {
+                color: white;
+                font-weight: 400;
+                font-size: 18px;
+                //margin: 6px 0 6px 10px;
+
+                &__icon {
+                    color: #69afe5;
+                }
+            }
+        }
     }
 }

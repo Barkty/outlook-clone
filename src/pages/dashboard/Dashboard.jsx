@@ -1,5 +1,5 @@
 import styles from './Dashboard.module.css';
-import TopNav, { Icons } from '../../components/loggedInNavbar/TopNav';
+import TopNav, { Icons, SecondNav } from '../../components/loggedInNavbar/TopNav';
 
 const Dashboard = () => {
 
@@ -7,6 +7,7 @@ const Dashboard = () => {
         <div className={styles.dashboard}>
             <TopNav/>
             <Icons/>
+            <SecondNav/>
         </div>
     )
 }

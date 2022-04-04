@@ -1,12 +1,12 @@
 import styles from './Navbar.module.css'
 import { CgMenuGridR } from 'react-icons/cg'
-import { VscSearch } from 'react-icons/vsc'
+import { VscSearch, VscMailRead } from 'react-icons/vsc'
 import { BsCameraVideo, BsSkype, BsPeople } from 'react-icons/bs'
 import { AiOutlineQrcode, AiOutlineQuestion } from 'react-icons/ai'
 import { SiMicrosoftonenote, SiMicrosoftexcel, SiMicrosoftpowerpoint, SiMicrosoftword} from 'react-icons/si'
-import { RiCalendarCheckLine, RiAttachment2 } from 'react-icons/ri'
-import { HiOutlineCog, HiSpeakerphone, HiOutlineMail } from 'react-icons/hi'
-import { IoCalendarOutline } from 'react-icons/io5'
+import { RiCalendarCheckLine, RiAttachment2, RiEditBoxLine } from 'react-icons/ri'
+import { HiOutlineCog, HiSpeakerphone, HiMail } from 'react-icons/hi'
+import { IoCalendarOutline, IoMenuOutline } from 'react-icons/io5'
 import { ImCheckmark } from 'react-icons/im'
 import { useState } from 'react'
 //import word from '../../images/word-icon.jpg'
@@ -68,7 +68,7 @@ export const Icons = () => {
         <div className={styles.icons}>
             <div className={styles.icons__wrap}>
                 <div className={click === 'Mail' ? styles.icons__active : styles.icons__icon} onClick={()=>{handleClick('Mail')}}>
-                    <HiOutlineMail/>
+                    <HiMail/>
                 </div>
                 <div className={click === 'Calendar' ? styles.icons__active : styles.icons__icon} onClick={()=>{handleClick('Calendar')}}>
                     <IoCalendarOutline/>
@@ -91,6 +91,31 @@ export const Icons = () => {
                 </div>
                 <div className={styles.icons__power}>
                     <SiMicrosoftpowerpoint/>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export const SecondNav = () => {
+
+    return (
+        <div className={styles.navigation}>
+            <div className={styles.navigation__actions}>
+                <div className={styles.navigation__actions__menu}>
+                    <IoMenuOutline className={styles.navigation__actions__menu__icon}/>
+                </div>
+                <div className={styles.navigation__actions__action}>
+                    <button className={styles.navigation__actions__action__message}>
+                        <RiEditBoxLine/>
+                        New message
+                    </button>
+                </div>
+                <div className={styles.navigation__actions__action}>
+                    <button className={styles.navigation__actions__action__mark}>
+                        <VscMailRead className={styles.navigation__actions__action__mark__icon}/>
+                        Mark all as read
+                    </button>
                 </div>
             </div>
         </div>
