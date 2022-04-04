@@ -130,14 +130,14 @@
 
     &__actions {
         background-color: inherit;
-        width: 35%;
+        width: 40%;
         height: 48px;
         margin: 0;
         padding: 10px 0;
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
 
         &__menu {
             color: #69afe5;
@@ -190,6 +190,83 @@
                     color: #69afe5;
                 }
             }
+
+            &__undo {
+                color: white;
+                font-weight: 400;
+                font-size: 18px;
+                //margin: 6px 0 6px 10px;
+
+                &__icon {
+                    color: white;
+                    width: 30px;
+                    height: 25px;
+                }
+            }
+        }
+    }
+}
+
+.folder {
+    width: 200px;
+    height: calc(100vh - 96px);
+    background-color: rgba(0, 0, 0, 0.903);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    top: 96px;
+    left: 50px;
+
+    &__favourites {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        cursor: pointer;
+
+        &__text {
+            width: 100%;
+            height: 38px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: left;
+            padding-left: 15px;
+            color: white;
+
+            &__icon {
+                margin-right: 15px;
+            }
+        }
+
+        &__nav {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &__text {
+                width: 100%;
+                height: 38px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: left;
+                padding-left: 35px;
+                color: white;
+                text-align: left;
+            }
+        }
+
+        &__fav {
+            display: none;
         }
     }
 }

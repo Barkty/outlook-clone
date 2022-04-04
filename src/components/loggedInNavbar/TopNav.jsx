@@ -1,12 +1,12 @@
 import styles from './Navbar.module.css'
-import { CgMenuGridR } from 'react-icons/cg'
-import { VscSearch, VscMailRead } from 'react-icons/vsc'
-import { BsCameraVideo, BsSkype, BsPeople } from 'react-icons/bs'
+import { CgMenuGridR, CgUndo } from 'react-icons/cg'
+import { VscSearch, VscMailRead, VscEdit } from 'react-icons/vsc'
+import { BsCameraVideo, BsSkype, BsPeople, BsInbox } from 'react-icons/bs'
 import { AiOutlineQrcode, AiOutlineQuestion } from 'react-icons/ai'
-import { SiMicrosoftonenote, SiMicrosoftexcel, SiMicrosoftpowerpoint, SiMicrosoftword} from 'react-icons/si'
+import { SiMicrosoftonenote, SiMicrosoftexcel, SiMicrosoftpowerpoint, SiMicrosoftword, SiMinutemailer} from 'react-icons/si'
 import { RiCalendarCheckLine, RiAttachment2, RiEditBoxLine } from 'react-icons/ri'
 import { HiOutlineCog, HiSpeakerphone, HiMail } from 'react-icons/hi'
-import { IoCalendarOutline, IoMenuOutline } from 'react-icons/io5'
+import { IoCalendarOutline, IoMenuOutline, IoChevronForwardSharp, IoChevronDownSharp } from 'react-icons/io5'
 import { ImCheckmark } from 'react-icons/im'
 import { useState } from 'react'
 //import word from '../../images/word-icon.jpg'
@@ -116,6 +116,92 @@ export const SecondNav = () => {
                         <VscMailRead className={styles.navigation__actions__action__mark__icon}/>
                         Mark all as read
                     </button>
+                </div>
+                <div className={styles.navigation__actions__action}>
+                    <button className={styles.navigation__actions__action__undo}>
+                        <CgUndo className={styles.navigation__actions__action__undo__icon}/>
+                        Undo
+                    </button>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export const EmailFolder = () => {
+    const [fav, setFav] = useState(false);
+    const [folder, setFolder] = useState(false);
+    const [group, setGroup] = useState(false);
+    // const handleActive = (menu) => {
+    //     setActive(menu);
+    // }
+
+    return (
+        <div className={styles.folder}>
+            <div className={styles.folder__favourites}>
+                <div className={styles.folder__favourites__text}
+                onClick={()=>setFav(!fav)}
+                >
+                    {fav ? <IoChevronDownSharp className={styles.folder__favourites__text__icon}/> : <IoChevronForwardSharp className={styles.folder__favourites__text__icon}/>}
+                    Favourites
+                </div>
+                <div className={fav ? styles.folder__favourites__nav : styles.folder__favourites__fav}>
+                    <div className={styles.folder__favourites__nav__text}>
+                        <BsInbox className={styles.folder__favourites__text__icon}/>
+                        Inbox
+                    </div>
+                    <div className={styles.folder__favourites__nav__text}>
+                        <SiMinutemailer className={styles.folder__favourites__text__icon}/>
+                        Sent items
+                    </div>
+                    <div className={styles.folder__favourites__nav__text}>
+                        <VscEdit className={styles.folder__favourites__text__icon}/>
+                        Drafts
+                    </div>
+                </div>
+            </div>
+            <div className={styles.folder__favourites}>
+                <div className={styles.folder__favourites__text}
+                onClick={()=>setFolder(!folder)}
+                >
+                    {folder ? <IoChevronDownSharp className={styles.folder__favourites__text__icon}/> : <IoChevronForwardSharp className={styles.folder__favourites__text__icon}/>}
+                    Folders
+                </div>
+                <div className={folder ? styles.folder__favourites__nav : styles.folder__favourites__fav}>
+                    <div className={styles.folder__favourites__nav__text}>
+                        <BsInbox className={styles.folder__favourites__text__icon}/>
+                        Inbox
+                    </div>
+                    <div className={styles.folder__favourites__nav__text}>
+                        <SiMinutemailer className={styles.folder__favourites__text__icon}/>
+                        Sent items
+                    </div>
+                    <div className={styles.folder__favourites__nav__text}>
+                        <VscEdit className={styles.folder__favourites__text__icon}/>
+                        Drafts
+                    </div>
+                </div>
+            </div>
+            <div className={styles.folder__favourites}>
+                <div className={styles.folder__favourites__text}
+                onClick={()=>setGroup(!group)}
+                >
+                    {group ? <IoChevronDownSharp className={styles.folder__favourites__text__icon}/> : <IoChevronForwardSharp className={styles.folder__favourites__text__icon}/>}
+                    Groups
+                </div>
+                <div className={group ? styles.folder__favourites__nav : styles.folder__favourites__fav}>
+                    <div className={styles.folder__favourites__nav__text}>
+                        <BsInbox className={styles.folder__favourites__text__icon}/>
+                        Inbox
+                    </div>
+                    <div className={styles.folder__favourites__nav__text}>
+                        <SiMinutemailer className={styles.folder__favourites__text__icon}/>
+                        Sent items
+                    </div>
+                    <div className={styles.folder__favourites__nav__text}>
+                        <VscEdit className={styles.folder__favourites__text__icon}/>
+                        Drafts
+                    </div>
                 </div>
             </div>
         </div>
