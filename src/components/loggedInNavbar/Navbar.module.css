@@ -320,6 +320,7 @@
   top: 96px;
   left: 50px;
   overflow-y: scroll;
+  border: 1px solid black;
 }
 
 .folder__favourites {
@@ -441,5 +442,48 @@
   position: absolute;
   top: 96px;
   left: 250px;
+}
+
+.mail__nav {
+  width: 100%;
+  height: 40px;
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: white;
+}
+
+.mail__nav__focus {
+  width: 50px;
+  height: 30px;
+  padding: 10px 0;
+}
+
+.mail__nav__filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50px;
+  height: 30px;
 }
 /*# sourceMappingURL=Navbar.module.css.map */

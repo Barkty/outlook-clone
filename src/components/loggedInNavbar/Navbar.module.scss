@@ -219,6 +219,7 @@
     top: 96px;
     left: 50px;
     overflow-y: scroll;
+    border: 1px solid black;
 
     &__favourites {
         width: 100%;
@@ -307,5 +308,29 @@
     top: 96px;
     left: 250px;
 
-    
+    &__nav {
+        width: 100%;
+        height: 40px;
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+        color: white;
+
+        &__focus {
+            width: 50px;
+            height: 30px;
+            padding: 10px 0;
+        }
+
+        &__filter {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 30px;
+        }
+    }    
 }
