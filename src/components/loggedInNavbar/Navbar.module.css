@@ -319,6 +319,7 @@
   position: absolute;
   top: 96px;
   left: 50px;
+  overflow-y: scroll;
 }
 
 .folder__favourites {
@@ -402,7 +403,43 @@
   text-align: left;
 }
 
+.folder__favourites__nav a {
+  text-align: center;
+  text-decoration: none;
+  color: #69afe5;
+}
+
 .folder__favourites__fav {
   display: none;
+}
+
+.folder__favourites__fav a {
+  text-align: center;
+  text-decoration: none;
+  color: #69afe5;
+}
+
+.folder::-webkit-scrollbar {
+  width: 0.45em;
+}
+
+.folder::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.folder::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+  border-radius: 4px;
+}
+
+.mail {
+  width: 400px;
+  height: calc(100vh - 96px);
+  background-color: rgba(0, 0, 0, 0.903);
+  position: absolute;
+  top: 96px;
+  left: 250px;
 }
 /*# sourceMappingURL=Navbar.module.css.map */

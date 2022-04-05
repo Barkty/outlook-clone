@@ -1,14 +1,15 @@
 import styles from './Navbar.module.css'
 import { CgMenuGridR, CgUndo } from 'react-icons/cg'
-import { VscSearch, VscMailRead, VscEdit } from 'react-icons/vsc'
-import { BsCameraVideo, BsSkype, BsPeople, BsInbox } from 'react-icons/bs'
+import { VscSearch, VscMailRead, VscEdit, VscError } from 'react-icons/vsc'
+import { BsCameraVideo, BsSkype, BsPeople, BsInbox, BsFolder } from 'react-icons/bs'
 import { AiOutlineQrcode, AiOutlineQuestion } from 'react-icons/ai'
 import { SiMicrosoftonenote, SiMicrosoftexcel, SiMicrosoftpowerpoint, SiMicrosoftword, SiMinutemailer} from 'react-icons/si'
-import { RiCalendarCheckLine, RiAttachment2, RiEditBoxLine } from 'react-icons/ri'
-import { HiOutlineCog, HiSpeakerphone, HiMail } from 'react-icons/hi'
+import { RiCalendarCheckLine, RiAttachment2, RiEditBoxLine, RiDeleteBin6Line, RiStickyNoteLine } from 'react-icons/ri'
+import { HiOutlineCog, HiSpeakerphone, HiMail, HiOutlineArchive } from 'react-icons/hi'
 import { IoCalendarOutline, IoMenuOutline, IoChevronForwardSharp, IoChevronDownSharp } from 'react-icons/io5'
 import { ImCheckmark } from 'react-icons/im'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 //import word from '../../images/word-icon.jpg'
 
 const TopNav = () => {
@@ -158,6 +159,9 @@ export const EmailFolder = () => {
                         <VscEdit className={styles.folder__favourites__text__icon}/>
                         Drafts
                     </div>
+                    <Link to='/'>
+                        Add favourites
+                    </Link>
                 </div>
             </div>
             <div className={styles.folder__favourites}>
@@ -173,13 +177,36 @@ export const EmailFolder = () => {
                         Inbox
                     </div>
                     <div className={styles.folder__favourites__nav__text}>
-                        <SiMinutemailer className={styles.folder__favourites__text__icon}/>
-                        Sent items
+                        <VscError className={styles.folder__favourites__text__icon}/>
+                        Junk Email
                     </div>
                     <div className={styles.folder__favourites__nav__text}>
                         <VscEdit className={styles.folder__favourites__text__icon}/>
                         Drafts
                     </div>
+                    <div className={styles.folder__favourites__nav__text}>
+                        <SiMinutemailer className={styles.folder__favourites__text__icon}/>
+                        Sent items
+                    </div>
+                    <div className={styles.folder__favourites__nav__text}>
+                        <RiDeleteBin6Line className={styles.folder__favourites__text__icon}/>
+                        Deleted items
+                    </div>
+                    <div className={styles.folder__favourites__nav__text}>
+                        <HiOutlineArchive className={styles.folder__favourites__text__icon}/>
+                        Archive
+                    </div>
+                    <div className={styles.folder__favourites__nav__text}>
+                        <RiStickyNoteLine className={styles.folder__favourites__text__icon}/>
+                        Notes
+                    </div>
+                    <div className={styles.folder__favourites__nav__text}>
+                        <BsFolder className={styles.folder__favourites__text__icon}/>
+                        Conversation History
+                    </div>
+                    <Link to='/'>
+                        New folder
+                    </Link>
                 </div>
             </div>
             <div className={styles.folder__favourites}>
@@ -190,7 +217,10 @@ export const EmailFolder = () => {
                     Groups
                 </div>
                 <div className={group ? styles.folder__favourites__nav : styles.folder__favourites__fav}>
-                    <div className={styles.folder__favourites__nav__text}>
+                    <Link to='/'>
+                        New group
+                    </Link>
+                    {/* <div className={styles.folder__favourites__nav__text}>
                         <BsInbox className={styles.folder__favourites__text__icon}/>
                         Inbox
                     </div>
@@ -201,8 +231,8 @@ export const EmailFolder = () => {
                     <div className={styles.folder__favourites__nav__text}>
                         <VscEdit className={styles.folder__favourites__text__icon}/>
                         Drafts
-                    </div>
-                </div>
+                    </div>*/}
+                </div> 
             </div>
         </div>
     )
