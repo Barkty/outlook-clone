@@ -134,9 +134,6 @@ export const EmailFolder = () => {
     const [folder, setFolder] = useState(false);
     const [group, setGroup] = useState(false);
     const [mail, setMail] = useState('Inbox');
-    // const handleActive = (menu) => {
-    //     setActive(menu);
-    // }
 
     return (
         <div className={styles.folder}>

@@ -1,11 +1,13 @@
 import styles from './Navbar.module.css'
 import { CgCheckO, CgChevronDown } from 'react-icons/cg'
+import { useState } from 'react'
 const Mail = () => {
-
+    const [active, setActive] = useState(true);
+    
     return (
         <div className={styles.mail}>
             <div className={styles.mail__nav}>
-                <CgCheckO/>
+                <CgCheckO className={styles.mail__nav__icon}/>
                 <div className={styles.mail__nav__focus}>
                     Focused
                 </div>

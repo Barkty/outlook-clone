@@ -365,9 +365,10 @@
 }
 
 .mail {
-    width: 400px;
+    width: 351px;
     height: calc(100vh - 96px);
-    background-color: rgba(0, 0, 0, 0.903);
+    background-color: #212121;
+    border-right: 1px solid #000;
     position: absolute;
     top: 96px;
     left: 250px;
@@ -375,17 +376,34 @@
     &__nav {
         width: 100%;
         height: 40px;
-        padding: 10px 0;
+        padding: 9px 24px 6px 12px;
         display: flex;
         align-items: center;
         justify-content: space-around;
         flex-direction: row;
         color: white;
+        border-bottom: 1px solid #000;
+
+        &__icon {
+            width: 20px;
+            height: 20px;
+            margin-bottom: 8px;
+        }
 
         &__focus {
             width: 50px;
             height: 30px;
-            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            //padding: 10px 0;
+        }
+        &__active {
+            width: 50px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         &__filter {
