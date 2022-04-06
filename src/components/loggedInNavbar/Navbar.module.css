@@ -541,7 +541,7 @@
 
 .mail__nav {
   width: 100%;
-  height: 40px;
+  height: 48px;
   padding: 9px 24px 6px 12px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -563,11 +563,12 @@
   width: 20px;
   height: 20px;
   margin-bottom: 8px;
+  cursor: pointer;
 }
 
 .mail__nav__focus {
-  width: 50px;
-  height: 30px;
+  width: 60px;
+  height: 48px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -581,8 +582,8 @@
 }
 
 .mail__nav__active {
-  width: 50px;
-  height: 30px;
+  width: 60px;
+  height: 48px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -613,5 +614,57 @@
           justify-content: center;
   width: 50px;
   height: 30px;
+  cursor: pointer;
+}
+
+.mail__user {
+  width: 100%;
+  height: 68px;
+  padding: 9px 24px 6px 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: white;
+  border-bottom: 1px solid #000;
+}
+
+.mail__user__icon {
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+}
+
+.mail__user__mess {
+  height: 60px;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.mail__user__mess p {
+  color: white;
+  font-size: 14px;
+  text-align: left;
 }
 /*# sourceMappingURL=Navbar.module.css.map */
