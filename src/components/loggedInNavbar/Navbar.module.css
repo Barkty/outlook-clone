@@ -577,6 +577,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  cursor: pointer;
 }
 
 .mail__nav__active {
@@ -591,6 +592,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: #000;
+  border-bottom: 3px solid #69afe5;
+  cursor: pointer;
 }
 
 .mail__nav__filter {
