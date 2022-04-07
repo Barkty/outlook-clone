@@ -691,4 +691,12 @@
   color: white;
   font-size: 12px;
 }
+
+.email {
+  width: 55%;
+  height: auto;
+  background-color: #212121;
+  position: absolute;
+  top: 96px;
+}
 /*# sourceMappingURL=Navbar.module.css.map */

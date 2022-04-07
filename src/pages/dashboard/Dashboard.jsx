@@ -1,6 +1,6 @@
 import styles from './Dashboard.module.css';
 import TopNav, { EmailFolder, Icons, SecondNav } from '../../components/loggedInNavbar/TopNav';
-import Mail from '../../components/loggedInNavbar/Mails';
+import Mail, { Email } from '../../components/loggedInNavbar/Mails';
 
 const Dashboard = () => {
 
@@ -11,6 +11,7 @@ const Dashboard = () => {
             <SecondNav/>
             <EmailFolder/>
             <Mail/>
+            <Email/>
         </div>
     )
 }

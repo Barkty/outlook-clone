@@ -1,6 +1,7 @@
 import styles from './Navbar.module.css'
 import { CgCheckO, CgChevronDown } from 'react-icons/cg'
 import { useState } from 'react'
+
 const Mail = () => {
     const [active, setActive] = useState('Focus');
     
@@ -44,3 +45,15 @@ const Mail = () => {
     )
 }
 export default Mail;
+
+export const Email = () => {
+
+    return (
+        <div className={styles.email}>
+            <h1>New app(s) connected to your Microsoft account</h1>
+            <div className={styles.email__con}>
+                
+            </div>
+        </div>
+    )
+}
