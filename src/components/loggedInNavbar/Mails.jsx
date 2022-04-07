@@ -21,9 +21,12 @@ const Mail = () => {
             <div className={styles.mail__user}>
                 <div className={styles.mail__user__icon}></div>
                 <div className={styles.mail__user__mess}>
-                <p>Microsoft Account Team</p>
+                    <p>Microsoft Account Team</p>
                     <p>New apps connected to your....</p>
                     <p>Microsoft account New app(s) connected to your ....</p>
+                </div>
+                <div className={styles.mail__user__time}>
+                    <p>Tue 3/29</p>
                 </div>
             </div>
             <div className={styles.mail__user}>
@@ -32,6 +35,9 @@ const Mail = () => {
                     <p>Microsoft Account Team</p>
                     <p>New apps connected to your....</p>
                     <p>Microsoft account New app(s) connected to your ....</p>
+                </div>
+                <div className={styles.mail__user__time}>
+                    <p>Wed 4/29</p>
                 </div>
             </div>
         </div>
