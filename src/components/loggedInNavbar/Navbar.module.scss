@@ -8,6 +8,9 @@
     align-items: center;
     //justify-content: space-around;
     background-color: #0078d4;
+    position: fixed;
+    top: 0;
+    left: 0;
 
     &__title {
         color: white;
@@ -107,6 +110,9 @@
     height: calc(100vh - 48px);
     background-color: black;
     padding: 0 15px;
+    position: fixed;
+    left: 0;
+    top: 48px;
 
     &__wrap {
         width: 100%;
@@ -158,7 +164,7 @@
     flex-direction: row;
     background-color: #212121;
     border-bottom: #000000;
-    position: absolute;
+    position: fixed;
     top: 48px;
     left: 50px;
 
@@ -251,7 +257,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    position: absolute;
+    position: fixed;
     top: 96px;
     left: 50px;
     overflow-y: scroll;
@@ -369,7 +375,7 @@
     height: calc(100vh - 96px);
     background-color: #212121;
     border-right: 1px solid #000;
-    position: absolute;
+    position: fixed;
     top: 96px;
     left: 250px;
 
@@ -496,7 +502,7 @@
     width: 56%;
     height: calc(100vh - 96px);
     background-color: #212121;
-    position: absolute;
+    position: fixed;
     top: 96px;
     left: 601px;
     padding: 15px 10px;
@@ -511,101 +517,206 @@
         margin-bottom: 15px;
     }
 
-    &__con {
+    &__cont::-webkit-scrollbar {
+        width: 0.45em;
+    }
+    
+    &__cont::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    }
+    
+    &__cont::-webkit-scrollbar-thumb {
+        background-color: darkgrey;
+        outline: 1px solid slategrey;
+        border-radius: 4px;
+    }
+
+    &__cont {
+        overflow-x: scroll;
         width: 100%;
-        height: auto;
-        border: 0.5px solid #fff;
+        height: calc(100vh - 150px);
+        padding-bottom: 200px;
 
-        &__sub {
+        &__con {
             width: 100%;
-            height: 48px;
-            border-bottom: 1px solid black;
-            display: flex;
-            align-items: center;
-            justify-content: left;
-            margin-bottom: 10px;
-
-            p {
-                width: 60%;
-                color: white;
+            height: auto;
+            border: 0.5px solid #fff;
+            
+    
+            &__sub {
+                width: 100%;
+                height: 48px;
+                border-bottom: 1px solid black;
                 display: flex;
                 align-items: center;
-                justify-content: center;
-                flex-direction: row;
-
-                a {
-                    color: #0078d4;
+                justify-content: left;
+                margin-bottom: 10px;
+    
+                p {
+                    width: 60%;
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: row;
+    
+                    a {
+                        color: #0078d4;
+                    }
+                }
+    
+                &__icon {
+                    margin-right: 15px;
                 }
             }
+    
+            &__logo {
+                width: 80px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                flex-direction: column;
+                background-color: #212121;
+                //margin-right: 10px;
+    
+                &__icon {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 100px;
+                    background-color: #fff;
+                    background-image: url('../../images/microsoftLogo.png');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                }
+            }
+    
+            &__mail {
+                width: 80%;
+                height: auto;
+                position: relative;
+                top: -49px;
+                left: 80px;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                justify-content: left;
+                align-items: baseline;
+                
+                &__team {
+                    font-size: 14px;
+                    width: 300px;
+                }
+    
+                &__date {
+                    font-size: 14px;
+                    text-align: left;
+                    margin-left: 14px;
+                }
+    
+                &__recieve {
+                    font-size: 14px;
+                    text-align: left;
+                    margin-left: 15px;
+                    position: relative;
+                    top: 5px;
+                }
+    
+                &__mic {
+                    font-size: 18px;
+                    text-align: left;
+                    margin-top: 20px;
+                    margin-left: 14px;
+                    color: black;
+                    font-weight: 400;
+                }
+    
+                &__app {
+                    font-size: 50px;
+                    font-style: normal;
+                    color: #69afe5;
+                    text-align: left;
+                    margin-left: 14px;
+                }
+                &__amb {
+                    width: 400px;
+                    font-size: 14px;
+                    text-align: left;
+                    margin-left: 9px;
+                    position: relative;
+                    top: 20px; 
+    
+                    a {
+                        color: #69afe5;
+                    }
+                }
+    
+                &__acc {
+                    width: 400px;
+                    font-size: 14px;
+                    text-align: left;
+                    margin-left: 9px;
+                    position: relative;
+                    top: 50px; 
+                }
+    
+                &__btn {
+                    width: 150px;
+                    height: 30px;
+                    outline: none;
+                    border: none;
+                    color: white;
+                    background-color: #106ebe;
+                    position: relative;
+                    top: 70px;
+                    left: 10px;
+                    margin-top: 20px;
+                }
+    
+                &__opt {
+                    width: 400px;
+                    font-size: 14px;
+                    text-align: left;
+                    margin-left: 9px;
+                    margin-top: 90px;
+                }
 
-            &__icon {
-                margin-right: 15px;
+                &__man {
+                    width: 400px;
+                    font-size: 14px;
+                    text-align: left;
+                    margin-left: 9px;
+                    margin-top: 20px;
+                }
+                &__links {
+                    width: 150px;
+                    text-align: left;
+                    margin-left: 9px;
+                    margin-top: 20px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: baseline;
+                    justify-content: space-between;
+
+                    a {
+                        color: #0078d4;
+                        font-size: 14px;
+                        font-weight: 700;
+                        font-style: normal;
+                    }
+
+                    div {
+                        width: 1px;
+                        height: 25px;
+                        background-color: white;
+                        position: relative;
+                        top: 10px;
+                    }
+                }
             }
         }
 
-        &__logo {
-            width: 80px;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            flex-direction: column;
-            background-color: #212121;
-            margin-right: 10px;
-
-            &__icon {
-                width: 50px;
-                height: 50px;
-                border-radius: 100px;
-                background-color: #fff;
-                background-image: url('../../images/microsoftLogo.png');
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-position: center center;
-            }
-        }
-
-        &__mail {
-            width: 80%;
-            height: auto;
-            position: relative;
-            top: -50px;
-            left: 70px;
-            color: white;
-            
-            &__team {
-                font-size: 14px;
-                width: 300px;
-            }
-
-            &__date {
-                font-size: 14px;
-                text-align: left;
-                margin-left: 12px;
-            }
-
-            &__recieve {
-                font-size: 14px;
-                text-align: left;
-                margin-left: 11px;
-            }
-
-            &__mic {
-                font-size: 18px;
-                text-align: left;
-                margin-top: 20px;
-                margin-left: 10px;
-                color: black;
-                font-weight: 400;
-            }
-
-            &__app {
-                font-size: 50px;
-                font-style: normal;
-                color: #69afe5;
-                text-align: left;
-            }
-
-        }
     }
 }

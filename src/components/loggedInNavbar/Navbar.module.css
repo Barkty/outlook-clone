@@ -14,6 +14,9 @@
       -ms-flex-align: center;
           align-items: center;
   background-color: #0078d4;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .nav__title {
@@ -162,6 +165,9 @@
   height: calc(100vh - 48px);
   background-color: black;
   padding: 0 15px;
+  position: fixed;
+  left: 0;
+  top: 48px;
 }
 
 .icons__wrap {
@@ -238,7 +244,7 @@
           flex-direction: row;
   background-color: #212121;
   border-bottom: #000000;
-  position: absolute;
+  position: fixed;
   top: 48px;
   left: 50px;
 }
@@ -369,7 +375,7 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  position: absolute;
+  position: fixed;
   top: 96px;
   left: 50px;
   overflow-y: scroll;
@@ -534,7 +540,7 @@
   height: calc(100vh - 96px);
   background-color: #212121;
   border-right: 1px solid #000;
-  position: absolute;
+  position: fixed;
   top: 96px;
   left: 250px;
 }
@@ -718,7 +724,7 @@
   width: 56%;
   height: calc(100vh - 96px);
   background-color: #212121;
-  position: absolute;
+  position: fixed;
   top: 96px;
   left: 601px;
   padding: 15px 10px;
@@ -734,13 +740,35 @@
   margin-bottom: 15px;
 }
 
-.email__con {
+.email__cont::-webkit-scrollbar {
+  width: 0.45em;
+}
+
+.email__cont::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.email__cont::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+  border-radius: 4px;
+}
+
+.email__cont {
+  overflow-x: scroll;
+  width: 100%;
+  height: calc(100vh - 150px);
+  padding-bottom: 200px;
+}
+
+.email__cont__con {
   width: 100%;
   height: auto;
   border: 0.5px solid #fff;
 }
 
-.email__con__sub {
+.email__cont__con__sub {
   width: 100%;
   height: 48px;
   border-bottom: 1px solid black;
@@ -756,7 +784,7 @@
   margin-bottom: 10px;
 }
 
-.email__con__sub p {
+.email__cont__con__sub p {
   width: 60%;
   color: white;
   display: -webkit-box;
@@ -774,15 +802,15 @@
           flex-direction: row;
 }
 
-.email__con__sub p a {
+.email__cont__con__sub p a {
   color: #0078d4;
 }
 
-.email__con__sub__icon {
+.email__cont__con__sub__icon {
   margin-right: 15px;
 }
 
-.email__con__logo {
+.email__cont__con__logo {
   width: 80px;
   height: 100%;
   display: -webkit-box;
@@ -799,10 +827,9 @@
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #212121;
-  margin-right: 10px;
 }
 
-.email__con__logo__icon {
+.email__cont__con__logo__icon {
   width: 50px;
   height: 50px;
   border-radius: 100px;
@@ -813,45 +840,147 @@
   background-position: center center;
 }
 
-.email__con__mail {
+.email__cont__con__mail {
   width: 80%;
   height: auto;
   position: relative;
-  top: -50px;
-  left: 70px;
+  top: -49px;
+  left: 80px;
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
-.email__con__mail__team {
+.email__cont__con__mail__team {
   font-size: 14px;
   width: 300px;
 }
 
-.email__con__mail__date {
+.email__cont__con__mail__date {
   font-size: 14px;
   text-align: left;
-  margin-left: 12px;
+  margin-left: 14px;
 }
 
-.email__con__mail__recieve {
+.email__cont__con__mail__recieve {
   font-size: 14px;
   text-align: left;
-  margin-left: 11px;
+  margin-left: 15px;
+  position: relative;
+  top: 5px;
 }
 
-.email__con__mail__mic {
+.email__cont__con__mail__mic {
   font-size: 18px;
   text-align: left;
   margin-top: 20px;
-  margin-left: 10px;
+  margin-left: 14px;
   color: black;
   font-weight: 400;
 }
 
-.email__con__mail__app {
+.email__cont__con__mail__app {
   font-size: 50px;
   font-style: normal;
   color: #69afe5;
   text-align: left;
+  margin-left: 14px;
+}
+
+.email__cont__con__mail__amb {
+  width: 400px;
+  font-size: 14px;
+  text-align: left;
+  margin-left: 9px;
+  position: relative;
+  top: 20px;
+}
+
+.email__cont__con__mail__amb a {
+  color: #69afe5;
+}
+
+.email__cont__con__mail__acc {
+  width: 400px;
+  font-size: 14px;
+  text-align: left;
+  margin-left: 9px;
+  position: relative;
+  top: 50px;
+}
+
+.email__cont__con__mail__btn {
+  width: 150px;
+  height: 30px;
+  outline: none;
+  border: none;
+  color: white;
+  background-color: #106ebe;
+  position: relative;
+  top: 70px;
+  left: 10px;
+  margin-top: 20px;
+}
+
+.email__cont__con__mail__opt {
+  width: 400px;
+  font-size: 14px;
+  text-align: left;
+  margin-left: 9px;
+  margin-top: 90px;
+}
+
+.email__cont__con__mail__man {
+  width: 400px;
+  font-size: 14px;
+  text-align: left;
+  margin-left: 9px;
+  margin-top: 20px;
+}
+
+.email__cont__con__mail__links {
+  width: 150px;
+  text-align: left;
+  margin-left: 9px;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.email__cont__con__mail__links a {
+  color: #0078d4;
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.email__cont__con__mail__links div {
+  width: 1px;
+  height: 25px;
+  background-color: white;
+  position: relative;
+  top: 10px;
 }
 /*# sourceMappingURL=Navbar.module.css.map */

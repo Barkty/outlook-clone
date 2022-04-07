@@ -54,20 +54,34 @@ export const Email = () => {
     return (
         <div className={styles.email}>
             <h1>New app(s) connected to your Microsoft account</h1>
-            <div className={styles.email__con}>
-                <div className={styles.email__con__sub}>
-                   <p> <AiOutlineInfoCircle className={styles.email__con__sub__icon}/>
-                    Getting too much email? <Link to='/'> Unsubscribe </Link>| <Link to='/'> Manage </Link></p>
-                </div>
-                <div className={styles.email__con__logo}>
-                    <div className={styles.email__con__logo__icon}></div>
-                </div>
-                <div className={styles.email__con__mail}>
-                    <p className={styles.email__con__mail__team}>Microsoft account team &lt;account-security-noreply&#64;accountprotection.microsoft.com&gt;</p>
-                    <p className={styles.email__con__mail__date}>Tue 3/29/2022 10:54 AM</p>
-                    <p className={styles.email__con__mail__recieve}>To: You</p>
-                    <h3 className={styles.email__con__mail__mic}>Microsoft account</h3>
-                    <p className={styles.email__con__mail__app}>New app(s) have access to your data</p>
+            <div className={styles.email__cont}>
+                <div className={styles.email__cont__con}>
+                    <div className={styles.email__cont__con__sub}>
+                    <p> <AiOutlineInfoCircle className={styles.email__cont__con__sub__icon}/>
+                        Getting too much email? <Link to='/'> Unsubscribe </Link>| <Link to='/'> Manage </Link></p>
+                    </div>
+                    <div className={styles.email__cont__con__logo}>
+                        <div className={styles.email__cont__con__logo__icon}></div>
+                    </div>
+                    <div className={styles.email__cont__con__mail}>
+                        <p className={styles.email__cont__con__mail__team}>Microsoft account team &lt;account-security-noreply&#64;accountprotection.microsoft.com&gt;</p>
+                        <p className={styles.email__cont__con__mail__date}>Tue 3/29/2022 10:54 AM</p>
+                        <p className={styles.email__cont__con__mail__recieve}>To: You</p>
+                        <h3 className={styles.email__cont__con__mail__mic}>Microsoft account</h3>
+                        <p className={styles.email__cont__con__mail__app}>New app(s) have access to your data</p>
+                        <p className={styles.email__cont__con__mail__amb}>StudentAmbassadors-API connected to the Microsoft account <Link to='/'>gb**e&#64;outlook.com.</Link></p>
+                        <p className={styles.email__cont__con__mail__acc}>If you didn't grant this access, please remove the app(s) from your account.</p>
+                        <button className={styles.email__cont__con__mail__btn}>Manage your apps</button>
+
+                        <p className={styles.email__cont__con__mail__opt}>You can also opt out or change where you receive security notifications.</p>
+                        <p className={styles.email__cont__con__mail__opt}>Thanks,</p>
+                        <p className={styles.email__cont__con__mail__man}>The Microsoft account team</p>
+                        <div className={styles.email__cont__con__mail__links}>
+                            <Link to='/'>Reply</Link>
+                            <div></div>
+                            <Link to='/'>Forward</Link>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
