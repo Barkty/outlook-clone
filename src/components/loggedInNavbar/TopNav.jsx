@@ -130,7 +130,7 @@ export const SecondNav = () => {
 }
 
 export const EmailFolder = () => {
-    const [fav, setFav] = useState(false);
+    const [fav, setFav] = useState(true);
     const [folder, setFolder] = useState(false);
     const [group, setGroup] = useState(false);
     const [mail, setMail] = useState('Inbox');

@@ -424,6 +424,18 @@
         }
     }    
 
+    &__userActive {
+        width: 100%;
+        height: 88px;
+        padding: 9px 24px 6px 12px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+        color: white;
+        border-bottom: 1px solid #000;
+        background-color: #106ebe;
+    }
     &__user {
         width: 100%;
         height: 88px;
@@ -434,6 +446,7 @@
         flex-direction: row;
         color: white;
         border-bottom: 1px solid #000;
+        cursor: pointer;
 
         &__icon {
             border-radius: 100px;
@@ -465,7 +478,7 @@
 
             p {
                 color: white;
-                font-size: 11px;
+                font-size: 12px;
                 text-align: left;
             }
         }
@@ -495,6 +508,7 @@
         font-style: normal;
         text-align: left;
         margin-left: 25px;
+        margin-bottom: 15px;
     }
 
     &__con {
@@ -544,6 +558,10 @@
                 height: 50px;
                 border-radius: 100px;
                 background-color: #fff;
+                background-image: url('../../images/microsoftLogo.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center center;
             }
         }
 
@@ -555,15 +573,39 @@
             left: 70px;
             color: white;
             
-            p {
+            &__team {
                 font-size: 14px;
                 width: 300px;
             }
 
             &__date {
+                font-size: 14px;
                 text-align: left;
-                margin-left: 10px;
+                margin-left: 12px;
             }
+
+            &__recieve {
+                font-size: 14px;
+                text-align: left;
+                margin-left: 11px;
+            }
+
+            &__mic {
+                font-size: 18px;
+                text-align: left;
+                margin-top: 20px;
+                margin-left: 10px;
+                color: black;
+                font-weight: 400;
+            }
+
+            &__app {
+                font-size: 50px;
+                font-style: normal;
+                color: #69afe5;
+                text-align: left;
+            }
+
         }
     }
 }

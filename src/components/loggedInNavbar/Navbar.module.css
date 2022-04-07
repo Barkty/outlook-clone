@@ -618,6 +618,27 @@
   color: #0078d4;
 }
 
+.mail__userActive {
+  width: 100%;
+  height: 88px;
+  padding: 9px 24px 6px 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: white;
+  border-bottom: 1px solid #000;
+  background-color: #106ebe;
+}
+
 .mail__user {
   width: 100%;
   height: 88px;
@@ -636,6 +657,7 @@
           flex-direction: row;
   color: white;
   border-bottom: 1px solid #000;
+  cursor: pointer;
 }
 
 .mail__user__icon {
@@ -681,7 +703,7 @@
 
 .mail__user__mess p {
   color: white;
-  font-size: 11px;
+  font-size: 12px;
   text-align: left;
 }
 
@@ -709,6 +731,7 @@
   font-style: normal;
   text-align: left;
   margin-left: 25px;
+  margin-bottom: 15px;
 }
 
 .email__con {
@@ -784,6 +807,10 @@
   height: 50px;
   border-radius: 100px;
   background-color: #fff;
+  background-image: url("../../images/microsoftLogo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .email__con__mail {
@@ -795,13 +822,36 @@
   color: white;
 }
 
-.email__con__mail p {
+.email__con__mail__team {
   font-size: 14px;
   width: 300px;
 }
 
 .email__con__mail__date {
+  font-size: 14px;
   text-align: left;
+  margin-left: 12px;
+}
+
+.email__con__mail__recieve {
+  font-size: 14px;
+  text-align: left;
+  margin-left: 11px;
+}
+
+.email__con__mail__mic {
+  font-size: 18px;
+  text-align: left;
+  margin-top: 20px;
   margin-left: 10px;
+  color: black;
+  font-weight: 400;
+}
+
+.email__con__mail__app {
+  font-size: 50px;
+  font-style: normal;
+  color: #69afe5;
+  text-align: left;
 }
 /*# sourceMappingURL=Navbar.module.css.map */

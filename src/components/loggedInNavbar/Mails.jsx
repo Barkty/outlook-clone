@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 
 const Mail = () => {
     const [active, setActive] = useState('Focus');
+    const [mail, setMail] = useState('');
     
     return (
         <div className={styles.mail}>
@@ -21,7 +22,7 @@ const Mail = () => {
                     Filter <CgChevronDown/>
                 </div>
             </div>
-            <div className={styles.mail__user}>
+            <div className={mail === 'mail1' ? styles.mail__userActive : styles.mail__user} onClick={()=>setMail('mail1')}>
                 <div className={styles.mail__user__icon}></div>
                 <div className={styles.mail__user__mess}>
                     <p>Microsoft Account Team</p>
@@ -32,11 +33,11 @@ const Mail = () => {
                     <p>Tue 3/29</p>
                 </div>
             </div>
-            <div className={styles.mail__user}>
+            <div className={mail === 'mail2' ? styles.mail__userActive : styles.mail__user} onClick={()=>setMail('mail2')}>
                 <div className={styles.mail__user__icon}></div>
                 <div className={styles.mail__user__mess}>
-                    <p>Microsoft Account Team</p>
-                    <p>New apps connected to your....</p>
+                    <p>Outlook Team</p>
+                    <p>Welcome to your new Outl....</p>
                     <p>Microsoft account New app(s) connected to your ....</p>
                 </div>
                 <div className={styles.mail__user__time}>
@@ -62,8 +63,11 @@ export const Email = () => {
                     <div className={styles.email__con__logo__icon}></div>
                 </div>
                 <div className={styles.email__con__mail}>
-                    <p>Microsoft account team &lt;account-security-noreply&#64;accountprotection.microsoft.com&gt;</p>
+                    <p className={styles.email__con__mail__team}>Microsoft account team &lt;account-security-noreply&#64;accountprotection.microsoft.com&gt;</p>
                     <p className={styles.email__con__mail__date}>Tue 3/29/2022 10:54 AM</p>
+                    <p className={styles.email__con__mail__recieve}>To: You</p>
+                    <h3 className={styles.email__con__mail__mic}>Microsoft account</h3>
+                    <p className={styles.email__con__mail__app}>New app(s) have access to your data</p>
                 </div>
             </div>
         </div>
