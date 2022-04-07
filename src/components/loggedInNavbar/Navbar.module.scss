@@ -480,10 +480,90 @@
 }
 
 .email {
-    width: 55%;
-    height: auto;
+    width: 56%;
+    height: calc(100vh - 96px);
     background-color: #212121;
     position: absolute;
     top: 96px;
-    left: 800px;
+    left: 601px;
+    padding: 15px 10px;
+    
+    h1 {
+        color: #fff;
+        font-size: 22px;
+        font-weight: 500;
+        font-style: normal;
+        text-align: left;
+        margin-left: 25px;
+    }
+
+    &__con {
+        width: 100%;
+        height: auto;
+        border: 0.5px solid #fff;
+
+        &__sub {
+            width: 100%;
+            height: 48px;
+            border-bottom: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            margin-bottom: 10px;
+
+            p {
+                width: 60%;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+
+                a {
+                    color: #0078d4;
+                }
+            }
+
+            &__icon {
+                margin-right: 15px;
+            }
+        }
+
+        &__logo {
+            width: 80px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: column;
+            background-color: #212121;
+            margin-right: 10px;
+
+            &__icon {
+                width: 50px;
+                height: 50px;
+                border-radius: 100px;
+                background-color: #fff;
+            }
+        }
+
+        &__mail {
+            width: 80%;
+            height: auto;
+            position: relative;
+            top: -50px;
+            left: 70px;
+            color: white;
+            
+            p {
+                font-size: 14px;
+                width: 300px;
+            }
+
+            &__date {
+                text-align: left;
+                margin-left: 10px;
+            }
+        }
+    }
 }

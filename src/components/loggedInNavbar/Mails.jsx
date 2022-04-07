@@ -1,6 +1,8 @@
 import styles from './Navbar.module.css'
 import { CgCheckO, CgChevronDown } from 'react-icons/cg'
+import { AiOutlineInfoCircle } from 'react-icons/ai'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const Mail = () => {
     const [active, setActive] = useState('Focus');
@@ -52,7 +54,17 @@ export const Email = () => {
         <div className={styles.email}>
             <h1>New app(s) connected to your Microsoft account</h1>
             <div className={styles.email__con}>
-                
+                <div className={styles.email__con__sub}>
+                   <p> <AiOutlineInfoCircle className={styles.email__con__sub__icon}/>
+                    Getting too much email? <Link to='/'> Unsubscribe </Link>| <Link to='/'> Manage </Link></p>
+                </div>
+                <div className={styles.email__con__logo}>
+                    <div className={styles.email__con__logo__icon}></div>
+                </div>
+                <div className={styles.email__con__mail}>
+                    <p>Microsoft account team &lt;account-security-noreply&#64;accountprotection.microsoft.com&gt;</p>
+                    <p className={styles.email__con__mail__date}>Tue 3/29/2022 10:54 AM</p>
+                </div>
             </div>
         </div>
     )

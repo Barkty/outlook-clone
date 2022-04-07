@@ -693,10 +693,115 @@
 }
 
 .email {
-  width: 55%;
-  height: auto;
+  width: 56%;
+  height: calc(100vh - 96px);
   background-color: #212121;
   position: absolute;
   top: 96px;
+  left: 601px;
+  padding: 15px 10px;
+}
+
+.email h1 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  font-style: normal;
+  text-align: left;
+  margin-left: 25px;
+}
+
+.email__con {
+  width: 100%;
+  height: auto;
+  border: 0.5px solid #fff;
+}
+
+.email__con__sub {
+  width: 100%;
+  height: 48px;
+  border-bottom: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  margin-bottom: 10px;
+}
+
+.email__con__sub p {
+  width: 60%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.email__con__sub p a {
+  color: #0078d4;
+}
+
+.email__con__sub__icon {
+  margin-right: 15px;
+}
+
+.email__con__logo {
+  width: 80px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #212121;
+  margin-right: 10px;
+}
+
+.email__con__logo__icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  background-color: #fff;
+}
+
+.email__con__mail {
+  width: 80%;
+  height: auto;
+  position: relative;
+  top: -50px;
+  left: 70px;
+  color: white;
+}
+
+.email__con__mail p {
+  font-size: 14px;
+  width: 300px;
+}
+
+.email__con__mail__date {
+  text-align: left;
+  margin-left: 10px;
 }
 /*# sourceMappingURL=Navbar.module.css.map */
