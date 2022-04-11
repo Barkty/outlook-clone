@@ -31,18 +31,19 @@ const Products = () => {
             </div>
     
             {/* Carousel large */}
-            <Carousel>
-                <CarouselItem>
-                    <img alt='Word' src={word}/>
-                </CarouselItem>
-                <CarouselItem>
-                    <img alt='Excel' src={excel}/>
-                </CarouselItem>
-                <CarouselItem>
-                    <img alt='Powerpoint' src={powerpoint}/>
-                </CarouselItem>
-            </Carousel>
-            <div className={styles.productswrap__carousel}></div>
+            <div className={styles.productswrap__carousel}>
+                <Carousel>
+                    <CarouselItem>
+                        <img alt='Word' src={word} className={styles.productswrap__carousel__word}/>
+                    </CarouselItem>
+                    <CarouselItem>
+                        <img alt='Excel' src={excel} className={styles.productswrap__carousel__word}/>
+                    </CarouselItem>
+                    <CarouselItem>
+                        <img alt='Powerpoint' src={powerpoint} className={styles.productswrap__carousel__word}/>
+                    </CarouselItem>
+                </Carousel>
+            </div>
 
             {/* Article */}
             <article className={styles.productswrap__article}>

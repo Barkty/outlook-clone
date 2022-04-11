@@ -411,8 +411,6 @@
     }
 }
 
-
-
 @media screen and (min-width: 425px) {
     .productswrap {
         width: 100%;
@@ -1250,8 +1248,27 @@
 }
 
 @media screen and (min-width: 1024px){
-    .productswrap__carouselMini {
-        display: none;
+    .productswrap {
+
+        &__carouselMini {
+            display: none;
+        }
+
+        &__carousel {
+            display: block;
+
+            &__word {
+                width: 80%;
+                margin: 0 120px;
+                object-fit: contain;
+            }
+        }
+
+        &__article {
+            max-width: 47rem;
+            position: relative;
+            left: 300px;
+        }
     }
 }
 @keyframes freeRise {
