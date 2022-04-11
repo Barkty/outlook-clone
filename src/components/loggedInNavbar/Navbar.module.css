@@ -678,6 +678,17 @@
   margin-right: 15px;
 }
 
+.mail__user__iconActive {
+  width: 20px;
+  height: 20px;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  background-image: none;
+  background-color: inherit;
+  border-radius: 100px;
+  border: 2px solid white;
+}
+
 .mail__user__icon:hover {
   width: 20px;
   height: 20px;

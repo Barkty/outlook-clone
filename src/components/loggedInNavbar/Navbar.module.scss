@@ -465,6 +465,16 @@
             background-size: contain;
             margin-right: 15px;
         }
+
+        &__iconActive {
+            width: 20px;
+            height: 20px;
+            transition: all 200ms;
+            background-image: none;
+            background-color: inherit;
+            border-radius: 100px;
+            border: 2px solid white;
+        }
         &__icon:hover {
             width: 20px;
             height: 20px;

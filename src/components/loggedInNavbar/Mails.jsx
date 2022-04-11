@@ -23,7 +23,7 @@ const Mail = () => {
                 </div>
             </div>
             <div className={mail === 'mail1' ? styles.mail__userActive : styles.mail__user} onClick={()=>setMail('mail1')}>
-                <div className={styles.mail__user__icon}></div>
+                <div className={mail === 'mail1' ? styles.mail__user__iconActive : styles.mail__user__icon}></div>
                 <div className={styles.mail__user__mess}>
                     <p>Microsoft Account Team</p>
                     <p>New apps connected to your....</p>
@@ -34,7 +34,7 @@ const Mail = () => {
                 </div>
             </div>
             <div className={mail === 'mail2' ? styles.mail__userActive : styles.mail__user} onClick={()=>setMail('mail2')}>
-                <div className={styles.mail__user__icon}></div>
+                <div className={mail === 'mail2' ? styles.mail__user__iconActive : styles.mail__user__icon}></div>
                 <div className={styles.mail__user__mess}>
                     <p>Outlook Team</p>
                     <p>Welcome to your new Outl....</p>
