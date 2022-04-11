@@ -1,5 +1,8 @@
+import Carousel, { CarouselItem } from '../carousel/Carousel';
 import styles from './Products.module.css'
-
+import word from '../../images/ratio-word.png'
+import excel from '../../images/ratio-excel.png'
+import powerpoint from '../../images/ratio-powerpoint.png'
 const Products = () => {
 
     return (
@@ -28,6 +31,17 @@ const Products = () => {
             </div>
     
             {/* Carousel large */}
+            <Carousel>
+                <CarouselItem>
+                    <img alt='Word' src={word}/>
+                </CarouselItem>
+                <CarouselItem>
+                    <img alt='Excel' src={excel}/>
+                </CarouselItem>
+                <CarouselItem>
+                    <img alt='Powerpoint' src={powerpoint}/>
+                </CarouselItem>
+            </Carousel>
             <div className={styles.productswrap__carousel}></div>
 
             {/* Article */}
