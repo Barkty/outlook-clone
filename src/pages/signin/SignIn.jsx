@@ -12,6 +12,7 @@ import * as Yup from 'yup';
 //import useContextGetter from '../../hooks/UseContextGetter';
 import { Spinner } from 'react-bootstrap';
 import { useState } from 'react';
+import useContextGetter from '../../hooks/UseContextGetter';
 
 const SignIn = () => {
     const navigate = useNavigate();
@@ -75,12 +76,7 @@ export default SignIn;
 
 export const EnterPassword = () => {
     const navigate = useNavigate();
-    //const emailContext = useContext(FormContext)
-    //console.log('context: ', FormContext.Consumer);
-    //console.log('usecontext: ', useContext(FormContext));
-    const email = localStorage.getItem('email');
-    const reversedEmail = JSON.parse(email)
-    //console.log(reversedEmail);
+    const auth = useContextGetter();
     const validationSchema = Yup.object().shape({
         password: Yup.string().min(8, 'Password must be 8 characters or more').required('Password is required!')
     })
@@ -107,7 +103,7 @@ export const EnterPassword = () => {
                         <img src={logo} alt="Microsoft logo" className={styles.signin__logo__img}/>
                     </div>
                     <div className={styles.signin__back}>
-                        <p className={styles.signin__back__text}><Link to='/login'><BsArrowLeft className={styles.signin__back__text__icon}/></Link>{reversedEmail.email}</p> 
+                        <p className={styles.signin__back__text}><Link to='/login'><BsArrowLeft className={styles.signin__back__text__icon}/></Link>{auth.email}</p> 
                     </div>
                     <h1 className={styles.signin__title}>Enter password</h1>
                     <div className={styles.signin__form}>
@@ -140,8 +136,7 @@ export const EnterPassword = () => {
 
 export const SignedIn = () => {
     const navigate = useNavigate();
-    const email = localStorage.getItem('email');
-    const reversedEmail = JSON.parse(email)
+    const auth = useContextGetter();
     const [signedIn, setSignedIn] = useState('')
     const handleStaySigned = (value) => {
         setSignedIn(value);
@@ -155,7 +150,7 @@ export const SignedIn = () => {
                         <img src={logo} alt="Microsoft logo" className={styles.signin__logo__img}/>
                     </div>
                     <div className={styles.signin__back}>
-                        <p className={styles.signin__back__text}>{reversedEmail.email}</p> 
+                        <p className={styles.signin__back__text}>{auth.email}</p> 
                     </div>
                     <h1 className={styles.signin__title}>Stay signed in?</h1>
                     <p className={styles.signin__text}>Stay signed in so you don't have to sign in again next time.</p>
