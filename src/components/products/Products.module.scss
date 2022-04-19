@@ -1269,6 +1269,21 @@
             position: relative;
             left: 300px;
         }
+
+        &__organize {
+
+            &__family {
+
+                h2 {
+                    left: 50px;
+                }
+
+                &__description {
+                    position: relative;
+                    left: 40px;
+                }
+            }
+        }
     }
 }
 @keyframes freeRise {

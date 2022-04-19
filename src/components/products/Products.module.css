@@ -1558,6 +1558,13 @@
     position: relative;
     left: 300px;
   }
+  .productswrap__organize__family h2 {
+    left: 50px;
+  }
+  .productswrap__organize__family__description {
+    position: relative;
+    left: 40px;
+  }
 }
 
 @-webkit-keyframes freeRise {

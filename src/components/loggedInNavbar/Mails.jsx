@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 const Mail = () => {
     const [active, setActive] = useState('Focus');
-    const [mail, setMail] = useState('');
+    const [mail, setMail] = useState('mail1');
     
     return (
         <div className={styles.mail}>
