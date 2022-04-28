@@ -1,17 +1,11 @@
-import { FormContext } from "./formContext";
-import { useEffect } from 'react';
+import FormContext from "./formContext";
 
-const FormState = (props) => {
-    const email = localStorage.getItem('email');
-    const retrievedEmail = JSON.parse(email)
-    useEffect(()=> {
-        console.log(email);
-        console.log(retrievedEmail);
-    }, [email, retrievedEmail]);
-
+const FormState = ({ children }) => {
+    const email = JSON.parse(localStorage.getItem('email'));
+    console.log(email)
     return (
-        <FormContext.Provider value={{retrievedEmail}}>
-            {props.children}
+        <FormContext.Provider value={{email}}>
+            {children}
         </FormContext.Provider>
     )
 }

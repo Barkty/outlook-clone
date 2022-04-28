@@ -5,11 +5,11 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { BsArrowLeft } from 'react-icons/bs';
 import { Spinner } from 'react-bootstrap';
+import useContextGetter from '../../hooks/UseContextGetter'
 
 const Name = () => {
     const navigate = useNavigate();
-    const retrievedUser = localStorage.getItem('newAccount')
-    const user = JSON.parse(retrievedUser);
+    const auth = useContextGetter();
     const validationSchema = Yup.object().shape({
         firstname: Yup.string().min(3, 'Firstname must be 3 characters or more').required('Firstname is required!'),
         lastname: Yup.string().min(3, 'Lasttname must be 3 characters or more').required('Lastname is required!')
@@ -34,7 +34,7 @@ const Name = () => {
                     <img src={logo} alt="Microsoft logo" className={styles.signup__logo__img}/>
                 </div>
                 <div className={styles.signup__back}>
-                    <p className={styles.signup__back__text}><Link to='/signup/create_password'><BsArrowLeft className={styles.signup__back__text__icon}/></Link>{user.email + user.domain}</p> 
+                    <p className={styles.signup__back__text}><Link to='/signup/create_password'><BsArrowLeft className={styles.signup__back__text__icon}/></Link>{auth.email.email + auth.email.domain}</p> 
                 </div>
                 <h1 className={styles.signup__title}>What's your name?</h1>
                 <p className={styles.signup__text}>We need just a little more info to set up your account.</p>
@@ -86,8 +86,7 @@ export default Name;
 
 export const Birthday = () => {
     const navigate = useNavigate();
-    const retrievedUser = localStorage.getItem('newAccount')
-    const user = JSON.parse(retrievedUser);
+    const auth = useContextGetter();
     const validationSchema = Yup.object().shape({
         country: Yup.string().required('Country of Residence is required'),
         month: Yup.string().required('Date of birth is required'),
@@ -116,7 +115,7 @@ export const Birthday = () => {
                     <img src={logo} alt="Microsoft logo" className={styles.signup__logo__img}/>
                 </div>
                 <div className={styles.signup__back}>
-                    <p className={styles.signup__back__text}><Link to='/signup/create_password'><BsArrowLeft className={styles.signin__back__text__icon}/></Link>{user.email + user.domain}</p> 
+                    <p className={styles.signup__back__text}><Link to='/signup/create_password'><BsArrowLeft className={styles.signin__back__text__icon}/></Link>{auth.email.email + auth.email.domain}</p> 
                 </div>
                 <h1 className={styles.signup__title2}>What's your birthdate?</h1>
                 <p className={styles.signup__text}>We need just a little more info to set up your account. Your date of birth helps us to provide you with age-appropriate settings.</p>
@@ -233,8 +232,7 @@ export const Birthday = () => {
 }
 
 export const Puzzle = () => {
-    const retrievedUser = localStorage.getItem('newAccount')
-    const user = JSON.parse(retrievedUser);
+    const auth = useContextGetter();
     const navigate = useNavigate();
     const handleClick = () => {
         navigate('/mail/0/inbox');
@@ -247,7 +245,7 @@ export const Puzzle = () => {
                     <img src={logo} alt="Microsoft logo" className={styles.signup__logo__img}/>
                 </div>
                 <div className={styles.signup__back}>
-                    <p className={styles.signup__back__text}><Link to='/signup/create_password'><BsArrowLeft className={styles.signup__back__text__icon}/></Link>{user.email + user.domain}</p> 
+                    <p className={styles.signup__back__text}><Link to='/signup/create_password'><BsArrowLeft className={styles.signup__back__text__icon}/></Link>{auth.email.email + auth.email.domain}</p> 
                 </div>
                 <h1 className={styles.signup__title}>Create account</h1>
                 <p className={styles.signup__text}>Please solve the puzzle so we know you are not a robot.</p>

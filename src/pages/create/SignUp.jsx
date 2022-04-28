@@ -5,6 +5,7 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { Spinner } from 'react-bootstrap'
 import { BsArrowLeft } from 'react-icons/bs'
+import useContextGetter from '../../hooks/UseContextGetter'
 
 const SignUp = () => {
     const navigate = useNavigate();
@@ -14,7 +15,7 @@ const SignUp = () => {
     })
     const handleSignup = async (values) => {
         console.log(values);
-        await localStorage.setItem('newAccount', JSON.stringify(values));
+        await localStorage.setItem('email', JSON.stringify(values));
         navigate('create_password');
     }
     const formik = useFormik({
@@ -78,15 +79,14 @@ export const AccountPassword = () => {
         password: Yup.string().min(8, 'Password must be 8 characters or more').required('Password is required!')
     });
     const navigate = useNavigate();
-    const retrievedUser = localStorage.getItem('newAccount')
-    const user = JSON.parse(retrievedUser);
+    const auth = useContextGetter();
     const handlePassword = (values) => {
         console.log(values);
         navigate('/set_name', {replace: true});
     }
     const formik = useFormik({
         initialValues: {
-            email: user.email + user.domain,
+            email: auth.email.email + auth.email.domain,
             password: '',
             inform: 1
         },
@@ -100,7 +100,7 @@ export const AccountPassword = () => {
                     <img src={logo} alt="Microsoft logo" className={styles.signup__logo__img}/>
                 </div>
                 <div className={styles.signup__back}>
-                    <p className={styles.signup__back__text}><Link to='/signup'><BsArrowLeft className={styles.signin__back__text__icon}/></Link>{user.email + user.domain}</p> 
+                    <p className={styles.signup__back__text}><Link to='/signup'><BsArrowLeft className={styles.signin__back__text__icon}/></Link>{auth.email.email + auth.email.domain}</p> 
                 </div>
                 <h1 className={styles.signup__title}>Create a password</h1>
                 <p className={styles.signup__text}>Enter the password you would like to use with your account.</p>

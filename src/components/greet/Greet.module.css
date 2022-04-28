@@ -1252,13 +1252,15 @@
   }
   .greet__bottom__textcon {
     background-color: white;
-    width: 69%;
+    width: 50%;
     height: 557px;
     position: relative;
     top: -740px;
     z-index: 2;
     padding: 30px 120px 0 80px;
     opacity: 1;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   .greet__bottom__textcon h1 {
     font-size: 3rem;

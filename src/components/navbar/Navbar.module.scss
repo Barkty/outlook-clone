@@ -27,7 +27,8 @@ $fontFamily : segoe, "Segoe UI", Arial, sans-serif;
     animation-delay: 50ms;
 }
 .top {
-    background-color: hsl(28,61,30);
+    background: rgba(255,255,255,0.2);
+    //background-color: hsl(28,61,30);
     height: 54px;
     width: 100%;
     order: 1;
@@ -35,7 +36,7 @@ $fontFamily : segoe, "Segoe UI", Arial, sans-serif;
     position: fixed;
     padding: 8px;
     overflow: hidden;
-    border-bottom: 1px solid hsl(28,61,30);
+    //border-bottom: 1px solid hsl(28,61,30);
     box-sizing: border-box;
     //background-color: #2a2112;
     background-image: inherit;
@@ -184,14 +185,16 @@ $fontFamily : segoe, "Segoe UI", Arial, sans-serif;
 
 @media screen and (min-width: 370px) {
     .top {
-        background-color: hsl(28,61,30);
+        //background-color: transparent;
+        //background-color: hsl(28,61,30);
+        background: rgba(255,255,255,0.2);
         height: 54px;
         width: 100%;
         order: 1;
         z-index: 3;
         position: fixed;
         padding: 15px;
-        border-bottom: 1px solid hsl(28,61,30);
+        //border-bottom: 1px solid hsl(28,61,30);
         //box-shadow: 0 10px 30px rgb(0 0 0);
 
         &__inner {
@@ -279,14 +282,15 @@ $fontFamily : segoe, "Segoe UI", Arial, sans-serif;
 
 @media screen and (min-width: 569px) {
     .top {
-        background-color: hsl(28,61,30);
+        //background-color: hsl(28,61,30);
+        background: rgba(255,255,255,0.2);
         height: 54px;
         width: 100%;
         order: 1;
         z-index: 3;
         position: fixed;
         padding: 5px 40px 5px 40px;
-        border-bottom: 1px solid hsl(28,61,30);
+        //border-bottom: 1px solid hsl(28,61,30);
         background-image: inherit;
         background-repeat: no-repeat;
         background-size: cover;
@@ -382,14 +386,15 @@ $fontFamily : segoe, "Segoe UI", Arial, sans-serif;
 
 @media screen and (min-width: 768px){
     .top {
-        background-color: hsl(28,61,30);
+        //background-color: hsl(28,61,30);
+        background: rgba(255,255,255,0.2);
         height: 54px;
         width: 100%;
         order: 1;
         z-index: 3;
         position: fixed;
         padding: 15px 40px 15px 40px;
-        border-bottom: 1px solid hsl(28,61,30);
+        //border-bottom: 1px solid hsl(28,61,30);
         background-image: inherit;
         background-repeat: no-repeat;
         background-size: cover;
@@ -549,14 +554,15 @@ $fontFamily : segoe, "Segoe UI", Arial, sans-serif;
 
 @media screen and (min-width: 992px) {
     .top {
-        background-color: hsl(28,61,30);
+        //background-color: hsl(28,61,30);
+        background: rgba(255,255,255,0.2);
         height: 54px;
         width: 100%;
         order: 1;
         z-index: 3;
         position: fixed;
         padding: 15px 70px 15px 70px;
-        border-bottom: 1px solid hsl(28,61,30);
+        //border-bottom: 1px solid hsl(28,61,30);
         background-image: inherit;
         background-repeat: no-repeat;
         background-size: cover;
@@ -652,14 +658,15 @@ $fontFamily : segoe, "Segoe UI", Arial, sans-serif;
 
 @media screen and (min-width: 1024px) {
     .top {
-        background-color: hsl(28,61,30);
+        background: rgba(255,255,255,0.2);
+        //background-color: hsl(28,61,30);
         height: 54px;
         width: 100%;
         order: 1;
         z-index: 3;
         position: fixed;
         padding: 15px 40px 15px 40px;
-        border-bottom: 1px solid hsl(28,61,30);
+        //border-bottom: 1px solid hsl(28,61,30);
         background-image: inherit;
         background-repeat: no-repeat;
         background-size: cover;
@@ -819,14 +826,15 @@ $fontFamily : segoe, "Segoe UI", Arial, sans-serif;
 
 @media screen and (min-width: 1281px) {
     .top {
-        background-color: hsl(28,61,30);
+        background: rgba(255,255,255,0.2);
+        //background-color: hsl(28,61,30);
         height: 70px;
         width: 100%;
         order: 1;
         z-index: 3;
         position: fixed;
         padding: 15px 70px 15px 70px;
-        border-bottom: 1px solid hsl(28,61,30);
+        //border-bottom: 1px solid hsl(28,61,30);
         background-image: inherit;
         background-repeat: no-repeat;
         background-size: cover;

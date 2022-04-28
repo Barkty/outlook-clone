@@ -1,14 +1,15 @@
 import styles from './Navbar.module.css'
 import { CgMenuGridR, CgUndo } from 'react-icons/cg'
-import { VscSearch, VscMailRead, VscEdit } from 'react-icons/vsc'
-import { BsCameraVideo, BsSkype, BsPeople, BsInbox } from 'react-icons/bs'
+import { VscSearch, VscMailRead, VscEdit, VscError } from 'react-icons/vsc'
+import { BsCameraVideo, BsSkype, BsPeople, BsInbox, BsFolder } from 'react-icons/bs'
 import { AiOutlineQrcode, AiOutlineQuestion } from 'react-icons/ai'
 import { SiMicrosoftonenote, SiMicrosoftexcel, SiMicrosoftpowerpoint, SiMicrosoftword, SiMinutemailer} from 'react-icons/si'
-import { RiCalendarCheckLine, RiAttachment2, RiEditBoxLine } from 'react-icons/ri'
-import { HiOutlineCog, HiSpeakerphone, HiMail } from 'react-icons/hi'
+import { RiCalendarCheckLine, RiAttachment2, RiEditBoxLine, RiDeleteBin6Line, RiStickyNoteLine } from 'react-icons/ri'
+import { HiOutlineCog, HiSpeakerphone, HiMail, HiOutlineArchive } from 'react-icons/hi'
 import { IoCalendarOutline, IoMenuOutline, IoChevronForwardSharp, IoChevronDownSharp } from 'react-icons/io5'
 import { ImCheckmark } from 'react-icons/im'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 //import word from '../../images/word-icon.jpg'
 
 const TopNav = () => {
@@ -16,7 +17,7 @@ const TopNav = () => {
     return (
         <div className={styles.nav}>
             <div className={styles.nav__icon}>
-                <CgMenuGridR/>
+                <CgMenuGridR className={styles.nav__icon__grid}/>
             </div>
             <p className={styles.nav__title}>Outlook</p>
             <div className={styles.nav__searchbar}>
@@ -129,12 +130,10 @@ export const SecondNav = () => {
 }
 
 export const EmailFolder = () => {
-    const [fav, setFav] = useState(false);
+    const [fav, setFav] = useState(true);
     const [folder, setFolder] = useState(false);
     const [group, setGroup] = useState(false);
-    // const handleActive = (menu) => {
-    //     setActive(menu);
-    // }
+    const [mail, setMail] = useState('Inbox');
 
     return (
         <div className={styles.folder}>
@@ -146,18 +145,21 @@ export const EmailFolder = () => {
                     Favourites
                 </div>
                 <div className={fav ? styles.folder__favourites__nav : styles.folder__favourites__fav}>
-                    <div className={styles.folder__favourites__nav__text}>
+                    <div className={mail === 'Inbox' ? styles.folder__favourites__nav__active : styles.folder__favourites__nav__text} onClick={()=>setMail('Inbox')}>
                         <BsInbox className={styles.folder__favourites__text__icon}/>
                         Inbox
                     </div>
-                    <div className={styles.folder__favourites__nav__text}>
+                    <div className={mail === 'Sent' ? styles.folder__favourites__nav__active : styles.folder__favourites__nav__text} onClick={()=>setMail('Sent')}>
                         <SiMinutemailer className={styles.folder__favourites__text__icon}/>
                         Sent items
                     </div>
-                    <div className={styles.folder__favourites__nav__text}>
+                    <div className={mail === 'Drafts' ? styles.folder__favourites__nav__active : styles.folder__favourites__nav__text} onClick={()=>setMail('Drafts')}>
                         <VscEdit className={styles.folder__favourites__text__icon}/>
                         Drafts
                     </div>
+                    <Link to='/'>
+                        Add favourites
+                    </Link>
                 </div>
             </div>
             <div className={styles.folder__favourites}>
@@ -168,18 +170,41 @@ export const EmailFolder = () => {
                     Folders
                 </div>
                 <div className={folder ? styles.folder__favourites__nav : styles.folder__favourites__fav}>
-                    <div className={styles.folder__favourites__nav__text}>
+                    <div className={mail === 'Inbox2' ? styles.folder__favourites__nav__active : styles.folder__favourites__nav__text} onClick={()=>setMail('Inbox2')}>
                         <BsInbox className={styles.folder__favourites__text__icon}/>
                         Inbox
                     </div>
-                    <div className={styles.folder__favourites__nav__text}>
-                        <SiMinutemailer className={styles.folder__favourites__text__icon}/>
-                        Sent items
+                    <div className={mail === 'Junk' ? styles.folder__favourites__nav__active : styles.folder__favourites__nav__text} onClick={()=>setMail('Junk')}>
+                        <VscError className={styles.folder__favourites__text__icon}/>
+                        Junk Email
                     </div>
-                    <div className={styles.folder__favourites__nav__text}>
+                    <div className={mail === 'Drafts2' ? styles.folder__favourites__nav__active : styles.folder__favourites__nav__text} onClick={()=>setMail('Drafts2')}>
                         <VscEdit className={styles.folder__favourites__text__icon}/>
                         Drafts
                     </div>
+                    <div className={mail === 'Sent2' ? styles.folder__favourites__nav__active : styles.folder__favourites__nav__text} onClick={()=>setMail('Sent2')}>
+                        <SiMinutemailer className={styles.folder__favourites__text__icon}/>
+                        Sent items
+                    </div>
+                    <div className={mail === 'Delete' ? styles.folder__favourites__nav__active : styles.folder__favourites__nav__text} onClick={()=>setMail('Delete')}>
+                        <RiDeleteBin6Line className={styles.folder__favourites__text__icon}/>
+                        Deleted items
+                    </div>
+                    <div className={mail === 'Archive' ? styles.folder__favourites__nav__active : styles.folder__favourites__nav__text} onClick={()=>setMail('Archive')}>
+                        <HiOutlineArchive className={styles.folder__favourites__text__icon}/>
+                        Archive
+                    </div>
+                    <div className={mail === 'Notes' ? styles.folder__favourites__nav__active : styles.folder__favourites__nav__text} onClick={()=>setMail('Notes')}>
+                        <RiStickyNoteLine className={styles.folder__favourites__text__icon}/>
+                        Notes
+                    </div>
+                    <div className={mail === 'History' ? styles.folder__favourites__nav__active : styles.folder__favourites__nav__text} onClick={()=>setMail('History')}>
+                        <BsFolder className={styles.folder__favourites__text__icon}/>
+                        Conversation History
+                    </div>
+                    <Link to='/'>
+                        New folder
+                    </Link>
                 </div>
             </div>
             <div className={styles.folder__favourites}>
@@ -190,7 +215,10 @@ export const EmailFolder = () => {
                     Groups
                 </div>
                 <div className={group ? styles.folder__favourites__nav : styles.folder__favourites__fav}>
-                    <div className={styles.folder__favourites__nav__text}>
+                    <Link to='/'>
+                        New group
+                    </Link>
+                    {/* <div className={styles.folder__favourites__nav__text}>
                         <BsInbox className={styles.folder__favourites__text__icon}/>
                         Inbox
                     </div>
@@ -201,8 +229,8 @@ export const EmailFolder = () => {
                     <div className={styles.folder__favourites__nav__text}>
                         <VscEdit className={styles.folder__favourites__text__icon}/>
                         Drafts
-                    </div>
-                </div>
+                    </div>*/}
+                </div> 
             </div>
         </div>
     )

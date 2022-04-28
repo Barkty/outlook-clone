@@ -13,9 +13,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   background-color: #0078d4;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .nav__title {
@@ -23,7 +24,7 @@
   font-weight: 500;
   font-size: 1.2rem;
   position: relative;
-  left: -80px;
+  right: -20px;
 }
 
 .nav__icons {
@@ -41,6 +42,8 @@
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  position: relative;
+  right: -400px;
 }
 
 .nav__icons__meet {
@@ -62,6 +65,13 @@
   color: white;
 }
 
+.nav__user {
+  border: 1px solid white;
+  border-radius: 100px;
+  padding: 5px;
+  color: white;
+}
+
 .nav__icon {
   width: 30px;
   height: 30px;
@@ -74,9 +84,16 @@
   color: white;
 }
 
+.nav__icon__grid {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  left: 5px;
+}
+
 .nav__searchbar {
-  background-color: black;
-  width: 400px;
+  background-color: #333;
+  width: 356px;
   height: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -91,21 +108,56 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
+  right: -150px;
 }
 
 .nav__searchbar__icon {
   color: white;
-  width: 30px;
+  width: 20px;
   height: 20px;
+  margin-left: 15px;
 }
 
 .nav__searchbar input {
-  width: 350px;
+  width: 340px;
   height: 32px;
-  background-color: inherit;
+  background-color: transparent;
+  border: 0;
   color: white;
   border: none;
   outline: none;
+  cursor: default;
+  z-index: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  font-weight: 400;
+  padding-left: 10px;
+}
+
+.nav__searchbar input::-webkit-input-placeholder {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.nav__searchbar input:-ms-input-placeholder {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.nav__searchbar input::-ms-input-placeholder {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.nav__searchbar input::placeholder {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .icons {
@@ -113,6 +165,9 @@
   height: calc(100vh - 48px);
   background-color: black;
   padding: 0 15px;
+  position: fixed;
+  left: 0;
+  top: 48px;
 }
 
 .icons__wrap {
@@ -187,8 +242,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background-color: black;
-  position: absolute;
+  background-color: #212121;
+  border-bottom: #000000;
+  position: fixed;
   top: 48px;
   left: 50px;
 }
@@ -215,7 +271,7 @@
 }
 
 .navigation__actions__menu {
-  color: #69afe5;
+  color: #b3d6fc;
   width: 60px;
   height: 38px;
   display: -webkit-box;
@@ -230,8 +286,8 @@
 }
 
 .navigation__actions__menu__icon {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 32px;
 }
 
 .navigation__actions__action {
@@ -271,16 +327,19 @@
 .navigation__actions__action__message {
   background-color: #69afe5;
   border-radius: 4px;
+  -webkit-transition: background-color .156s ease;
+  transition: background-color .156s ease;
   margin: 6px 3px 6px 0;
   color: #333;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 14px;
+  padding: 0px 4px;
 }
 
 .navigation__actions__action__mark {
   color: white;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .navigation__actions__action__mark__icon {
@@ -290,7 +349,7 @@
 .navigation__actions__action__undo {
   color: white;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .navigation__actions__action__undo__icon {
@@ -302,7 +361,7 @@
 .folder {
   width: 200px;
   height: calc(100vh - 96px);
-  background-color: rgba(0, 0, 0, 0.903);
+  background-color: #212121;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -316,9 +375,11 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  position: absolute;
+  position: fixed;
   top: 96px;
   left: 50px;
+  overflow-y: scroll;
+  border-right: 1px solid black;
 }
 
 .folder__favourites {
@@ -360,6 +421,9 @@
           justify-content: left;
   padding-left: 15px;
   color: white;
+  font-size: 14px;
+  font-weight: 300;
+  overflow: hidden;
 }
 
 .folder__favourites__text__icon {
@@ -400,9 +464,534 @@
   padding-left: 35px;
   color: white;
   text-align: left;
+  font-weight: 400;
+  overflow: hidden;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 14px;
+}
+
+.folder__favourites__nav__active {
+  width: 100%;
+  height: 38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  padding-left: 35px;
+  color: white;
+  text-align: left;
+  font-weight: 400;
+  overflow: hidden;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  background-color: #106ebe;
+}
+
+.folder__favourites__nav a {
+  text-align: center;
+  text-decoration: none;
+  color: #69afe5;
 }
 
 .folder__favourites__fav {
   display: none;
+}
+
+.folder__favourites__fav a {
+  text-align: center;
+  text-decoration: none;
+  color: #69afe5;
+}
+
+.folder::-webkit-scrollbar {
+  width: 0.45em;
+}
+
+.folder::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.folder::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+  border-radius: 4px;
+}
+
+.mail {
+  width: 351px;
+  height: calc(100vh - 96px);
+  background-color: #212121;
+  border-right: 1px solid #000;
+  position: fixed;
+  top: 96px;
+  left: 250px;
+}
+
+.mail__nav {
+  width: 100%;
+  height: 48px;
+  padding: 9px 24px 6px 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: white;
+  border-bottom: 1px solid #000;
+}
+
+.mail__nav__icon {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.mail__nav__focus {
+  width: 60px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.mail__nav__active {
+  width: 60px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #000;
+  border-bottom: 3px solid #69afe5;
+  cursor: pointer;
+}
+
+.mail__nav__filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50px;
+  height: 30px;
+  cursor: pointer;
+  color: #0078d4;
+}
+
+.mail__userActive {
+  width: 100%;
+  height: 88px;
+  padding: 9px 24px 6px 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: white;
+  border-bottom: 1px solid #000;
+  background-color: #106ebe;
+}
+
+.mail__user {
+  width: 100%;
+  height: 88px;
+  padding: 9px 24px 6px 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: white;
+  border-bottom: 1px solid #000;
+  cursor: pointer;
+}
+
+.mail__user__icon {
+  border-radius: 100px;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  background-image: url("../../images/messageIcon.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  margin-right: 15px;
+}
+
+.mail__user__iconActive {
+  width: 20px;
+  height: 20px;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  background-image: none;
+  background-color: inherit;
+  border-radius: 100px;
+  border: 2px solid white;
+}
+
+.mail__user__icon:hover {
+  width: 20px;
+  height: 20px;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  background-image: none;
+  background-color: inherit;
+  border-radius: 100px;
+  border: 2px solid white;
+}
+
+.mail__user__mess {
+  height: 60px;
+  width: 72%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.mail__user__mess p {
+  color: white;
+  font-size: 12px;
+  text-align: left;
+}
+
+.mail__user__time {
+  width: auto;
+  height: auto;
+  color: white;
+  font-size: 12px;
+}
+
+.email {
+  width: 56%;
+  height: calc(100vh - 96px);
+  background-color: #212121;
+  position: fixed;
+  top: 96px;
+  left: 601px;
+  padding: 15px 10px;
+}
+
+.email h1 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  font-style: normal;
+  text-align: left;
+  margin-left: 25px;
+  margin-bottom: 15px;
+}
+
+.email__cont::-webkit-scrollbar {
+  width: 0.45em;
+}
+
+.email__cont::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.email__cont::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+  border-radius: 4px;
+}
+
+.email__cont {
+  overflow-x: scroll;
+  width: 100%;
+  height: calc(100vh - 150px);
+  padding-bottom: 200px;
+}
+
+.email__cont__con {
+  width: 100%;
+  height: auto;
+  border: 0.5px solid #fff;
+}
+
+.email__cont__con__sub {
+  width: 100%;
+  height: 48px;
+  border-bottom: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  margin-bottom: 10px;
+}
+
+.email__cont__con__sub p {
+  width: 60%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.email__cont__con__sub p a {
+  color: #0078d4;
+}
+
+.email__cont__con__sub__icon {
+  margin-right: 15px;
+}
+
+.email__cont__con__logo {
+  width: 80px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #212121;
+}
+
+.email__cont__con__logo__icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  background-color: #fff;
+  background-image: url("../../images/microsoftLogo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.email__cont__con__mail {
+  width: 80%;
+  height: auto;
+  position: relative;
+  top: -49px;
+  left: 80px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.email__cont__con__mail__team {
+  font-size: 14px;
+  width: 300px;
+}
+
+.email__cont__con__mail__date {
+  font-size: 14px;
+  text-align: left;
+  margin-left: 14px;
+}
+
+.email__cont__con__mail__recieve {
+  font-size: 14px;
+  text-align: left;
+  margin-left: 15px;
+  position: relative;
+  top: 5px;
+}
+
+.email__cont__con__mail__mic {
+  font-size: 18px;
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 14px;
+  color: black;
+  font-weight: 400;
+}
+
+.email__cont__con__mail__app {
+  font-size: 50px;
+  font-style: normal;
+  color: #69afe5;
+  text-align: left;
+  margin-left: 14px;
+}
+
+.email__cont__con__mail__amb {
+  width: 400px;
+  font-size: 14px;
+  text-align: left;
+  margin-left: 9px;
+  position: relative;
+  top: 20px;
+}
+
+.email__cont__con__mail__amb a {
+  color: #69afe5;
+}
+
+.email__cont__con__mail__acc {
+  width: 400px;
+  font-size: 14px;
+  text-align: left;
+  margin-left: 9px;
+  position: relative;
+  top: 50px;
+}
+
+.email__cont__con__mail__btn {
+  width: 150px;
+  height: 30px;
+  outline: none;
+  border: none;
+  color: white;
+  background-color: #106ebe;
+  position: relative;
+  top: 70px;
+  left: 10px;
+  margin-top: 20px;
+}
+
+.email__cont__con__mail__opt {
+  width: 400px;
+  font-size: 14px;
+  text-align: left;
+  margin-left: 9px;
+  margin-top: 90px;
+}
+
+.email__cont__con__mail__man {
+  width: 400px;
+  font-size: 14px;
+  text-align: left;
+  margin-left: 9px;
+  margin-top: 20px;
+}
+
+.email__cont__con__mail__links {
+  width: 150px;
+  text-align: left;
+  margin-left: 9px;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.email__cont__con__mail__links a {
+  color: #0078d4;
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.email__cont__con__mail__links div {
+  width: 1px;
+  height: 25px;
+  background-color: white;
+  position: relative;
+  top: 10px;
 }
 /*# sourceMappingURL=Navbar.module.css.map */

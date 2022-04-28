@@ -1,0 +1,77 @@
+.carousel {
+    overflow: hidden;
+    height: 94vh;
+    padding: 20px;
+    margin: 0;
+    position: relative;
+    top: 25px;
+}
+.carousel__inner {
+    white-space: nowrap;
+    transition: transform 0.3s;
+    height: inherit;
+}
+.carousel__item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    height: inherit;
+    color: #000;
+    position: relative;
+    top: -10px;
+}
+.carousel__indicators {
+    position: relative;
+    top: -83px;
+    left: 55%;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+}
+.carousel__button {
+    width: 60px;
+    height: 70px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+    z-index: 2;
+}
+.carousel__button__hover {
+    width: 60px;
+    height: 70px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: hsl(0, 0%, 27%);
+    color: hsl(0, 0%, 100%);
+    z-index: 2;
+}
+@media screen and (max-width: 786px) {
+    .carousel__indicators {
+        position: relative;
+        top: -64px;
+        left: 88%;
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 676px) {
+    .carousel__indicators {
+        position: relative;
+        top: -80px;
+        left: 70%;
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 374px) {
+    .carousel__indicators {
+        position: relative;
+        top: -64px;
+        left: 76%;
+        display: flex;
+        justify-content: center;
+    }
+}

@@ -1544,6 +1544,27 @@
   .productswrap__carouselMini {
     display: none;
   }
+  .productswrap__carousel {
+    display: block;
+  }
+  .productswrap__carousel__word {
+    width: 80%;
+    margin: 0 120px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .productswrap__article {
+    max-width: 47rem;
+    position: relative;
+    left: 300px;
+  }
+  .productswrap__organize__family h2 {
+    left: 50px;
+  }
+  .productswrap__organize__family__description {
+    position: relative;
+    left: 40px;
+  }
 }
 
 @-webkit-keyframes freeRise {

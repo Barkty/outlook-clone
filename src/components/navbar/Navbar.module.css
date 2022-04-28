@@ -36,7 +36,7 @@
 }
 
 .top {
-  background-color: #7b491e;
+  background: rgba(255, 255, 255, 0.2);
   height: 54px;
   width: 100%;
   -webkit-box-ordinal-group: 2;
@@ -46,7 +46,6 @@
   position: fixed;
   padding: 8px;
   overflow: hidden;
-  border-bottom: 1px solid #7b491e;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-image: inherit;
@@ -203,7 +202,7 @@
 
 @media screen and (min-width: 370px) {
   .top {
-    background-color: #7b491e;
+    background: rgba(255, 255, 255, 0.2);
     height: 54px;
     width: 100%;
     -webkit-box-ordinal-group: 2;
@@ -212,7 +211,6 @@
     z-index: 3;
     position: fixed;
     padding: 15px;
-    border-bottom: 1px solid #7b491e;
   }
   .top__inner {
     display: -webkit-box;
@@ -302,7 +300,7 @@
 
 @media screen and (min-width: 569px) {
   .top {
-    background-color: #7b491e;
+    background: rgba(255, 255, 255, 0.2);
     height: 54px;
     width: 100%;
     -webkit-box-ordinal-group: 2;
@@ -311,7 +309,6 @@
     z-index: 3;
     position: fixed;
     padding: 5px 40px 5px 40px;
-    border-bottom: 1px solid #7b491e;
     background-image: inherit;
     background-repeat: no-repeat;
     background-size: cover;
@@ -409,7 +406,7 @@
 
 @media screen and (min-width: 768px) {
   .top {
-    background-color: #7b491e;
+    background: rgba(255, 255, 255, 0.2);
     height: 54px;
     width: 100%;
     -webkit-box-ordinal-group: 2;
@@ -418,7 +415,6 @@
     z-index: 3;
     position: fixed;
     padding: 15px 40px 15px 40px;
-    border-bottom: 1px solid #7b491e;
     background-image: inherit;
     background-repeat: no-repeat;
     background-size: cover;
@@ -572,7 +568,7 @@
 
 @media screen and (min-width: 992px) {
   .top {
-    background-color: #7b491e;
+    background: rgba(255, 255, 255, 0.2);
     height: 54px;
     width: 100%;
     -webkit-box-ordinal-group: 2;
@@ -581,7 +577,6 @@
     z-index: 3;
     position: fixed;
     padding: 15px 70px 15px 70px;
-    border-bottom: 1px solid #7b491e;
     background-image: inherit;
     background-repeat: no-repeat;
     background-size: cover;
@@ -679,7 +674,7 @@
 
 @media screen and (min-width: 1024px) {
   .top {
-    background-color: #7b491e;
+    background: rgba(255, 255, 255, 0.2);
     height: 54px;
     width: 100%;
     -webkit-box-ordinal-group: 2;
@@ -688,7 +683,6 @@
     z-index: 3;
     position: fixed;
     padding: 15px 40px 15px 40px;
-    border-bottom: 1px solid #7b491e;
     background-image: inherit;
     background-repeat: no-repeat;
     background-size: cover;
@@ -842,7 +836,7 @@
 
 @media screen and (min-width: 1281px) {
   .top {
-    background-color: #7b491e;
+    background: rgba(255, 255, 255, 0.2);
     height: 70px;
     width: 100%;
     -webkit-box-ordinal-group: 2;
@@ -851,7 +845,6 @@
     z-index: 3;
     position: fixed;
     padding: 15px 70px 15px 70px;
-    border-bottom: 1px solid #7b491e;
     background-image: inherit;
     background-repeat: no-repeat;
     background-size: cover;
